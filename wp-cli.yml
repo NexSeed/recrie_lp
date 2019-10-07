@@ -1,0 +1,4 @@
+require:
+  - wp-cli/browse-command.php
+@recrie.local:
+  ssh: vagrant:recrie.local:/var/www/html
