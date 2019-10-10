@@ -12,7 +12,7 @@ const srcDir = 'src/'
 
 paths = {
     html: srcDir + '**.html',
-    scss: [srcDir + 'assets/scss/**.scss', srcDir + 'assets/scss/*/**.scss'],
+    scss: [srcDir + 'assets/scss/**.scss', srcDir + 'assets/scss/**/**.scss'],
     img: srcDir + 'assets/img/*'
 }
 
