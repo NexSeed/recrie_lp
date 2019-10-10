@@ -1,0 +1,35 @@
+.c-staff {
+  &__img {
+    max-width: 9.7rem;
+
+    &.--margin-middle {
+      margin: 0 2px;
+    }
+  }
+
+}
+
+.c-finance {
+  width: 100%;
+  margin-top: 3.2rem;
+
+  &__title {
+    width: 20rem;
+    height: 6.7rem;
+    font: 500 2rem/3.8rem Source Han Serif;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #212121;
+  }
+
+  &__tax {
+    color: #0D5D4B;
+    letter-spacing: 1.3px;
+    font-size: 1.3rem;
+  }
+
+  &__cost {
+    font-size: 4rem;
+    letter-spacing: 4.1px;
+  }
+}
