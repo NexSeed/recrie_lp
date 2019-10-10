@@ -18,7 +18,7 @@
       </p>
       <ul id="menu-list">
         <li>
-          <a href="">トップ</a>
+          <a href="contact">トップ</a>
         </li>
         <li>
           <a href="">実績</a>
