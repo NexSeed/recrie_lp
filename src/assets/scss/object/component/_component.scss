@@ -1,6 +1,6 @@
 .c-staff {
   &__img {
-    max-width: 97px;
+    max-width: 9.7rem;
 
     &.--margin-middle {
       margin: 0 2px;
@@ -11,12 +11,12 @@
 
 .c-finance {
   width: 100%;
-  margin-top: 32px;
+  margin-top: 3.2rem;
 
   &__title {
-    width: 200px;
-    height: 67px;
-    font-size: 20px;
+    width: 20rem;
+    height: 6.7rem;
+    font-size: 2rem;
     letter-spacing: 2px;
     text-align: center;
     color: #212121;
@@ -25,11 +25,11 @@
   &__tax {
     color: #0D5D4B;
     letter-spacing: 1.3px;
-    font-size: 13px;
+    font-size: 1.3rem;
   }
 
   &__cost {
-    font-size: 41px;
+    font-size: 4rem;
     letter-spacing: 4.1px;
   }
 }
