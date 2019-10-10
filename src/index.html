@@ -1,67 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Recrie</title>
-  <link rel="stylesheet" href="/assets/css/style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://kit.fontawesome.com/125087969d.js" crossorigin="anonymous"></script>
-</head>
-<body>
-<div class="l-header-container">
-  <div class="l-navbar">
-    <img src="./assets/minified/images/logo.png" alt="" class="l-logo">
-    <p class="l-navbar__title">
-    レクリエの財務改善コーチング
-    </p>
-    <ul id="menu-list">
-      <li>
-        <a href="">トップ</a>
-      </li>
-      <li>
-        <a href="">実績</a>
-      </li>
-      <li>
-        <a href="">特徴</a>
-      </li>
-      <li>
-        <a href="">サービス</a>
-      </li>
-      <li id="toggleHamburger2" class="l-close-hamburger">
-        <a>
-          <i class="far fa-times-circle"></i>閉じる
-        </a>
-      </li>
-    </ul>
-    <div id="toggleHamburger" class="l-hamburger">
-      <img class="menu-icon" src="assets/minified/images/bars-icon.png" alt="" srcset="">
-      <p>MENU</p>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Recrie</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/125087969d.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <div class="l-header-container">
+      <div class="l-navbar">
+        <img src="./assets/minified/images/logo.png" alt="" class="l-logo">
+        <p class="l-navbar__title">
+          レクリエの財務改善コーチング
+        </p>
+        <ul id="menu-list">
+          <li>
+            <a href="">トップ</a>
+          </li>
+          <li>
+            <a href="">実績</a>
+          </li>
+          <li>
+            <a href="">特徴</a>
+          </li>
+          <li>
+            <a href="">サービス</a>
+          </li>
+          <li id="toggleHamburger2" class="l-close-hamburger">
+            <a>
+              <i class="far fa-times-circle"></i>閉じる
+            </a>
+          </li>
+        </ul>
+        <div id="toggleHamburger" class="l-hamburger">
+          <img class="menu-icon" src="assets/minified/images/bars-icon.png" alt="" srcset="">
+          <p>MENU</p>
+        </div>
+      </div>
+      <div class="l-footer">
+        <p>©2019 株式会社レクリエ</p>
+      </div>
     </div>
-  </div>
-  <div class="l-footer">
-    <p>©2019 株式会社レクリエ</p>
-  </div>  
-</div>
-</body>
-<script>
-  let flag = false;
-  $('#toggleHamburger, #toggleHamburger2').click(function () {
-    flag = !flag;
-    if(flag) {
+  </body>
+  <script>
+    let flag = false;
+    $('#toggleHamburger, #toggleHamburger2').click(function () {
+      flag = !flag;
+      if (flag) {
         $('.l-hamburger').addClass('l-hamburger--toggled');
         $('.menu-icon').attr({
           "src": "assets/minified/images/x-icon.png"
         }).toggleClass('menu-icon--rotate90');
-      }
-      else {
+      } else {
         $('.l-hamburger').removeClass('l-hamburger--toggled');
         $('.menu-icon').attr({
           "src": "assets/minified/images/bars-icon.png"
         }).toggleClass('menu-icon--rotate90');
       }
-    $('#menu-list').toggle('0.5s');
-  })
-</script>
+      $('#menu-list').toggle('0.5s');
+    })
+
+  </script>
+
 </html>
