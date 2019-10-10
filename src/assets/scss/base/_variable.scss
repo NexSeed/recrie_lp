@@ -1,0 +1,15 @@
+/* ------------------------------------------------------------
+  variables
+------------------------------------------------------------ */
+
+// breakpoints
+$breakpoint-sm: 576px !default;
+$breakpoint-md: 768px !default;
+$breakpoint-lg: 992px !default;
+$breakpoint-xl: 1200px !default;
+$breakpoints: (
+  'sm': 'screen and (max-width: #{$breakpoint-sm})',
+  'md': 'screen and (max-width: #{$breakpoint-md})',
+  'lg': 'screen and (max-width: #{$breakpoint-lg})',
+  'xl': 'screen and (max-width: #{$breakpoint-xl})',
+) !default;
