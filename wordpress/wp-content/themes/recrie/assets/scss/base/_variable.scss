@@ -3,11 +3,13 @@
 ------------------------------------------------------------ */
 
 // breakpoints
+$breakpoint-xs: 370px !default;
 $breakpoint-sm: 576px !default;
 $breakpoint-md: 768px !default;
 $breakpoint-lg: 992px !default;
 $breakpoint-xl: 1200px !default;
 $breakpoints: (
+  'xs': 'screen and (max-width: #{$breakpoint-xs})',
   'sm': 'screen and (max-width: #{$breakpoint-sm})',
   'md': 'screen and (max-width: #{$breakpoint-md})',
   'lg': 'screen and (max-width: #{$breakpoint-lg})',

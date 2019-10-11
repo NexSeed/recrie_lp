@@ -10,34 +10,35 @@
 </head>
 
 <body>
-  <div class="l-header-container">
-    <div class="l-navbar">
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/logo.png" alt="" class="l-logo">
-      <p class="l-navbar__title">
-      レクリエの財務改善コーチング
-      </p>
-      <ul id="menu-list">
-        <li>
-          <a href="">トップ</a>
-        </li>
-        <li>
-          <a href="">実績</a>
-        </li>
-        <li>
-          <a href="">特徴</a>
-        </li>
-        <li>
-          <a href="">サービス</a>
-        </li>
-        <li id="toggleHamburger2" class="l-close-hamburger">
-          <a>
-            <i class="far fa-times-circle"></i>閉じる
-          </a>
-        </li>
-      </ul>
-      <div id="toggleHamburger" class="l-hamburger">
-        <img class="menu-icon" src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/bars-icon.png" alt="" srcset="">
-        <p>MENU</p>
+  <div class="l-body-container">
+    <div class="l-header-container">
+      <div class="l-navbar">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/logo.png" alt="" class="l-logo">
+        <p class="l-navbar__title">
+        レクリエの財務改善コーチング
+        </p>
+        <ul id="menu-list">
+          <li>
+            <a href="contact">トップ</a>
+          </li>
+          <li>
+            <a href="">実績</a>
+          </li>
+          <li>
+            <a href="">特徴</a>
+          </li>
+          <li>
+            <a href="">サービス</a>
+          </li>
+          <li id="toggleHamburger2" class="l-close-hamburger">
+            <a>
+              <i class="far fa-times-circle"></i>閉じる
+            </a>
+          </li>
+        </ul>
+        <div id="toggleHamburger" class="l-hamburger">
+          <img class="menu-icon" src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/bars-icon.png" alt="" srcset="">
+          <p>MENU</p>
+        </div>
       </div>
     </div>
-  </div>
