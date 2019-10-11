@@ -75,3 +75,20 @@ label {
   color: #394829;
   display: block;
 }
+.c- {
+  &fab {
+    display: none;
+    position: fixed;
+    top: 50vh;
+    right: 5rem;
+    z-index: 2;
+    @include mq('md') {
+      right: 15px;
+    }
+  }
+}
+
+#top-link {
+  // display: none;
+  margin-top: 5rem;
+}
