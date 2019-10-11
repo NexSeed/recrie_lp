@@ -13,12 +13,12 @@
 ?>
 
 <?php get_header(); ?>
-<div class="l-container__fluid">
+<div>
   <div class="p-heading">
     <div class="c-staff">
-      <img class="c-staff__img" src="assets/minified/images/staff-1.png" alt="">
-      <img class="c-staff__img --margin-middle" src="assets/minified/images/staff-2.png" alt="">
-      <img class="c-staff__img" src="assets/minified/images/staff-3.png" alt="">
+      <img class="c-staff__img" src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/staff-1.png" alt="">
+      <img class="c-staff__img --margin-middle" src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/staff-2.png" alt="">
+      <img class="c-staff__img" src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/staff-3.png" alt="">
     </div>
     <div class="c-finance">
       <p class="c-finance__title">財務の専門家による財務改善診断</p>
@@ -27,6 +27,6 @@
     </div>
   </div>
 </div>
-<?php echo do_shortcode('[contact-form-7 id="34" title="Contact Recrie"]'); ?>
+  <?php echo do_shortcode('[contact-form-7 id="34" title="Contact Recrie"]'); ?>
 
 <?php get_footer(); ?>

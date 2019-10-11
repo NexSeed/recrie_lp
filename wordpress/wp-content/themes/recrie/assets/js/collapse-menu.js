@@ -7,12 +7,14 @@ $('#toggleHamburger, #toggleHamburger2').click(function () {
       $('.menu-icon').attr({
         "src": `${templateDir}/assets/minified/images/x-icon.png`
       }).toggleClass('menu-icon--rotate90');
+      $('body').css('overflow', 'hidden');
     }
     else {
       $('.l-hamburger').removeClass('l-hamburger--toggled');
       $('.menu-icon').attr({
         "src": `${templateDir}/assets/minified/images/bars-icon.png`
       }).toggleClass('menu-icon--rotate90');
+      $('body').css('overflow', 'auto');
     }
   $('#menu-list').toggle('0.5s');
 })

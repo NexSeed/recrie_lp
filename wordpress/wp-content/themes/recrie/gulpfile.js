@@ -42,15 +42,15 @@ const scss = () => {
 		.pipe(dest('assets/css/'))
 }
 
-//browser-sync
-const browserSync = () => {
-	return bs({
-		server: {
-			index: 'index.php',
-			browser: ['google chrome'], //open browser
-		}
-	})
-}
+// //browser-sync
+// const browserSync = () => {
+// 	return bs({
+// 		server: {
+// 			index: 'index.php',
+// 			browser: ['google chrome'], //open browser
+// 		}
+// 	})
+// }
 
 // image minify
 const imgSquash = () => {
@@ -60,5 +60,5 @@ const imgSquash = () => {
 }
 
 task('default',
-	parallel(browserSync, scss, imgSquash, watchFiles),
+	parallel( scss, imgSquash, watchFiles),
 )

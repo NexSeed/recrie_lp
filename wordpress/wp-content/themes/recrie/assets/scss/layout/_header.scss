@@ -23,12 +23,18 @@
     @include mq('md') {
       font-size: 14px;
     }
+    @include mq('xs') {
+      font-size: 11px;
+    }
   }
 
   .l-logo {
     width: 36px;
     height: 36px;
     margin: 0 14px 0 30px;
+    @include mq('sm') {
+      margin-left: 12px;
+    }
   }
 
   ul {
@@ -39,8 +45,10 @@
       display: none;
     }
     @include mq('md') {
-      position: absolute;
+      position: fixed;
+      overflow: hidden;
       top: 0;
+      left: 0;
       padding: 0 30px;
       display: none;
       width: 100%;
