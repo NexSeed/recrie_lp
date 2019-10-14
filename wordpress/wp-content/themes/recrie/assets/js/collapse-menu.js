@@ -38,3 +38,13 @@ function myFunction(x) {
 var x = window.matchMedia("(max-width: 768px)")
 myFunction(x) // Call listener function at run time
 x.addListener(myFunction) // Attach listener function on state changes
+
+window.addEventListener('scroll', () => {
+  let scrollHeight = window.pageYOffset;
+  if(scrollHeight>=400) {
+    $('.c-fab').css("display", "block");
+  }
+  else {
+    $('.c-fab').css("display", "none");
+  }
+});

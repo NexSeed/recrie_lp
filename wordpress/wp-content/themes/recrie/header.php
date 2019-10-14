@@ -10,10 +10,11 @@
 </head>
 
 <body>
+  <span id="top-link"></span>
   <div class="l-body-container">
     <div class="l-header-container">
       <div class="l-navbar">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/logo.png" alt="" class="l-logo">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/logo.png" alt="Company Logo" class="l-logo">
         <p class="l-navbar__title">
         レクリエの財務改善コーチング
         </p>
@@ -42,3 +43,4 @@
         </div>
       </div>
     </div>
+    <a href="#top-link"><img class="c-fab" src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/top-fab.png" alt="" srcset=""></a>

@@ -65,6 +65,7 @@ input[type=text], input[type=email] {
   font-size: 16px;
   padding-left: 15px;
   box-sizing: border-box;
+  margin-top: 10px;
 }
 
 label {
@@ -74,4 +75,21 @@ label {
   letter-spacing: 1.5px;
   color: #394829;
   display: block;
+}
+.c- {
+  &fab {
+    display: none;
+    position: fixed;
+    top: 50vh;
+    right: 5rem;
+    z-index: 2;
+    @include mq('md') {
+      right: 15px;
+    }
+  }
+}
+
+#top-link {
+  // display: none;
+  margin-top: 5rem;
 }
