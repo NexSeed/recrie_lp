@@ -38,8 +38,7 @@
           </li>
         </ul>
         <div id="toggleHamburger" class="l-hamburger">
-          <img class="menu-icon" src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/bars-icon.png" alt="" srcset="">
-          <p>MENU</p>
+          <img class="menu-icon" src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/menu.png" alt="" srcset="">
         </div>
       </div>
     </div>
