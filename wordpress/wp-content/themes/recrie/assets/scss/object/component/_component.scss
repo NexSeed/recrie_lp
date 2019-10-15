@@ -50,7 +50,7 @@
   box-sizing: border-box;
   padding: 4rem 0 !important;
   @include mq('md') {
-    width: 90%;
+    width: 92%;
     box-sizing: border-box;
   }
 }
@@ -80,16 +80,19 @@ label {
   &fab {
     display: none;
     position: fixed;
-    top: 50vh;
+    bottom: 9vh;
     right: 5rem;
     z-index: 2;
+    border: 1px solid #C4CCBB;
+    padding: 3px 10px;
+    border-radius: 5px;
+    box-shadow: inset 0px -1px 0.2px 0.3px grey;
     @include mq('md') {
-      right: 15px;
+      right: 20px;
     }
   }
 }
 
 #top-link {
-  // display: none;
   margin-top: 5rem;
 }
