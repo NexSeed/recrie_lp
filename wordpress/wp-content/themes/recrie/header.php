@@ -20,7 +20,7 @@
         </p>
         <ul id="menu-list">
           <li>
-            <a href="contact">トップ</a>
+            <a href="<?php echo home_url('contact'); ?>">トップ</a>
           </li>
           <li>
             <a href="">実績</a>
