@@ -1,0 +1,5 @@
+# Ignore these files during develop to avoid version conflicts
+
+assets/css/
+assets/img/
+assets/map/
