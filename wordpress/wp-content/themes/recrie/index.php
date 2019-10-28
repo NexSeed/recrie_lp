@@ -286,5 +286,41 @@
     </div>
     <p class="p-service_detail__details">上述のような財務改善コーチングを行なう為には、まず何より、御社の現状を把握する事が必要不可欠となります。</p>
     <p class="p-service_detail__details">本サービスにおいては、御社より決算書等を提出いただき、財務改善診断書を作成。書面と口頭により、以下情報を提供させていただきます。（その後、財務改善コーチングを申し込むかどうかをご判断ください）</p>
+    <p class="p-service_detail__title2">財務改善診断で得る事ができる情報</p>
+    <div class="p-service_detail__info-con">
+      <!-- Card -->
+      <div class="p-service_detail__info">
+        <p class="p-service_detail__info-title">現状把握</p>
+        <div class="p-service_detail__info-card">
+          <p class="p-service_detail__info-card-content">御社の現在の財務状況を把握できます</p>
+        </div>
+      </div>
+      <div class="p-service_detail__info">
+        <p class="p-service_detail__info-title">銀行格付けの把握</p>
+        <div class="p-service_detail__info-card">
+          <p class="p-service_detail__info-card-content">銀行格付けを算出。銀行から御社の決算書がどのような評価を受けているかを把握できます。</p>
+        </div>
+      </div>
+      <div class="p-service_detail__info">
+        <p class="p-service_detail__info-title">問題点の指摘</p>
+        <div class="p-service_detail__info-card">
+          <p class="p-service_detail__info-card-content">経営数値から浮かび上がる経営上の問題点や、表面上の決算書からは見えない本質的なキャッシュの問題点を把握していただきます。</p>
+        </div>
+      </div>
+      <div class="p-service_detail__info">
+        <p class="p-service_detail__info-title">総合診断</p>
+        <div class="p-service_detail__info-card">
+          <p class="p-service_detail__info-card-content">財務改善・利益改善の為の大まかな方向性を知ることができます。</p>
+        </div>
+      </div>
+      <div class="p-service_detail__info">
+        <p class="p-service_detail__info-title">電話相談（ZOOMでも可）</p>
+        <div class="p-service_detail__info-card">
+          <p class="p-service_detail__info-card-content">30分を目処に、文面では伝えにくい部分をお伝えすると共に、不明点についても可能な限りお応えします。</p>
+        </div>
+      </div>
+    </div>
+
+    
   </div>
   <?php get_footer(); ?>
