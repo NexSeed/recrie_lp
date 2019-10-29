@@ -108,7 +108,8 @@
     font-size: 2rem;
     font-weight: 500;
     letter-spacing: 2px;
-    color: #394829;;
+    color: #394829;
+    ;
     margin-bottom: 25px;
   }
 
@@ -120,7 +121,8 @@
     background-size: cover;
     // background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position:  center center;
+    background-position: center center;
+
     &__title {
       // margin: 0 auto;
       display: block;
@@ -158,6 +160,7 @@
         p {
           text-align: left;
         }
+
         margin-left: auto;
       }
 
@@ -168,11 +171,12 @@
           display: block;
           margin-left: auto;
         }
+
         margin-right: auto;
         text-align: right;
       }
     }
-    
+
   }
 
   &service {
@@ -181,8 +185,9 @@
     height: 821px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position:  center center;
-    margin:5rem 0;
+    background-position: center center;
+    margin: 5rem 0;
+
     &__detail {
       text-align: left;
       font-size: 20px;
@@ -204,20 +209,22 @@
     box-shadow: 0px 3px 6px #00000029;
     opacity: 1;
     display: grid;
-    grid-template-columns: 20% 80%; 
+    grid-template-columns: 20% 80%;
     margin: 1rem auto;
 
-    &__no { 
+    &__no {
       display: flex;
       align-items: center;
       justify-content: center;
+
       p {
         font-size: 15px;
         letter-spacing: 1.5px;
         color: #0D5D4B;
         line-height: 40px;
       }
-      p > span {
+
+      p>span {
         font-size: 60px;
         letter-spacing: 6px;
         color: #0D5D4B;
@@ -249,7 +256,7 @@
       letter-spacing: 2.6px;
       color: #0D5D4B;
       text-align: center;
-      margin: 19px 0 49px; 
+      margin: 19px 0 49px;
     }
 
     &__detail {
@@ -297,7 +304,7 @@
       &-visual {
         position: relative;
       }
-      
+
       &-vtext {
         margin-left: auto;
       }
@@ -348,8 +355,9 @@
       letter-spacing: 2.6px;
       color: #0D5D4B;
       text-align: center;
-      margin: 2rem 0 10px; 
+      margin: 2rem 0 10px;
     }
+
     &__subtitle {
       text-align: center;
       font-size: 16px;
@@ -368,7 +376,7 @@
     justify-content: space-evenly;
     width: 85%;
     padding: 6rem 5rem 4rem;
-  
+
     &__info {
       &-title {
         text-align: left;
@@ -382,7 +390,7 @@
         text-align: left;
         font-size: 16px;
         font-weight: 500;
-        letter-spacing: 1.6px; 
+        letter-spacing: 1.6px;
         color: #394829;
       }
 
@@ -403,9 +411,11 @@
       table {
         width: 500px;
       }
+
       thead {
         border-bottom: 1px solid #0D5D4B;
       }
+
       th {
         text-align: right;
         font-size: 16px;
@@ -414,6 +424,7 @@
         color: #0D5D4B;
         text-transform: uppercase;
       }
+
       tr {
         td {
           font-size: 16px;
@@ -422,15 +433,17 @@
           color: #394829;
           padding: 5px 0;
         }
-  
+
         td:nth-child(1) {
           width: 40%;
           text-align: left;
         }
+
         td:nth-child(2) {
           width: 30%;
           text-align: right;
         }
+
         td:nth-child(3) {
           width: 30%;
           text-align: right;
@@ -451,6 +464,7 @@
       justify-content: inherit;
       padding: 32px 50px;
       margin-top: 4rem;
+
       &-title {
         text-align: left;
         font-size: 36px;
@@ -459,7 +473,7 @@
         color: #394829;
         opacity: 0.2;
       }
-      
+
       &-subtitle {
         text-align: left;
         font-size: 16px;
@@ -492,9 +506,10 @@
   }
 
   &three__feature {
-    background: transparent linear-gradient(180deg, #5A6E2E 0%, #004B4B 100%) 0% 0% no-repeat padding-box;    
+    background: transparent linear-gradient(180deg, #5A6E2E 0%, #004B4B 100%) 0% 0% no-repeat padding-box;
     padding: 5rem 10rem;
     margin: 8rem 0 4rem;
+
     &-title {
       text-align: center;
       font-size: 26px;
@@ -519,10 +534,12 @@
       &-details {
         width: 60%;
       }
+
       &-title {
         display: flex;
         flex-wrap: wrap;
       }
+
       &-text {
         text-align: left;
         font-size: 74px;
@@ -542,6 +559,7 @@
           color: #F9FAF7;
           z-index: 2;
         }
+
         .ms {
           text-align: left;
           font-size: 55px;
@@ -555,14 +573,15 @@
           font-size: 45px;
           font-weight: bold;
           letter-spacing: -2.7px;
-          color: #F9FAF7; 
+          color: #F9FAF7;
         }
+
         .medium {
           text-align: left;
           font-size: 60px;
           font-weight: bold;
           letter-spacing: 1.98px;
-          color: #F9FAF7; 
+          color: #F9FAF7;
         }
 
         .large {
@@ -570,30 +589,33 @@
           font-size: 66px;
           font-weight: bold;
           letter-spacing: 6px;
-          color: #F9FAF7; 
+          color: #F9FAF7;
         }
+
         .fs39 {
           text-align: left;
           font-size: 39px;
           font-weight: bold;
           letter-spacing: 1.17px;
-          color: #F9FAF7; 
-        } 
+          color: #F9FAF7;
+        }
+
         .fs33 {
           text-align: left;
           font-size: 33px;
           font-weight: bold;
           letter-spacing: 0.99px;
-          color: #F9FAF7; 
-        } 
+          color: #F9FAF7;
+        }
+
         .fs24 {
           text-align: right;
           font-size: 24px;
           font-weight: bold;
           letter-spacing: 0.72px;
-          color: #F9FAF7; 
+          color: #F9FAF7;
           display: block;
-        } 
+        }
       }
 
       &-no {
@@ -650,7 +672,7 @@
       }
     }
 
-    &__subtitle{
+    &__subtitle {
       text-align: center;
       font-size: 16px;
       font-weight: bold;
@@ -674,25 +696,30 @@
     &__title2 {
       text-align: center;
       font-size: 18px;
-      font-weight: 500;
+      font-weight: 600;
+      line-height: 3.2rem;
       letter-spacing: 1.8px;
       color: #394829;
       width: 570px;
       display: block;
       margin: 0 auto;
-      border-bottom:  1px solid 
+      padding-bottom: 1.3rem;
+      border-bottom: 1px solid
     }
 
     &__info {
       margin: 4rem 2rem;
       width: 30%;
+
       &-con {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
       }
+
       &-title {
         text-align: center;
+        font-family: Yu Gothic;
         font-size: 16px;
         font-weight: bold;
         letter-spacing: 1.6px;
@@ -701,18 +728,183 @@
 
       &-card {
         height: 158px;
-        border: 1px solid #0D5D4B;    
-        padding: 24px;   
+        max-width: 37rem;
+        border: 1px solid #0D5D4B;
+        padding: 24px;
         margin-top: 16px;
-        
+
         &-content {
           text-align: left;
+          font-family: Yu Gothic;
           font-size: 16px;
           font-weight: 500;
           letter-spacing: 1.6px;
           color: #394829;
         }
       }
+    }
+  }
+
+  &financial_diagnostic {
+    background: transparent linear-gradient(0deg, #b6d86a2e 0%, #00b6b72e 100%) 0% 0% no-repeat padding-box;
+    padding: 7rem;
+    padding-bottom: 5.6rem;
+    margin: 6rem 0;
+
+    &__head {
+      text-align: left;
+      font-weight: 500;
+      font-size: 1.6rem;
+      line-height: 3.2rem;
+      font-family: Yu Gothic;
+      letter-spacing: 1.6px;
+      color: #394829;
+      max-width: 77rem;
+      margin: auto;
+
+      span {
+        text-align: left;
+        font-weight: 600;
+        font-size: 1.7rem;
+        line-height: 3.2rem;
+        font-family: Yu Gothic;
+        letter-spacing: 1.7px;
+        color: #0D5D4B;
+      }
+    }
+
+    &__body {
+      text-align: center;
+      font-weight: 500;
+      font-size: 2.6rem;
+      line-height: 3.9rem;
+      font-family: Source Han Serif;
+      letter-spacing: 2.6px;
+      color: #394829;
+      margin-top: 5rem;
+      margin-bottom: 6rem;
+
+      h1 {
+        text-align: center;
+        font-weight: 500;
+        font-size: 6.6rem;
+        line-height: 9.9rem;
+        font-family: Source Han Serif;
+        letter-spacing: 6.6px;
+        color: #0D5D4B;
+        margin-right: -2.8rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+
+        span {
+          text-align: center;
+          font-weight: 500;
+          font-size: 1.6rem;
+          line-height: 3.2rem;
+          font-family: Yu Gothic;
+          letter-spacing: 1.6px;
+          color: #0D5D4B;
+        }
+      }
+    }
+
+    &__feet {
+      text-align: left;
+      font-weight: 500;
+      font-size: 1.6rem;
+      line-height: 3.2rem;
+      font-family: Yu Gothic;
+      letter-spacing: 1.6px;
+      color: #394829;
+      max-width: 77rem;
+      margin: auto;
+    }
+  }
+
+  &required_documents {
+    font-family: Yu Gothic;
+    text-align: left;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+    letter-spacing: 1.6px;
+    color: #394829;
+    max-width: 77rem;
+    margin: auto;
+
+    &__head {
+      text-align: left;
+      font-family: Yu Gothic;
+      font-weight: 500;
+      font-size: 1.6rem;
+      line-height: 3.2rem;
+      letter-spacing: 1.6px;
+      color: #394829;
+    }
+
+    &__body {
+
+      &-item {
+        max-width: 57rem;
+        border: 1px solid #394829;
+        padding: 1rem 2.4rem;
+        display: grid;
+        grid-template-columns: 50px 60px auto;
+        align-items: center;
+        margin: auto;
+
+        &--line {
+          height: 1px;
+          width: 52px;
+          background: #394829;
+          display: inline-block;
+          align-self: center;
+          margin: 0 1rem;
+        }
+      }
+    }
+
+    h1 {
+      text-align: center;
+      max-width: 57rem;
+      font-family: Yu Gothic;
+      font-weight: 600;
+      font-size: 1.8rem;
+      line-height: 3.2rem;
+      letter-spacing: 1.8px;
+      color: #394829;
+      padding-bottom: 1.3rem;
+      margin: auto;
+      margin-bottom: 4rem;
+      border-bottom: 1px solid #394829;
+    }
+
+    h2 {
+      text-align: center;
+      max-width: 57rem;
+      font-family: Yu Gothic;
+      font-weight: 600;
+      font-size: 1.8rem;
+      line-height: 3.2rem;
+      letter-spacing: 1.8px;
+      color: #394829;
+      margin: auto;
+      margin-bottom: 4rem;
+    }
+
+    h3 {
+      text-align: center;
+      max-width: 57rem;
+      font-family: Yu Gothic;
+      font-weight: 600;
+      font-size: 1.8rem;
+      line-height: 3.2rem;
+      letter-spacing: 1.8px;
+      color: #394829;
+      padding-bottom: 1.3rem;
+      margin: auto;
+      margin-bottom: 4rem;
+      border-bottom: 1px solid #394829;
     }
   }
 }

@@ -13,12 +13,13 @@ const sourcemaps = require('gulp-sourcemaps')
 const autoprefixer = require('gulp-autoprefixer')
 const imagemin = require('gulp-imagemin')
 
-//wordpress dir 
+//wordpress dir
 const templateDir = 'http://recrie.local/wp-content/themes/recrie';
 
 paths = {
 	scss: ['assets/scss/**.scss', 'assets/scss/**/**.scss'],
-	img: 'assets/img/*'
+	img: 'assets/img/*',
+	root: '/'
 }
 
 // TODO -- BS Wordpress
@@ -26,6 +27,7 @@ paths = {
 const watchFiles = (done) => {
 	watch(paths.scss, scss).on('change', bs.reload)
 	watch(paths.img, imgSquash).on('change', bs.reload);
+	watch(paths.root + "*.php").on('change', bs.reload);
 	done()
 }
 
@@ -45,10 +47,8 @@ const scss = () => {
 // //browser-sync
 // const browserSync = () => {
 // 	return bs({
-// 		server: {
-// 			index: 'index.php',
-// 			browser: ['google chrome'], //open browser
-// 		}
+// 		port: 3990,
+// 		proxy: 'http://recrie.local/'
 // 	})
 // }
 
@@ -60,5 +60,5 @@ const imgSquash = () => {
 }
 
 task('default',
-	parallel( scss, imgSquash, watchFiles),
+	parallel(scss, imgSquash, watchFiles),
 )
