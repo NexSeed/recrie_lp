@@ -9,10 +9,16 @@
   <?php wp_head(); ?>
 </head>
 <body>
-  <div class="p-hero" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/minified/images/team.png')">
+  <!-- <div class="p-hero" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/minified/images/team.png')">
     <img src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/logo.png" alt="" class="c-logo">
     <img src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/hero.png" alt="" class="p-hero__title"  srcset="">
+  </div> -->
+  <div class="p-hero">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/logo.png" alt="" class="c-logo">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/heroPC.png" alt="" class="hero-pc"  srcset="">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/heroSP.png" alt="" class="hero-sp"  srcset="">
   </div>
+
   <div class="p-feature">
     <div class="p-feature__item p-feature__item--right">
       <p><span>頑</span>張っても頑張ってもなかなか会社にお金が残らない。</p>
@@ -26,6 +32,7 @@
   </div>
 
   <div class="p-service" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/minified/images/service.png')">
+    <div class="p-service__arrow-down u-center-block"></div>
     <p class="p-service__detail">
     弊社の財務コーチングは、そんな経営に関する悩みを払拭し、契約満了時には、以下の状況を手に入れる事が可能な、御社の為だけの唯一無二のカスタムメイド・コーチングです。
     </p>
