@@ -386,18 +386,38 @@
 					<p>直近の月次推移表</p>
 				</div>
 			</div>
+		</div>
 
-			<div class="p-heading">
-				<div class="c-staff">
-					<img class="c-staff__img" src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/staff-1.png" alt="">
-					<img class="c-staff__img --margin-middle" src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/staff-2.png" alt="">
-					<img class="c-staff__img" src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/staff-3.png" alt="">
+		<div class="p-heading top_page">
+			<div class="p-heading top_page__headers">
+				<header>キャッシュの問題点がわかる！</header>
+				<header>改善の方向性が見える！</header>
+			</div>
+			<div class=" c-staff">
+				<img class="c-staff__img" src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/staff-1.png" alt="">
+				<img class="c-staff__img --margin-middle__top_page" src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/staff-2.png" alt="">
+				<img class="c-staff__img" src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/staff-3.png" alt="">
+			</div>
+			<div class="c-finance top_page">
+				<p class="c-finance__title top_page">財務の専門家による財務改善診断</p>
+				<div class="c-finance__tax top_page">
+					<span class="c-finance__cost top_page">20,000円</span>(税抜き)
 				</div>
-				<div class="c-finance">
-					<p class="c-finance__title">財務の専門家による財務改善診断</p>
-					<p class="c-finance__tax">
-						<strong class="c-finance__cost">20,000円</strong>(税抜き)</p>
-				</div>
+			</div>
+			<button class="c-button__round c-button__round__top_page">財務改善診断のお申し込みはこちら</button>
+		</div>
+
+		<div class="p-company_profile" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/minified/images/footer-company-profile.png')">
+			<div class="p-company_profile__head">
+				<header>会社概要</header>
+			</div>
+			<div class="p-company_profile__body">
+				<h1>会社名</h1>
+				<p>株式会社レクリエ</p>
+				<h1>本店所在地</h1>
+				<p>広島市中区橋本町9-7-8F</p>
+				<h1>事業内容</h1>
+				<p>経営・財務改善コンサルティング、WEB集客コンサルティング</p>
 			</div>
 		</div>
 		<?php get_footer(); ?>

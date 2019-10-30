@@ -72,6 +72,38 @@
     background-color: #EFF2ED;
     padding-top: 4rem;
     padding-bottom: 4.0rem;
+    border-radius: 5px;
+
+    &.top_page {
+      max-width: 97rem;
+      margin: auto;
+      margin-top: 8rem;
+      margin-bottom: 12rem;
+      padding-top: 3rem;
+
+
+      &__headers {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        max-width: 60rem;
+        padding-top: unset;
+        padding-bottom: 2.5rem;
+
+        header {
+          display: inline-block;
+          min-width: 27rem;
+          text-align: center;
+          font-family: Yu Gothic;
+          font-size: 1.8rem;
+          font-weight: 600;
+          line-height: 3.2rem;
+          letter-spacing: 1.8px;
+          color: #0D5D4B;
+          border-bottom: 1px solid #0D5D4B;
+          margin: auto;
+        }
+      }
+    }
   }
 
   &privacy {
@@ -109,7 +141,6 @@
     font-weight: 500;
     letter-spacing: 2px;
     color: #394829;
-    ;
     margin-bottom: 25px;
   }
 
@@ -929,6 +960,47 @@
       margin: auto;
       margin-top: 8rem;
       margin-bottom: 2.4rem;
+    }
+  }
+
+  &company_profile {
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 48.2rem;
+    text-align: center;
+    color: #F9FAF7;
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+
+    &__head {
+      padding-bottom: 8rem;
+
+      header {
+        font-family: Yu Gothic;
+        font-weight: 600;
+        font-size: 1.8rem;
+        line-height: 3.2rem;
+        letter-spacing: 1.8px;
+      }
+    }
+
+    &__body {
+      h1 {
+        font-family: Yu Gothic;
+        font-weight: 600;
+        font-size: 1.6rem;
+        line-height: 3.2rem;
+        letter-spacing: 1.6px;
+      }
+
+      p {
+        font-family: Yu Gothic;
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 3.2rem;
+        letter-spacing: 1.6px;
+        margin-bottom: 4rem;
+      }
     }
   }
 }

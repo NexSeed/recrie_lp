@@ -1,82 +1,299 @@
 @import '../../helper/mixin';
-.c-staff {
-  &__img {
-    width: 132px;
-    height: 131px;
-    @include mq('md') {
-      width: 97px;
-      height: 96px;
-    }
 
-    &.--margin-middle {
-      margin: 0 2px;
-    }
-  }
-
-}
-
-.c-finance {
-  width: 100%;
-  margin-top: 3.2rem;
-
-  &__title {
-    font-size: 26px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-align: center;
-    color: #394829;
-    @include mq('md') {
-      font-size: 20px;
-      width: 200px;
-    }
-  }
-
-  &__tax {
-    color: #0D5D4B;
-    letter-spacing: 1.3px;
-    font-size: 1.3rem;
-  }
-
-  &__cost {
-    font-size: 5.3rem;
-    letter-spacing: 4.1px;
-  }
-}
-// wordpress form 
-.wpcf7 {
-  width: 770px;
-  display: block;
-  margin: 0 auto !important;
-  box-sizing: border-box;
-  padding: 4rem 0 !important;
-  @include mq('md') {
-    width: 92%;
-    box-sizing: border-box;
-  }
-}
-// component form input types
-input[type=text], input[type=email] {
-  width: 100%; 
-  height: 48px;
-  border: 1px solid #C4CCBB;
-  border-radius: 3px;
-  background: #F9FAF7;
-  color: #394829; 
-  font-size: 16px;
-  padding-left: 15px;
-  box-sizing: border-box;
-  margin-top: 10px;
-}
-
-label {
-  text-align: left;
-  font-size: 15px;
-  font-weight: medium;
-  letter-spacing: 1.5px;
-  color: #394829;
-  display: block;
-}
 .c- {
+  &button__round {
+    background: transparent linear-gradient(133deg, #E3A211 0%, #E53859 100%) 0% 0% no-repeat padding-box;
+    box-sizing: border-box;
+    box-shadow: 1px 3px 4px #07030329;
+    border: 2px solid #FFFFFF;
+    border-radius: 4.0rem;
+    color: #F9FAF7;
+    display: block;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 8rem;
+    letter-spacing: 1.5px;
+    text-align: center;
+    text-shadow: 0px 0px 6px #00000029;
+    text-decoration: none;
+    height: 8rem;
+    width: 100%;
+    max-width: 57rem;
+
+    @include mq('md') {
+      height: 5rem;
+      line-height: 5rem;
+      max-width: 30rem;
+    }
+
+    &__upload {
+      margin: 5rem auto;
+    }
+
+    &__top_page {
+      text-align: center;
+      font-weight: Yu Gothic;
+      font-weight: 600;
+      font-size: 2.2rem;
+      line-height: 3.2rem;
+      letter-spacing: 2.2px;
+      color: #F9FAF7;
+      text-shadow: 0px 0px 6px #00000029;
+    }
+  }
+
+  &button__default {
+    background: #687262;
+    border-radius: 5px;
+    box-shadow: 1px 3px 4px #00000029 !important;
+    color: #F9FAF7;
+    display: block;
+    height: 5rem;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 5rem;
+    letter-spacing: 1.6px;
+    text-align: center;
+    text-decoration: none;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 20rem;
+
+    @include mq('md') {
+      height: 5rem;
+      line-height: 5rem;
+      max-width: 40rem;
+    }
+
+    &__upload {
+      margin: 1.8rem auto;
+    }
+
+    &__remove {
+      width: 20rem;
+      margin: 1.8rem auto;
+    }
+  }
+
+  &head {
+    &__button {
+      margin-bottom: 4rem;
+    }
+  }
+
+  &finance {
+    width: 100%;
+    margin-top: 3.2rem;
+
+    &__title {
+      width: 20rem;
+      height: 6.7rem;
+      font-family: Source Han Serif;
+      font-weight: 500;
+      font-size: 2rem;
+      line-height: 3.8rem;
+      letter-spacing: 2px;
+      text-align: center;
+      color: #212121;
+
+      @include mq('md') {
+        font-size: 20px;
+        width: 200px;
+      }
+
+      &.top_page {
+        font-family: Source Han Serif;
+        font-weight: 500;
+        font-size: 2.6rem;
+        line-height: 3.9rem;
+        height: 3.9rem;
+        letter-spacing: 2.6px;
+        color: #394829;
+        width: unset;
+      }
+    }
+
+    &__tax {
+      color: #0D5D4B;
+      font-size: 1.3rem;
+      font-family: Yu Gothic;
+      font-weight: 500;
+      line-height: 2.4rem;
+      letter-spacing: 1.3px;
+
+      &.top_page {
+        font-size: 1.6rem;
+        font-family: Yu Gothic;
+        font-weight: 500;
+        line-height: 3.2rem;
+        letter-spacing: 1.6px;
+        margin-bottom: 2.3rem;
+      }
+    }
+
+    &__cost {
+      color: #0D5D4B;
+      font-size: 4rem;
+      font-family: Source Han Serif;
+      font-weight: 500;
+      line-height: 6.2rem;
+      letter-spacing: 4.1px;
+
+      &.top_page {
+        font-size: 5.3rem;
+        font-family: Source Han Serif;
+        font-weight: 500;
+        line-height: 8rem;
+        letter-spacing: 5.3px;
+        margin-left: 7.4rem;
+      }
+    }
+
+    &.top_page {
+      margin-top: 5px;
+    }
+  }
+
+  &staff {
+    &__img {
+      width: 132px;
+      height: 131px;
+
+      @include mq('md') {
+        width: 97px;
+        height: 96px;
+      }
+
+      &.--margin-middle {
+        margin: 0 2px;
+
+        &__top_page {
+          margin: 0 5px;
+
+        }
+      }
+    }
+  }
+
+  &file {
+
+    &__content {
+      margin-top: 1.6rem;
+      text-align: left;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__delete {
+      margin: 1.6rem auto;
+    }
+
+    &__icon {
+      text-align: left;
+      max-width: 2.7rem;
+      max-height: 3rem;
+      padding-right: 3.5px;
+    }
+
+    &__name {
+      margin-left: 3.5px;
+      font-weight: 600;
+      font-size: 1.6rem;
+      line-height: 3.2rem;
+      letter-spacing: 1.6px;
+      color: #394829;
+    }
+
+    &__size {
+      margin-top: -1rem;
+      font-weight: 500;
+      font-size: 1.5rem;
+      line-height: 3rem;
+      letter-spacing: 1.5px;
+      color: #394829;
+    }
+
+    &__type {
+      text-align: left;
+      font-weight: 500;
+      font-size: 1.5rem;
+      line-height: 2.2rem;
+      letter-spacing: 1.5px;
+      color: #D86A83;
+    }
+
+    &__sent {
+      width: 220px;
+      height: 126px;
+    }
+
+    &__success {
+      text-align: center;
+      font-weight: 600;
+      font-size: 1.5rem;
+      line-height: 3rem;
+      letter-spacing: 1.5px;
+      color: #394829;
+      margin-top: 2rem;
+      margin-bottom: -3rem;
+
+      @include mq('md') {
+        max-width: 20rem;
+      }
+    }
+
+    &__select {
+      width: 40px;
+      height: 52px;
+      display: block;
+      margin: 3rem auto;
+    }
+
+    &__text {
+      text-align: center;
+      font-weight: 600;
+      font-size: 1.8rem;
+      line-height: 3.2rem;
+      letter-spacing: 1.8px;
+      color: #687262;
+    }
+
+    &__upload {
+      margin-bottom: 5rem !important;
+      border: 2px dashed rgba(57, 72, 41, 0.5) !important;
+      background: #EFF2ED 0% 0% no-repeat padding-box;
+    }
+  }
+
+  &progress {
+    overflow: hidden;
+    width: 50rem;
+    display: flex;
+    position: relative;
+    align-items: center;
+
+    &__bar {
+      background: rgba(0, 0, 0, 0.075);
+      border-radius: 1rem;
+      min-width: 30rem;
+    }
+
+    &__load {
+      border-radius: 1rem;
+      padding: 4px 0;
+      width: 0%;
+    }
+
+    &__count {
+      text-align: left;
+      font-weight: 600;
+      font-size: 1.2rem;
+      letter-spacing: 1.2px;
+      color: #394829;
+      margin: auto;
+    }
+  }
+
   &fab {
     display: none;
     position: fixed;
@@ -87,19 +304,147 @@ label {
     padding: 3px 10px;
     border-radius: 5px;
     box-shadow: inset 0px -1px 0.2px 0.3px grey;
+
     @include mq('md') {
       right: 20px;
     }
   }
-  &logo {
-    position: absolute;
-    top: 41px;
-    left: 56px;
-    width: 46px;
-    height: 46px;
+}
+
+// wordpress plugins custom design
+// wp_form
+.wpcf7 {
+  width: 770px;
+  display: block;
+  margin: 0 auto !important;
+  box-sizing: border-box;
+
+  @include mq('md') {
+    width: 100%;
   }
 }
 
+// drag and drop
+.dnd {
+  &-icon-blank-file {
+    font-size: 1.5rem !important;
+  }
+
+  &-progress-bar {
+    height: 1rem !important;
+    margin: 8px 0;
+
+    .complete {
+      line-height: 1rem !important;
+    }
+  }
+
+  &-upload {
+    &-status {
+      padding: unset !important;
+      border-bottom: 0.5px solid #C4CCBB;
+      margin-bottom: 1rem;
+    }
+
+    &-image {
+      align-self: start;
+      width: 3rem !important;
+      height: 3rem !important;
+    }
+
+    &-details {
+      text-align: left;
+      padding: unset !important;
+      font-family: Yu Gothic;
+      font-size: 1.6rem;
+      line-height: 2rem;
+      letter-spacing: 1.6px;
+
+      .name {
+        margin-left: 1rem;
+        font-weight: 600;
+        padding: 0 !important;
+        color: #394829 !important;
+
+        em {
+          font-weight: 500 !important;
+          display: block;
+        }
+      }
+
+      .remove-file {
+        display: block;
+        margin-left: -3rem;
+        text-align: center;
+        position: unset !important;
+        right: unset !important;
+        top: unset !important;
+
+        span {
+          line-height: 5rem;
+        }
+      }
+    }
+  }
+}
+
+// component form input types
+input[type=text],
+input[type=email] {
+  width: 100%;
+  height: 48px;
+  border: 1px solid #C4CCBB;
+  border-radius: 3px;
+  background: #F9FAF7;
+  color: #394829;
+  font-size: 16px;
+  padding-left: 15px;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+label {
+  text-align: left;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  color: #394829;
+  display: block;
+}
+
+//specific elements styling with these IDs
+
 #top-link {
   margin-top: 5rem;
+}
+
+#pcFileUpload,
+#spFileUpload {
+  margin-top: 2rem;
+}
+
+#spFileUpload {
+  display: none;
+
+  .codedropz- {
+    &upload-container {
+      padding: 0 !important;
+    }
+  }
+
+  .c-file {
+
+    &__upload {
+      border: none !important;
+      background: none !important;
+
+      span {
+        display: none;
+      }
+    }
+
+    &__select {
+      display: none;
+    }
+  }
 }
