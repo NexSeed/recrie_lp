@@ -349,11 +349,55 @@
 				<div class="p-required_documents__body-item">
 					<div class="p-required_documents__body-item--line"></div>
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/check-symbol.png" alt="" srcset="" class="">
-					<span>決算報告書（貸借対照表と損益計算書）</span>
+					<p>決算報告書（貸借対照表と損益計算書）</p>
 				</div>
-				財務診断を行なう為には、以下書類をPDF添付していただく必要があります。
-				<br>
-				PDFの添付は、申込み条項に同意していただき、財務診断サービスに申込み確定後、専用URLからお願いいたします。
+				<div class="p-required_documents__body-item">
+					<div class="p-required_documents__body-item--line"></div>
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/check-symbol.png" alt="" srcset="" class="">
+					<p>内訳書（勘定科目内訳明細書）</p>
+				</div>
+				<div class="p-required_documents__body-item">
+					<div class="p-required_documents__body-item--line"></div>
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/check-symbol.png" alt="" srcset="" class="">
+					<p>概況報告書（法人事業概況説明書）</p>
+				</div>
+				<div class="p-required_documents__body-item">
+					<div class="p-required_documents__body-item--line"></div>
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/check-symbol.png" alt="" srcset="" class="">
+					<p>申告書（法人税申告書）</p>
+				</div>
+			</div>
+
+			<div class="p-required_documents__feet">
+				<h3>その他資料（診断申し込み時点のもの）</h3>
+				<div class="p-required_documents__feet-item">
+					<div class="p-required_documents__feet-item--line"></div>
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/check-symbol.png" alt="" srcset="" class="">
+					<p>銀行借入一覧表 or 全ての銀行の融資返済予定表一式</p>
+				</div>
+				<div class="p-required_documents__feet-item">
+					<div class="p-required_documents__feet-item--line"></div>
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/check-symbol.png" alt="" srcset="" class="">
+					<p>法人名義の保険加入一覧（生命保険・損害保険含む） or 保険証券のコピー一式</p>
+				</div>
+				<div class="p-required_documents__feet-item">
+					<div class="p-required_documents__feet-item--line"></div>
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/check-symbol.png" alt="" srcset="" class="">
+					<p>直近の月次推移表</p>
+				</div>
+			</div>
+
+			<div class="p-heading">
+				<div class="c-staff">
+					<img class="c-staff__img" src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/staff-1.png" alt="">
+					<img class="c-staff__img --margin-middle" src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/staff-2.png" alt="">
+					<img class="c-staff__img" src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/staff-3.png" alt="">
+				</div>
+				<div class="c-finance">
+					<p class="c-finance__title">財務の専門家による財務改善診断</p>
+					<p class="c-finance__tax">
+						<strong class="c-finance__cost">20,000円</strong>(税抜き)</p>
+				</div>
 			</div>
 		</div>
 		<?php get_footer(); ?>

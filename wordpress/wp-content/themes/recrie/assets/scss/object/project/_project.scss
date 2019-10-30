@@ -703,7 +703,6 @@
       width: 570px;
       display: block;
       margin: 0 auto;
-      padding-bottom: 1.3rem;
       border-bottom: 1px solid
     }
 
@@ -728,7 +727,6 @@
 
       &-card {
         height: 158px;
-        max-width: 37rem;
         border: 1px solid #0D5D4B;
         padding: 24px;
         margin-top: 16px;
@@ -845,21 +843,48 @@
     &__body {
 
       &-item {
-        max-width: 57rem;
+        max-width: 52rem;
+        min-height: 5rem;
         border: 1px solid #394829;
         padding: 1rem 2.4rem;
         display: grid;
-        grid-template-columns: 50px 60px auto;
+        grid-template-columns: 5.6rem min-content auto;
         align-items: center;
         margin: auto;
+        margin-bottom: 2rem;
 
         &--line {
           height: 1px;
-          width: 52px;
+          width: 4.7rem;
           background: #394829;
-          display: inline-block;
-          align-self: center;
-          margin: 0 1rem;
+        }
+
+        img {
+          padding-right: 1.6rem;
+        }
+      }
+    }
+
+    &__feet {
+
+      &-item {
+        max-width: 57rem;
+        display: grid;
+        grid-template-columns: 4.5rem min-content auto;
+        align-items: center;
+        margin-left: 10rem;
+        margin-right: auto;
+        margin-bottom: 9px;
+
+        &--line {
+          height: 0;
+          border-top: 1px solid #394829;
+        }
+
+        img {
+          max-width: 1.5rem;
+          padding-right: 3rem;
+          padding-left: 9px;
         }
       }
     }
@@ -901,10 +926,9 @@
       line-height: 3.2rem;
       letter-spacing: 1.8px;
       color: #394829;
-      padding-bottom: 1.3rem;
       margin: auto;
-      margin-bottom: 4rem;
-      border-bottom: 1px solid #394829;
+      margin-top: 8rem;
+      margin-bottom: 2.4rem;
     }
   }
 }
