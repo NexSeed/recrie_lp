@@ -774,8 +774,6 @@
       }
       
       &-title {
-        // display: flex;
-        // flex-wrap: wrap;
         position: relative;
         height: 200px;
         
@@ -791,7 +789,7 @@
             height: 410px;
           }
           @include mq('md') {
-            height: 160px;
+            height: 175px;
           }
         }
         &--three {
@@ -801,6 +799,9 @@
           }
           @include mq('md') {
             height: 165px;
+          }
+          @include mq('xs') {
+            height: 180px;
           }
         }
       }
@@ -819,7 +820,7 @@
 
         @include mq('md') {
           font-size: 38px;
-          letter-spacing: -9.6px;
+          letter-spacing: 1.4px;
           top: 60px;
         }
 
