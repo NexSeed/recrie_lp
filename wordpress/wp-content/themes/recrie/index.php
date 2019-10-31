@@ -11,10 +11,12 @@
 </head>
 
 <body>
-	<div class="p-hero" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/minified/images/team.png')">
+	<div class="p-hero">
 		<img src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/logo.png" alt="" class="c-logo">
-		<img src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/hero.png" alt="" class="p-hero__title" srcset="">
+		<img src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/heroPC.png" alt="" class="hero-pc" srcset="">
+		<img src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/heroSP.png" alt="" class="hero-sp" srcset="">
 	</div>
+
 	<div class="p-feature">
 		<div class="p-feature__item p-feature__item--right">
 			<p><span>頑</span>張っても頑張ってもなかなか会社にお金が残らない。</p>
@@ -27,7 +29,9 @@
 		</div>
 	</div>
 
-	<div class="p-service" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/minified/images/service.png')">
+	<div class="p-service" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/minified/images/service.jpeg')">
+		<div class="p-service__bg"></div>
+		<div class="p-service__arrow-down u-center-block"></div>
 		<p class="p-service__detail">
 			弊社の財務コーチングは、そんな経営に関する悩みを払拭し、契約満了時には、以下の状況を手に入れる事が可能な、御社の為だけの唯一無二のカスタムメイド・コーチングです。
 		</p>
@@ -60,16 +64,17 @@
 			<span class="p-coaching__detail--bold">社長自身が明確な根拠を持って会社経営のかじ取りを行なっていく</span>ことが可能となります。
 		</p>
 	</div>
+
 	<div class="p-coaching">
 		<p class="p-coaching__title">弊社財務コーチングで獲得できる事項</p>
-		<img src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/vertical-icon.png" alt="" srcset="" class="p-center-block">
+		<img src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/vertical-icon.png" alt="" srcset="" class="p-center-block l-logo">
 		<!-- 1st item -->
 		<div class="p-coaching__item">
 			<div class="p-coaching__item-visual">
 				<div class="p-coaching__item-bg"></div>
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/coaching-img1.png" alt="" srcset="" class="p-coaching__item-img">
 			</div>
-			<div>
+			<div class="p-coaching__item-vtext">
 				<p class="p-coaching__item-title">的確な現状把握が可能に</p>
 				<div class="p-coaching__item-details">
 					<div class="p-coaching__item-line"></div>
@@ -90,7 +95,7 @@
 		</div>
 		<!-- 2nd item -->
 		<div class="p-coaching__item">
-			<div class="p-coaching__item-vtext">
+			<div class="p-coaching__item-vtext p-coaching__item-vtext--end">
 				<p class="p-coaching__item-title">経営者が物心ともに満足できる状態に！</p>
 				<div class="p-coaching__item-details">
 					<div class="p-coaching__item-line"></div>
@@ -119,8 +124,8 @@
 				<div class="p-coaching__item-bg"></div>
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/coaching-img3.png" alt="" srcset="" class="p-coaching__item-img">
 			</div>
-			<div>
-				<p class="p-coaching__item-title">目指すべき経営の目標数字が明確になり、正しい事業計画を立てることができる</p>
+			<div class="p-coaching__item-vtext">
+				<p class="p-coaching__item-title">目指すべき経営の目標数字が明確になり、<br />正しい事業計画を立てることができる</p>
 				<div class="p-coaching__item-details">
 					<div class="p-coaching__item-line"></div>
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/check-symbol.png" alt="" srcset="" class="">
@@ -142,7 +147,7 @@
 	<!-- Coaching experience -->
 	<div class="p-experience">
 		<p class="p-experience__title">財務コーチングの実績</p>
-		<img src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/vertical-icon.png" alt="" srcset="" class="p-center-block">
+		<img src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/vertical-icon.png" alt="" srcset="" class="p-center-block l-logo">
 		<p class="p-experience__subtitle">
 			レクリエと共に財務改善に取り組んでこられたお客様の事例をご紹介します
 		</p>
@@ -245,19 +250,19 @@
 		<!-- Feature 1 -->
 		<div class="p-three__feature-item">
 			<div class="p-three__feature-item-details">
-				<div class="p-three__feature-item-title">
+				<div class="p-three__feature-item-title p-three__feature-item-title--one">
 					<p class="p-three__feature-item-no">1</p>
 					<p class="p-three__feature-item-text">伴走型<span class="xs">の</span><span class="medium">サポート</span></p>
 				</div>
-				<p class="p-three__feature-item-content">調達再編スキームを用いて資金繰り改善を行なうだけではなく、経営者に寄り添った、悩み解決型のサービスを提供します。経営者の本質的成功を目指し、社長自身が経営改善に関する専門的スキル・知識を習得することを目的とし、一時的な改善ではなく、中長期的な改善にまでコミットしたコンサルティングの提供となります。</p>
+				<p class="p-three__feature-item-content">調達再編スキームを用いて資金繰り改善を行なうだけではなく、経営者に寄り添った、悩み解決型のサービスを提供します。<br />経営者の本質的成功を目指し、社長自身が経営改善に関する専門的スキル・知識を習得することを目的とし、一時的な改善ではなく、中長期的な改善にまでコミットしたコンサルティングの提供となります。</p>
 			</div>
-			<img src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/financial-coaching-img1.png" alt="" srcset="" class="p-three__feature-item-img">
+			<img src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/financial-coaching-img1.jpeg" alt="" srcset="" class="p-three__feature-item-img">
 		</div>
 		<!-- Feature 2 -->
 		<div class="p-three__feature-item">
-			<img src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/financial-coaching-img2.png" alt="" srcset="" class="p-three__feature-item-img">
+			<img src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/financial-coaching-img2.jpeg" alt="" srcset="" class="p-three__feature-item-img">
 			<div class="p-three__feature-item-details">
-				<div class="p-three__feature-item-title">
+				<div class="p-three__feature-item-title p-three__feature-item-title--two">
 					<p class="p-three__feature-item-no">2</p>
 					<p class="p-three__feature-item-text">CFO<span class="xs">（最高財務責任者）</span><span class="medium">を</span><br /><span class="large">社外</span><span class="ms">に</span><span class="large">持</span><span class="small"><span class="large">つ</span>ことができる</span></p>
 				</div>
@@ -265,9 +270,9 @@
 			</div>
 		</div>
 		<!-- Feature 3 -->
-		<div class="p-three__feature-item">
+		<div class="p-three__feature-item p-three__feature-item--three">
 			<div class="p-three__feature-item-details">
-				<div class="p-three__feature-item-title">
+				<div class="p-three__feature-item-title p-three__feature-item-title--three">
 					<p class="p-three__feature-item-no">3</p>
 					<p class="p-three__feature-item-text"><span class="fs39">中小企業</span><span class="fs33">の</span><br /><span class="medium">課題解決</span><span class="xs">を</span>
 						<span class="large">ワンストップで</span><br /><span class="fs24">（資金繰り・集客・人材）</span></p>
@@ -322,102 +327,103 @@
 				</div>
 			</div>
 		</div>
+	</div>
 
-		<div class="p-financial_diagnostic">
-			<div class="p-financial_diagnostic__head">
-				上記は、<span>銀行機関が年間300万円を支払って使用している診断システムをそのまま使用し、更に、弊社の財務スペシャリストが御社の疑問にもお応えする</span>という、これだけでも非常に価値の高い内容となっております。
+	<div class="p-financial_diagnostic">
+		<div class="p-financial_diagnostic__head">
+			上記は、<span>銀行機関が年間300万円を支払って使用している診断システムをそのまま使用し、更に、弊社の財務スペシャリストが御社の疑問にもお応えする</span>という、これだけでも非常に価値の高い内容となっております。
+		</div>
+		<div class="p-financial_diagnostic__body">
+			これらの財務診断サービスを
+			<h1>20,000円<span>（税抜き）</span></h1>
+			で提供させていただきます。
+		</div>
+		<div class="p-financial_diagnostic__feet">
+			※その後の財務コーチングを申し込むかどうかは任意となります。これだけでも十分価値の高い内容となっておりますので、改善点を把握して、御社でアクションを起こしていただいても、もちろん問題ありません。
+		</div>
+	</div>
+
+	<div class="p-required_documents">
+		<div class="p-required_documents__head">
+			<h1>財務診断に必要な書類</h1>
+			財務診断を行なう為には、以下書類をPDF添付していただく必要があります。
+			<br>
+			PDFの添付は、申込み条項に同意していただき、財務診断サービスに申込み確定後、専用URLからお願いいたします。
+		</div>
+		<div class="p-required_documents__body">
+			<h2>決算書等（直近３か年分）</h2>
+			<div class="p-required_documents__body-item">
+				<div class="p-required_documents__body-item--line"></div>
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/check-symbol.png" alt="" srcset="" class="">
+				<p>決算報告書（貸借対照表と損益計算書）</p>
 			</div>
-			<div class="p-financial_diagnostic__body">
-				これらの財務診断サービスを
-				<h1>20,000円<span>（税抜き）</span></h1>
-				で提供させていただきます。
+			<div class="p-required_documents__body-item">
+				<div class="p-required_documents__body-item--line"></div>
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/check-symbol.png" alt="" srcset="" class="">
+				<p>内訳書（勘定科目内訳明細書）</p>
 			</div>
-			<div class="p-financial_diagnostic__feet">
-				※その後の財務コーチングを申し込むかどうかは任意となります。これだけでも十分価値の高い内容となっておりますので、改善点を把握して、御社でアクションを起こしていただいても、もちろん問題ありません。
+			<div class="p-required_documents__body-item">
+				<div class="p-required_documents__body-item--line"></div>
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/check-symbol.png" alt="" srcset="" class="">
+				<p>概況報告書（法人事業概況説明書）</p>
+			</div>
+			<div class="p-required_documents__body-item">
+				<div class="p-required_documents__body-item--line"></div>
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/check-symbol.png" alt="" srcset="" class="">
+				<p>申告書（法人税申告書）</p>
 			</div>
 		</div>
 
-		<div class="p-required_documents">
-			<div class="p-required_documents__head">
-				<h1>財務診断に必要な書類</h1>
-				財務診断を行なう為には、以下書類をPDF添付していただく必要があります。
-				<br>
-				PDFの添付は、申込み条項に同意していただき、財務診断サービスに申込み確定後、専用URLからお願いいたします。
+		<div class="p-required_documents__feet">
+			<h3>その他資料（診断申し込み時点のもの）</h3>
+			<div class="p-required_documents__feet-item">
+				<div class="p-required_documents__feet-item--line"></div>
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/check-symbol.png" alt="" srcset="" class="">
+				<p>銀行借入一覧表 or 全ての銀行の融資返済予定表一式</p>
 			</div>
-			<div class="p-required_documents__body">
-				<h2>決算書等（直近３か年分）</h2>
-				<div class="p-required_documents__body-item">
-					<div class="p-required_documents__body-item--line"></div>
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/check-symbol.png" alt="" srcset="" class="">
-					<p>決算報告書（貸借対照表と損益計算書）</p>
-				</div>
-				<div class="p-required_documents__body-item">
-					<div class="p-required_documents__body-item--line"></div>
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/check-symbol.png" alt="" srcset="" class="">
-					<p>内訳書（勘定科目内訳明細書）</p>
-				</div>
-				<div class="p-required_documents__body-item">
-					<div class="p-required_documents__body-item--line"></div>
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/check-symbol.png" alt="" srcset="" class="">
-					<p>概況報告書（法人事業概況説明書）</p>
-				</div>
-				<div class="p-required_documents__body-item">
-					<div class="p-required_documents__body-item--line"></div>
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/check-symbol.png" alt="" srcset="" class="">
-					<p>申告書（法人税申告書）</p>
-				</div>
+			<div class="p-required_documents__feet-item">
+				<div class="p-required_documents__feet-item--line"></div>
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/check-symbol.png" alt="" srcset="" class="">
+				<p>法人名義の保険加入一覧（生命保険・損害保険含む） or 保険証券のコピー一式</p>
 			</div>
-
-			<div class="p-required_documents__feet">
-				<h3>その他資料（診断申し込み時点のもの）</h3>
-				<div class="p-required_documents__feet-item">
-					<div class="p-required_documents__feet-item--line"></div>
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/check-symbol.png" alt="" srcset="" class="">
-					<p>銀行借入一覧表 or 全ての銀行の融資返済予定表一式</p>
-				</div>
-				<div class="p-required_documents__feet-item">
-					<div class="p-required_documents__feet-item--line"></div>
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/check-symbol.png" alt="" srcset="" class="">
-					<p>法人名義の保険加入一覧（生命保険・損害保険含む） or 保険証券のコピー一式</p>
-				</div>
-				<div class="p-required_documents__feet-item">
-					<div class="p-required_documents__feet-item--line"></div>
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/check-symbol.png" alt="" srcset="" class="">
-					<p>直近の月次推移表</p>
-				</div>
+			<div class="p-required_documents__feet-item">
+				<div class="p-required_documents__feet-item--line"></div>
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/check-symbol.png" alt="" srcset="" class="">
+				<p>直近の月次推移表</p>
 			</div>
 		</div>
+	</div>
 
-		<div class="p-heading top_page">
-			<div class="p-heading top_page__headers">
-				<header>キャッシュの問題点がわかる！</header>
-				<header>改善の方向性が見える！</header>
-			</div>
-			<div class=" c-staff">
-				<img class="c-staff__img" src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/staff-1.png" alt="">
-				<img class="c-staff__img --margin-middle__top_page" src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/staff-2.png" alt="">
-				<img class="c-staff__img" src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/staff-3.png" alt="">
-			</div>
-			<div class="c-finance top_page">
-				<p class="c-finance__title top_page">財務の専門家による財務改善診断</p>
-				<div class="c-finance__tax top_page">
-					<span class="c-finance__cost top_page">20,000円</span>(税抜き)
-				</div>
-			</div>
-			<button class="c-button__round c-button__round__top_page">財務改善診断のお申し込みはこちら</button>
+	<div class="p-heading top_page">
+		<div class="p-heading top_page__headers">
+			<header>キャッシュの問題点がわかる！</header>
+			<header>改善の方向性が見える！</header>
 		</div>
-
-		<div class="p-company_profile" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/minified/images/footer-company-profile.png')">
-			<div class="p-company_profile__head">
-				<header>会社概要</header>
-			</div>
-			<div class="p-company_profile__body">
-				<h1>会社名</h1>
-				<p>株式会社レクリエ</p>
-				<h1>本店所在地</h1>
-				<p>広島市中区橋本町9-7-8F</p>
-				<h1>事業内容</h1>
-				<p>経営・財務改善コンサルティング、WEB集客コンサルティング</p>
+		<div class=" c-staff">
+			<img class="c-staff__img" src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/staff-1.png" alt="">
+			<img class="c-staff__img --margin-middle__top_page" src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/staff-2.png" alt="">
+			<img class="c-staff__img" src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/staff-3.png" alt="">
+		</div>
+		<div class="c-finance top_page">
+			<p class="c-finance__title top_page">財務の専門家による財務改善診断</p>
+			<div class="c-finance__tax top_page">
+				<span class="c-finance__cost top_page">20,000円</span>(税抜き)
 			</div>
 		</div>
-		<?php get_footer(); ?>
+		<button class="c-button__round c-button__round__top_page">財務改善診断のお申し込みはこちら</button>
+	</div>
+
+	<div class="p-company_profile" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/minified/images/footer-company-profile.png')">
+		<div class="p-company_profile__head">
+			<header>会社概要</header>
+		</div>
+		<div class="p-company_profile__body">
+			<h1>会社名</h1>
+			<p>株式会社レクリエ</p>
+			<h1>本店所在地</h1>
+			<p>広島市中区橋本町9-7-8F</p>
+			<h1>事業内容</h1>
+			<p>経営・財務改善コンサルティング、WEB集客コンサルティング</p>
+		</div>
+	</div>
+	<?php get_footer(); ?>
