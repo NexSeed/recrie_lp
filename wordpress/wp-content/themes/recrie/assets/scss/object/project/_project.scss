@@ -141,18 +141,12 @@
     font-weight: 500;
     letter-spacing: 2px;
     color: #394829;
+    ;
     margin-bottom: 25px;
   }
 
   &hero {
     position: relative;
-    width: 100%;
-    height: 768px;
-    max-height: 100vh;
-    background-size: cover;
-    // background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center center;
 
     &__title {
       display: block;
@@ -161,21 +155,27 @@
       left: 50%;
       transform: translateX(-50%);
     }
-    .hero-pc, .hero-sp {
+
+    .hero-pc,
+    .hero-sp {
       width: 100%;
       height: auto;
     }
+
     .hero-pc {
       @include mq('sm') {
         display: none;
       }
     }
+
     .hero-sp {
       display: none;
+
       @include mq('sm') {
         display: block;
       }
     }
+
     @include mq('md') {
       .c-logo {
         display: none;
@@ -188,14 +188,17 @@
     @include mq('sm') {
       padding: 0 15px;
     }
+
     &__item {
       width: 70%;
       border-bottom: 1px solid #0D5D4B;
       padding: 15px 0;
       display: block;
+
       @include mq('sm') {
         width: 85%;
       }
+
       @include mq('xs') {
         width: 100%;
       }
@@ -205,6 +208,7 @@
         font-weight: 500;
         letter-spacing: 1.6px;
         color: #394829;
+
         @include mq('sm') {
           letter-spacing: 1.5px;
           font-size: 15px;
@@ -217,6 +221,7 @@
         font-weight: 500;
         letter-spacing: 2.6px;
         color: #394829;
+
         @include mq('sm') {
           font-size: 20px;
         }
@@ -228,6 +233,7 @@
         }
 
         margin-left: auto;
+
         @include mq('sm') {
           margin-left: 0;
           margin-right: auto;
@@ -263,8 +269,8 @@
     height: 821px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position:  center center;
-    margin:5rem 0;
+    background-position: center center;
+    margin: 5rem 0;
     padding: 0 15px;
     z-index: -2;
 
@@ -295,12 +301,14 @@
       margin: 0 auto;
       padding: 6rem 0 5rem;
       width: 770px;
+
       @include mq('lg') {
         font-size: 16px;
         letter-spacing: 1.62px;
         width: 100%;
       }
     }
+
     &__arrow-down {
       width: 0;
       height: 0;
@@ -320,9 +328,11 @@
     display: grid;
     grid-template-columns: 20% 80%;
     margin: 1rem auto;
+
     @include mq('lg') {
       width: 100%;
     }
+
     @include mq('md') {
       height: 95px;
     }
@@ -337,6 +347,7 @@
         letter-spacing: 1.5px;
         color: #0D5D4B;
         line-height: 40px;
+
         @include mq('md') {
           font-size: 9px;
           letter-spacing: 0.9px;
@@ -348,6 +359,7 @@
         font-size: 60px;
         letter-spacing: 6px;
         color: #0D5D4B;
+
         @include mq('md') {
           font-size: 36px;
           letter-spacing: 3.6px;
@@ -361,6 +373,7 @@
       color: #394829;
       text-align: left;
       margin: auto 0;
+
       @include mq('md') {
         font-size: 16px;
         letter-spacing: 1.6px;
@@ -378,6 +391,7 @@
     display: block;
     margin: 0 auto;
     padding: 0 15px;
+
     @include mq('md') {
       .l-logo {
         width: 29px;
@@ -393,6 +407,7 @@
       color: #0D5D4B;
       text-align: center;
       margin: 19px 0 49px;
+
       @include mq('md') {
         font-size: 20px;
         letter-spacing: 2px;
@@ -410,19 +425,23 @@
       width: 770px;
       display: block;
       line-height: 1.8;
+
       @include mq('lg') {
         width: 100%;
       }
+
       @include mq('md') {
         font-size: 15px;
         letter-spacing: 1.5px;
         margin: 0 auto 6rem;
       }
+
       &--bold {
         font-size: 17px;
         font-weight: bold;
         letter-spacing: 1.7px;
         color: #0D5D4B;
+
         @include mq('md') {
           font-size: 15px;
           letter-spacing: 1.5px;
@@ -435,6 +454,7 @@
       grid-template-columns: 50% 50%;
       position: relative;
       margin: 6rem 0;
+
       @include mq('xl') {
         display: flex;
         flex-wrap: wrap;
@@ -448,6 +468,7 @@
         top: 50%;
         transform: translate(-50%, -50%);
         width: 540px;
+
         @include mq('lg') {
           width: 276px;
           height: 173px;
@@ -461,6 +482,7 @@
         z-index: 1;
         display: block;
         margin: auto;
+
         @include mq('lg') {
           width: 250px;
           height: 150px;
@@ -469,10 +491,12 @@
 
       &-visual {
         position: relative;
+
         @include mq('xl') {
           margin: 3rem 15px 0 auto;
           justify-self: end;
         }
+
         @include mq('lg') {
           order: 2;
         }
@@ -486,6 +510,7 @@
         color: #394829;
         padding: 15px 0;
         border-bottom: 1px solid #394829;
+
         @include mq('md') {
           font-size: 20px;
           letter-spacing: 2px;
@@ -514,6 +539,7 @@
         font-weight: 500;
         letter-spacing: 1.6px;
         color: #394829;
+
         @include mq('md') {
           font-size: 15px;
           letter-spacing: 1.5px;
@@ -522,10 +548,12 @@
 
       &-vtext {
         width: 570px;
+
         @include mq('xl') {
           width: 40%;
           margin: 0 auto;
         }
+
         @include mq('lg') {
           width: 100%;
         }
@@ -546,6 +574,7 @@
         height: 39px;
       }
     }
+
     &__title {
       text-align: center;
       font-size: 26px;
@@ -554,6 +583,7 @@
       color: #0D5D4B;
       text-align: center;
       margin: 2rem 0 10px;
+
       @include mq('md') {
         font-size: 20px;
         letter-spacing: 2px;
@@ -568,6 +598,7 @@
       letter-spacing: 1.6px;
       color: #394829;
       margin: 4.5rem 0 4rem;
+
       @include mq('md') {
         font-size: 15px;
         letter-spacing: 1.5px;
@@ -595,6 +626,7 @@
         font-weight: 500;
         letter-spacing: 2.6px;
         color: #394829;
+
         @include mq('sm') {
           font-size: 20px;
           letter-spacing: 2px;
@@ -607,6 +639,7 @@
         font-weight: 500;
         letter-spacing: 1.6px;
         color: #394829;
+
         @include mq('sm') {
           font-size: 15px;
           letter-spacing: 1.5px;
@@ -621,6 +654,7 @@
         letter-spacing: 1.6px;
         color: #095389;
       }
+
       @include mq('md') {
         width: 100%;
       }
@@ -636,6 +670,7 @@
         width: 100%;
         padding-right: 2rem;
       }
+
       @include mq('sm') {
         padding: 0;
       }
@@ -643,9 +678,11 @@
       table {
         max-width: 500px;
         width: 100%;
+
         @include mq('md') {
           max-width: 100%;
         }
+
         @include mq('sm') {
           width: 100%;
         }
@@ -671,6 +708,7 @@
           letter-spacing: 1.6px;
           color: #394829;
           padding: 5px 0;
+
           @include mq('sm') {
             font-size: 15px;
             letter-spacing: 1.5px;
@@ -694,6 +732,7 @@
           font-weight: bold;
           letter-spacing: 1.6px;
           color: #0D5D4B;
+
           @include mq('sm') {
             font-size: 15px;
             letter-spacing: 1.5px;
@@ -754,6 +793,7 @@
         letter-spacing: 1.6px;
         color: #394829;
         width: 50%;
+
         @include mq('lg') {
           width: 100%;
         }
@@ -785,6 +825,7 @@
     @include mq('md') {
       padding: 6rem 1.5rem 1rem;
     }
+
     &-title {
       text-align: center;
       font-size: 26px;
@@ -829,27 +870,35 @@
 
         &--one {
           height: 200px;
+
           @include mq('md') {
             height: 130px;
           }
         }
+
         &--two {
           height: 270px;
+
           @include mq('xxl') {
             height: 410px;
           }
+
           @include mq('md') {
             height: 175px;
           }
         }
+
         &--three {
           height: 290px;
+
           @include mq('xxl') {
             height: 410px;
           }
+
           @include mq('md') {
             height: 165px;
           }
+
           @include mq('xs') {
             height: 180px;
           }
@@ -882,6 +931,7 @@
           letter-spacing: -5.1px;
           color: #F9FAF7;
           z-index: 2;
+
           @include mq('md') {
             font-size: 26px;
             letter-spacing: 0.5px;
@@ -894,6 +944,7 @@
           font-weight: bold;
           color: #F9FAF7;
           z-index: 2;
+
           @include mq('md') {
             font-size: 28px;
             letter-spacing: 0.8px;
@@ -950,6 +1001,7 @@
             letter-spacing: 0.6px;
           }
         }
+
         .fs33 {
           text-align: left;
           font-size: 33px;
@@ -962,6 +1014,7 @@
             letter-spacing: 0.5px;
           }
         }
+
         .fs24 {
           text-align: right;
           font-size: 24px;
@@ -1065,6 +1118,7 @@
       color: #0D5D4B;
       display: inline-block;
       align-self: center;
+
       @include mq('md') {
         font-size: 13px;
         letter-spacing: 1.3px;
@@ -1080,6 +1134,7 @@
       width: 770px;
       display: block;
       margin: 2rem auto;
+
       @include mq('lg') {
         width: 100%;
       }
@@ -1088,14 +1143,13 @@
     &__title2 {
       text-align: center;
       font-size: 18px;
-      font-weight: 600;
-      line-height: 3.2rem;
+      font-weight: 500;
       letter-spacing: 1.8px;
       color: #394829;
       width: 570px;
       display: block;
       margin: 0 auto;
-      border-bottom:  1px solid;
+      border-bottom: 1px solid;
 
       @include mq('md') {
         font-size: 16px;
@@ -1117,6 +1171,7 @@
       @include mq('sm') {
         width: 100%;
       }
+
       &-con {
         display: flex;
         flex-wrap: wrap;
@@ -1129,7 +1184,6 @@
 
       &-title {
         text-align: center;
-        font-family: Yu Gothic;
         font-size: 16px;
         font-weight: bold;
         letter-spacing: 1.6px;
@@ -1142,9 +1196,12 @@
         padding: 24px;
         margin-top: 16px;
 
+        @include mq('sm') {
+          height: auto;
+        }
+
         &-content {
           text-align: left;
-          font-family: Yu Gothic;
           font-size: 16px;
           font-weight: 500;
           letter-spacing: 1.6px;
@@ -1160,6 +1217,11 @@
     padding-bottom: 5.6rem;
     margin: 6rem 0;
 
+    @include mq('sm') {
+      padding: 5.6rem 1.5rem;
+      margin: 6rem 0 5.2rem;
+    }
+
     &__head {
       text-align: left;
       font-weight: 500;
@@ -1171,6 +1233,14 @@
       max-width: 77rem;
       margin: auto;
 
+      @include mq('sm') {
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 3.2rem;
+        font-family: Yu Gothic;
+        letter-spacing: 1.5px;
+      }
+
       span {
         text-align: left;
         font-weight: 600;
@@ -1179,6 +1249,14 @@
         font-family: Yu Gothic;
         letter-spacing: 1.7px;
         color: #0D5D4B;
+
+        @include mq('sm') {
+          font-weight: 600;
+          font-size: 1.5rem;
+          line-height: 3.2rem;
+          font-family: Yu Gothic;
+          letter-spacing: 1.6px;
+        }
       }
     }
 
@@ -1190,8 +1268,17 @@
       font-family: Source Han Serif;
       letter-spacing: 2.6px;
       color: #394829;
-      margin-top: 5rem;
-      margin-bottom: 6rem;
+      margin: 5rem auto 6rem;
+
+      @include mq('sm') {
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 3.8rem;
+        font-family: Source Han Serif;
+        letter-spacing: 2px;
+        color: #212121;
+        margin: 2.7rem 0;
+      }
 
       h1 {
         text-align: center;
@@ -1201,9 +1288,16 @@
         font-family: Source Han Serif;
         letter-spacing: 6.6px;
         color: #0D5D4B;
-        margin-right: -2.8rem;
-        margin-top: 1rem;
-        margin-bottom: 2rem;
+        margin: 1rem auto 2rem;
+
+        @include mq('sm') {
+          font-weight: 500;
+          font-size: 5.5rem;
+          line-height: 8.3rem;
+          font-family: Source Han Serif;
+          letter-spacing: 5.5px;
+          margin: 0.1rem auto 0.2rem;
+        }
 
         span {
           text-align: center;
@@ -1213,6 +1307,14 @@
           font-family: Yu Gothic;
           letter-spacing: 1.6px;
           color: #0D5D4B;
+
+          @include mq('sm') {
+            font-weight: 500;
+            font-size: 1.2rem;
+            line-height: 2.6rem;
+            font-family: Yu Gothic;
+            letter-spacing: 1.2px;
+          }
         }
       }
     }
@@ -1227,6 +1329,16 @@
       color: #394829;
       max-width: 77rem;
       margin: auto;
+
+      @include mq('sm') {
+        text-align: center;
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 3.0rem;
+        font-family: Yu Gothic;
+        letter-spacing: 1.5px;
+        color: #212121;
+      }
     }
   }
 
@@ -1239,6 +1351,7 @@
     letter-spacing: 1.6px;
     color: #394829;
     max-width: 77rem;
+    padding: 0 1.6rem;
     margin: auto;
 
     &__head {
@@ -1249,29 +1362,72 @@
       line-height: 3.2rem;
       letter-spacing: 1.6px;
       color: #394829;
+
+      @include mq('sm') {
+        text-align: left;
+        font-family: Yu Gothic;
+        font-size: 1.5rem;
+        line-height: 3rem;
+        letter-spacing: 1.5px;
+        color: #212121;
+      }
     }
 
     &__body {
 
       &-item {
-        max-width: 52rem;
+        max-width: 56rem;
         min-height: 5rem;
-        border: 1px solid #394829;
-        padding: 1rem 2.4rem;
         display: grid;
-        grid-template-columns: 5.6rem min-content auto;
-        align-items: center;
+        grid-template-columns: max-content max-content auto;
         margin: auto;
+        border: 1px solid #394829;
         margin-bottom: 2rem;
+        padding: 2.3rem 0 0 1rem;
+
+        @include mq('sm') {
+          min-height: 3.8rem;
+          margin-bottom: 1rem;
+          padding: 1.1rem 0 0.5rem;
+
+        }
 
         &--line {
-          height: 1px;
+          height: 0px;
           width: 4.7rem;
-          background: #394829;
+          border: 0.5px solid #394829;
+          margin: 1.3rem 0;
+          margin-left: 1rem;
+
+          @include mq('sm') {
+            width: 3.4rem;
+          }
         }
 
         img {
+          padding-top: 1rem;
+          padding-left: 0.9rem;
           padding-right: 1.6rem;
+
+          @include mq('sm') {
+            width: 1rem;
+          }
+        }
+
+        p {
+          text-align: left;
+          font-family: Yu Gothic;
+          font-weight: 500;
+          font-size: 1.6rem;
+          letter-spacing: 1.6px;
+          color: #394829;
+
+          @include mq('sm') {
+            font-size: 1.5rem;
+            letter-spacing: 1.5px;
+            color: #212121;
+            padding-right: 2rem;
+          }
         }
       }
     }
@@ -1313,6 +1469,13 @@
       margin: auto;
       margin-bottom: 4rem;
       border-bottom: 1px solid #394829;
+
+      @include mq('md') {
+        font-size: 1.6rem;
+        letter-spacing: 1.6px;
+        padding: 0.6rem 0 0.7rem;
+        margin-bottom: 2.5rem;
+      }
     }
 
     h2 {
@@ -1325,7 +1488,14 @@
       letter-spacing: 1.8px;
       color: #394829;
       margin: auto;
-      margin-bottom: 4rem;
+      margin-bottom: 3.2rem;
+
+      @include mq('md') {
+        font-size: 1.6rem;
+        line-height: 3.2rem;
+        letter-spacing: 1.6px;
+        margin: 2.5rem 0 1.5rem;
+      }
     }
 
     h3 {

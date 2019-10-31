@@ -335,7 +335,7 @@
 		</div>
 		<div class="p-financial_diagnostic__body">
 			これらの財務診断サービスを
-			<h1>20,000円<span>（税抜き）</span></h1>
+			<h1>20,000円<span>(税抜き)</span></h1>
 			で提供させていただきます。
 		</div>
 		<div class="p-financial_diagnostic__feet">
