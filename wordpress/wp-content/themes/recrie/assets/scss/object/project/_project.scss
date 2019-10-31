@@ -136,7 +136,7 @@
         display: block;
       }
     }
-    @include mq('sm') {
+    @include mq('md') {
       .c-logo {
         display: none;
       }
@@ -199,9 +199,14 @@
           width: 320px;
           display: block;
           margin-left: auto;
+
+          @include mq('sm') {
+            width: 100%;
+          }
         }
         margin-right: auto;
         text-align: right;
+
         @include mq('sm') {
           margin-left: auto;
           margin-right: 0;
@@ -213,12 +218,30 @@
 
   &service {
     position: relative;
-    width: 100%;
     height: 821px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position:  center center;
     margin:5rem 0;
+    padding: 0 15px;
+    z-index: -2;
+
+    @include mq('md') {
+      height: 100%;
+      padding-bottom: 6rem;
+    }
+
+    &__bg {
+      background: transparent linear-gradient(180deg, #5A6E2E 0%, #004B4B 100%) 0% 0% no-repeat padding-box;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.9;
+      z-index: -1;
+    }
+
     &__detail {
       text-align: left;
       font-size: 20px;
@@ -230,6 +253,11 @@
       margin: 0 auto;
       padding: 6rem 0 5rem;
       width: 770px;
+      @include mq('lg') {
+        font-size: 16px;
+        letter-spacing: 1.62px;
+        width: 100%;
+      }
     }
     &__arrow-down {
       width: 0; 
@@ -250,6 +278,12 @@
     display: grid;
     grid-template-columns: 20% 80%; 
     margin: 1rem auto;  
+    @include mq('lg') {
+      width: 100%;
+    }
+    @include mq('md') {
+      height: 95px;
+    }
 
     &__no { 
       display: flex;
@@ -260,11 +294,20 @@
         letter-spacing: 1.5px;
         color: #0D5D4B;
         line-height: 40px;
+        @include mq('md') {
+          font-size: 9px;
+          letter-spacing: 0.9px;
+          line-height: 25px;
+        }
       }
       p > span {
         font-size: 60px;
         letter-spacing: 6px;
         color: #0D5D4B;
+        @include mq('md') {
+          font-size: 36px;
+          letter-spacing: 3.6px;
+        }
       }
     }
 
@@ -274,6 +317,11 @@
       color: #394829;
       text-align: left;
       margin: auto 0;
+      @include mq('md') {
+        font-size: 16px;
+        letter-spacing: 1.6px;
+        padding-right: 15px;
+      }
     }
 
     &__underline {
@@ -285,6 +333,13 @@
   &coaching {
     display: block;
     margin: 0 auto;
+    padding: 0 15px;
+    @include mq('md') {
+      .l-logo {
+        width: 29px;
+        height: 39px;
+      }
+    }
 
     &__title {
       text-align: center;
@@ -294,6 +349,11 @@
       color: #0D5D4B;
       text-align: center;
       margin: 19px 0 49px; 
+      @include mq('md') {
+        font-size: 20px;
+        letter-spacing: 2px;
+        margin: 19px 0 16px;
+      }
     }
 
     &__detail {
@@ -306,12 +366,23 @@
       width: 770px;
       display: block;
       line-height: 1.8;
-
+      @include mq('lg') {
+        width: 100%;        
+      }
+      @include mq('md') {
+        font-size: 15px;
+        letter-spacing: 1.5px;
+        margin: 0 auto 6rem;
+      }
       &--bold {
         font-size: 17px;
         font-weight: bold;
         letter-spacing: 1.7px;
         color: #0D5D4B;
+        @include mq('md') {
+          font-size: 15px;
+          letter-spacing: 1.5px;
+        }
       }
     }
 
@@ -320,6 +391,11 @@
       grid-template-columns: 50% 50%;
       position: relative;
       margin: 6rem 0;
+      @include mq('xl') {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
 
       &-img {
         z-index: 2;
@@ -327,6 +403,11 @@
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
+        width: 540px;
+        @include mq('lg') {
+          width: 276px;
+          height: 173px;
+        }
       }
 
       &-bg {
@@ -336,14 +417,21 @@
         z-index: 1;
         display: block;
         margin: auto;
+        @include mq('lg') {
+          width: 250px;
+          height: 150px;
+        }
       }
 
       &-visual {
         position: relative;
-      }
-      
-      &-vtext {
-        margin-left: auto;
+        @include mq('xl') {
+          margin: 3rem 15px 0 auto;
+          justify-self: end;
+        }
+        @include mq('lg') {
+          order: 2;
+        }
       }
 
       &-title {
@@ -354,7 +442,10 @@
         color: #394829;
         padding: 15px 0;
         border-bottom: 1px solid #394829;
-        width: 570px;
+        @include mq('md') {
+          font-size: 20px;
+          letter-spacing: 2px;
+        }
       }
 
       &-details {
@@ -379,12 +470,38 @@
         font-weight: 500;
         letter-spacing: 1.6px;
         color: #394829;
+        @include mq('md') {
+          font-size: 15px;
+          letter-spacing: 1.5px;
+        }
       }
 
+      &-vtext {
+        width: 570px;
+        @include mq('xl') {
+          width: 40%;
+          margin: 0 auto;
+        }
+        @include mq('lg') {
+          width: 100%;
+        }
+
+        &--end {
+          justify-self: end;
+        }
+      }
     }
   }
 
   &experience {
+    padding: 0 15px;
+
+    @include mq('md') {
+      .l-logo {
+        width: 29px;
+        height: 39px;
+      }
+    }
     &__title {
       text-align: center;
       font-size: 26px;
@@ -393,6 +510,11 @@
       color: #0D5D4B;
       text-align: center;
       margin: 2rem 0 10px; 
+      @include mq('md') {
+        font-size: 20px;
+        letter-spacing: 2px;
+        margin: 19px 0 16px;
+      }
     }
     &__subtitle {
       text-align: center;
@@ -401,6 +523,10 @@
       letter-spacing: 1.6px;
       color: #394829;
       margin: 4.5rem 0 4rem;
+      @include mq('md') {
+        font-size: 15px;
+        letter-spacing: 1.5px;
+      }
     }
   }
 
@@ -412,6 +538,10 @@
     justify-content: space-evenly;
     width: 85%;
     padding: 6rem 5rem 4rem;
+
+    @include mq('sm') {
+      padding: 2rem 1.5rem;
+    }
   
     &__info {
       &-title {
@@ -420,6 +550,10 @@
         font-weight: 500;
         letter-spacing: 2.6px;
         color: #394829;
+        @include mq('sm') {
+          font-size: 20px;
+          letter-spacing: 2px;
+        }
       }
 
       &-content {
@@ -428,6 +562,10 @@
         font-weight: 500;
         letter-spacing: 1.6px; 
         color: #394829;
+        @include mq('sm') {
+          font-size: 15px;
+          letter-spacing: 1.5px;
+        }
       }
 
       &-link {
@@ -438,14 +576,34 @@
         letter-spacing: 1.6px;
         color: #095389;
       }
+      @include mq('md') {
+        width: 100%;
+      }
     }
 
     &__table {
       border-left: 1px solid #687262;
       padding-left: 2rem;
 
+      @include mq('md') {
+        border: 0;
+        margin: 3rem 0;
+        width: 100%;
+        padding-right: 2rem;
+      }
+      @include mq('sm') {
+        padding: 0;
+      }
+
       table {
-        width: 500px;
+        max-width: 500px;
+        width: 100%;
+        @include mq('md') {
+          max-width: 100%;
+        }
+        @include mq('sm') {
+          width: 100%;
+        }
       }
       thead {
         border-bottom: 1px solid #0D5D4B;
@@ -465,6 +623,10 @@
           letter-spacing: 1.6px;
           color: #394829;
           padding: 5px 0;
+          @include mq('sm') {
+            font-size: 15px;
+            letter-spacing: 1.5px;
+          }
         }
   
         td:nth-child(1) {
@@ -482,6 +644,10 @@
           font-weight: bold;
           letter-spacing: 1.6px;
           color: #0D5D4B;
+          @include mq('sm') {
+            font-size: 15px;
+            letter-spacing: 1.5px;
+          }
         }
       }
     }
@@ -495,6 +661,15 @@
       justify-content: inherit;
       padding: 32px 50px;
       margin-top: 4rem;
+      
+      @include mq('lg') {
+        justify-content: space-between;
+      }
+
+      @include mq('md') {
+        padding: 3rem 2rem;
+      }
+
       &-title {
         text-align: left;
         font-size: 36px;
@@ -502,6 +677,11 @@
         letter-spacing: 3.6px;
         color: #394829;
         opacity: 0.2;
+
+        @include mq('md') {
+          font-size: 18px;
+          letter-spacing: 1.8px;
+        }
       }
       
       &-subtitle {
@@ -510,6 +690,11 @@
         font-weight: 500;
         letter-spacing: 1 .6px;
         color: #394829;
+
+        @include mq('md') {
+          font-size: 15px;
+          letter-spacing: 1.5px;
+        }
       }
 
       &-details {
@@ -519,6 +704,13 @@
         letter-spacing: 1.6px;
         color: #394829;
         width: 50%;
+        @include mq('lg') {
+          width: 100%;
+        }
+      }
+      
+      img {
+        margin-bottom: 2rem;
       }
     }
 
@@ -539,6 +731,10 @@
     background: transparent linear-gradient(180deg, #5A6E2E 0%, #004B4B 100%) 0% 0% no-repeat padding-box;    
     padding: 5rem 10rem;
     margin: 8rem 0 4rem;
+
+    @include mq('md') {
+      padding: 6rem 1.5rem 1rem;
+    }
     &-title {
       text-align: center;
       font-size: 26px;
@@ -550,22 +746,63 @@
       width: 500px;
       text-align: center;
       margin: 0 auto;
+
+      @include mq('md') {
+        font-size: 20px;
+        letter-spacing: 2px;
+        width: 100%;
+        padding: 0;
+      }
     }
 
     &-item {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-column-gap: 15px;
       padding-bottom: 4rem;
       border-bottom: 1px solid #F9FAF7;
 
-      &-details {
-        width: 60%;
-      }
-      &-title {
+      @include mq('xl') {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      &--three {
+        border: 0;
+      }
+      
+      &-title {
+        // display: flex;
+        // flex-wrap: wrap;
+        position: relative;
+        height: 200px;
+        
+        &--one {
+          height: 200px;
+          @include mq('md') {
+            height: 130px;
+          }
+        }
+        &--two {
+          height: 270px;
+          @include mq('xxl') {
+            height: 410px;
+          }
+          @include mq('md') {
+            height: 160px;
+          }
+        }
+        &--three {
+          height: 290px;
+          @include mq('xxl') {
+            height: 410px;
+          }
+          @include mq('md') {
+            height: 165px;
+          }
+        }
       }
       &-text {
         text-align: left;
@@ -575,8 +812,16 @@
         color: #F9FAF7;
         z-index: 2;
         align-self: center;
-        margin-left: -100px;
         line-height: 1;
+        position: absolute;
+        top: 112px;
+        left: 0;
+
+        @include mq('md') {
+          font-size: 38px;
+          letter-spacing: -9.6px;
+          top: 60px;
+        }
 
         .xs {
           text-align: left;
@@ -585,6 +830,10 @@
           letter-spacing: -5.1px;
           color: #F9FAF7;
           z-index: 2;
+          @include mq('md') {
+            font-size: 26px;
+            letter-spacing: 0.5px;
+          }
         }
         .ms {
           text-align: left;
@@ -592,6 +841,10 @@
           font-weight: bold;
           color: #F9FAF7;
           z-index: 2;
+          @include mq('md') {
+            font-size: 28px;
+            letter-spacing: 0.8px;
+          }
         }
 
         .small {
@@ -600,13 +853,20 @@
           font-weight: bold;
           letter-spacing: -2.7px;
           color: #F9FAF7; 
+          @include mq('md') {
+            font-size: 22px;
+          }
         }
         .medium {
           text-align: left;
-          font-size: 60px;
+          font-size: 61px;
           font-weight: bold;
-          letter-spacing: 1.98px;
+          letter-spacing: 1.83px;
           color: #F9FAF7; 
+          @include mq('md') {
+            font-size: 29px;
+            letter-spacing: 0.5px;
+          }
         }
 
         .large {
@@ -615,6 +875,10 @@
           font-weight: bold;
           letter-spacing: 6px;
           color: #F9FAF7; 
+          @include mq('md') {
+            font-size: 29px;
+            letter-spacing: -3px;
+          }
         }
         .fs39 {
           text-align: left;
@@ -622,6 +886,10 @@
           font-weight: bold;
           letter-spacing: 1.17px;
           color: #F9FAF7; 
+          @include mq('md') {
+            font-size: 20px;
+            letter-spacing: 0.6px;
+          }
         } 
         .fs33 {
           text-align: left;
@@ -629,6 +897,10 @@
           font-weight: bold;
           letter-spacing: 0.99px;
           color: #F9FAF7; 
+          @include mq('md') {
+            font-size: 17px;
+            letter-spacing: 0.5px;
+          }
         } 
         .fs24 {
           text-align: right;
@@ -637,6 +909,10 @@
           letter-spacing: 0.72px;
           color: #F9FAF7; 
           display: block;
+          @include mq('md') {
+            font-size: 12px;
+            letter-spacing: 0.3px;
+          }
         } 
       }
 
@@ -649,6 +925,14 @@
         color: #F9FAF7;
         opacity: 0.2;
         z-index: 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        @include mq('md') {
+          font-size: 95px;
+          letter-spacing: 9.5px;
+        }
       }
 
       &-content {
@@ -659,17 +943,35 @@
 
       &-img {
         align-self: flex-end;
+        width: 450px;
+        height: auto;
+
+        @include mq('xl') {
+          order: 2;
+          margin: 2rem 0;
+        }
+
+        @include mq('md') {
+          width: 100%;
+        }
       }
     }
   }
 
   &service_detail {
+    padding: 0 15px;
+
     &__title {
       text-align: center;
       font-size: 26px;
       font-weight: 500;
       letter-spacing: 2.6px;
       color: #0D5D4B;
+
+      @include mq('md') {
+        font-size: 20px;
+        letter-spacing: 2px;
+      }
     }
 
     &__subtitle-con {
@@ -702,6 +1004,10 @@
       color: #0D5D4B;
       display: inline-block;
       align-self: center;
+      @include mq('md') {
+        font-size: 13px;
+        letter-spacing: 1.3px;
+      }
     }
 
     &__details {
@@ -713,6 +1019,9 @@
       width: 770px;
       display: block;
       margin: 2rem auto;
+      @include mq('lg') {
+        width: 100%;
+      }
     }
 
     &__title2 {
@@ -724,16 +1033,36 @@
       width: 570px;
       display: block;
       margin: 0 auto;
-      border-bottom:  1px solid 
+      border-bottom:  1px solid;
+
+      @include mq('md') {
+        font-size: 16px;
+        letter-spacing: 1.6px;
+        width: 100%;
+        margin: 0;
+      }
     }
 
     &__info {
       margin: 4rem 2rem;
       width: 30%;
+
+      @include mq('md') {
+        width: 40%;
+        margin: 3rem 0;
+      }
+
+      @include mq('sm') {
+        width: 100%;
+      }
       &-con {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+
+        @include mq('md') {
+          justify-content: space-around;
+        }
       }
       &-title {
         text-align: center;
@@ -748,6 +1077,10 @@
         border: 1px solid #0D5D4B;    
         padding: 24px;   
         margin-top: 16px;
+
+        @include mq('sm') {
+          height: auto;
+        }
         
         &-content {
           text-align: left;
