@@ -76,20 +76,38 @@
 
     &.top_page {
       max-width: 97rem;
-      margin: auto;
-      margin-top: 8rem;
-      margin-bottom: 12rem;
+      margin: 8rem auto 12rem;
       padding-top: 3rem;
 
+      @include mq('lg') {
+        margin: 8rem 1.6rem 12rem;
+      }
+
+      @include mq('sm') {
+        margin: 8rem 1.6rem;
+      }
 
       &__headers {
         display: grid;
-        grid-template-columns: 50% 50%;
+        margin: auto;
         max-width: 60rem;
         padding-top: unset;
         padding-bottom: 2.5rem;
+        grid-template-areas: "header1 header2";
 
-        header {
+        @include cq(600px) {
+          //custom query
+          max-width: unset;
+          row-gap: 2.4rem;
+          padding-bottom: 4rem;
+
+          grid-template-areas:
+            "header1"
+            "header2";
+        }
+
+        h1,
+        h2 {
           display: inline-block;
           min-width: 27rem;
           text-align: center;
@@ -101,6 +119,19 @@
           color: #0D5D4B;
           border-bottom: 1px solid #0D5D4B;
           margin: auto;
+
+          @include cq(600px) {
+            font-size: 1.6rem;
+            letter-spacing: 1.6px;
+          }
+        }
+
+        h1 {
+          grid-area: header1;
+        }
+
+        h2 {
+          grid-area: header2;
         }
       }
     }
@@ -1212,12 +1243,12 @@
   }
 
   &financial_diagnostic {
-    background: transparent linear-gradient(0deg, #b6d86a2e 0%, #00b6b72e 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(0deg, rgba(182, 216, 106, 0.180392) 0%, rgba(0, 182, 183, 0.180392) 100%) 0% 0% no-repeat padding-box;
     padding: 7rem;
     padding-bottom: 5.6rem;
-    margin: 6rem 0;
+    margin: 6rem 0 7.7rem;
 
-    @include mq('sm') {
+    @include mq('md') {
       padding: 5.6rem 1.5rem;
       margin: 6rem 0 5.2rem;
     }
@@ -1359,17 +1390,19 @@
       font-family: Yu Gothic;
       font-weight: 500;
       font-size: 1.6rem;
-      line-height: 3.2rem;
+      line-height: 3rem;
       letter-spacing: 1.6px;
+      margin-bottom: 6.9rem;
       color: #394829;
 
-      @include mq('sm') {
+      @include mq('md') {
         text-align: left;
         font-family: Yu Gothic;
         font-size: 1.5rem;
         line-height: 3rem;
         letter-spacing: 1.5px;
         color: #212121;
+        margin-bottom: 0;
       }
     }
 
@@ -1377,13 +1410,14 @@
 
       &-item {
         max-width: 56rem;
-        min-height: 5rem;
+        min-height: 4.6rem;
         display: grid;
+        grid-template-columns: -webkit-max-content -webkit-max-content auto;
         grid-template-columns: max-content max-content auto;
         margin: auto;
         border: 1px solid #394829;
         margin-bottom: 2rem;
-        padding: 2.3rem 0 0 1rem;
+        padding: 2.4rem 0 0 1rem;
 
         @include mq('sm') {
           min-height: 3.8rem;
@@ -1405,8 +1439,8 @@
         }
 
         img {
-          padding-top: 1rem;
-          padding-left: 0.9rem;
+          padding-top: 0.7rem;
+          padding-left: 1.2rem;
           padding-right: 1.6rem;
 
           @include mq('sm') {
@@ -1435,13 +1469,17 @@
     &__feet {
 
       &-item {
-        max-width: 57rem;
+        max-width: 56rem;
         display: grid;
         grid-template-columns: 4.5rem min-content auto;
         align-items: center;
         margin-left: 10rem;
-        margin-right: auto;
-        margin-bottom: 9px;
+        margin-bottom: 8px;
+
+        @include mq('md') {
+          margin-left: 0;
+          margin: auto;
+        }
 
         &--line {
           height: 0;
@@ -1452,6 +1490,16 @@
           max-width: 1.5rem;
           padding-right: 3rem;
           padding-left: 9px;
+        }
+
+        p {
+          text-align: left;
+          font-family: Yu Gothic;
+          font-weight: 500;
+          font-size: 1.5rem;
+          line-height: 3rem;
+          letter-spacing: 1.5px;
+          color: #212121;
         }
       }
     }
@@ -1465,9 +1513,9 @@
       line-height: 3.2rem;
       letter-spacing: 1.8px;
       color: #394829;
-      padding-bottom: 1.3rem;
+      padding-bottom: 0.7rem;
       margin: auto;
-      margin-bottom: 4rem;
+      margin-bottom: 3.6rem;
       border-bottom: 1px solid #394829;
 
       @include mq('md') {
@@ -1508,22 +1556,39 @@
       letter-spacing: 1.8px;
       color: #394829;
       margin: auto;
-      margin-top: 8rem;
+      margin-top: 7.8rem;
       margin-bottom: 2.4rem;
+
+      @include mq('md') {
+        margin-top: 4.3rem;
+        margin-bottom: 1.6rem;
+        font-size: 1.6rem;
+        letter-spacing: 1.6px;
+      }
     }
   }
 
   &company_profile {
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 48.2rem;
+    background-position: center;
+    min-height: 40rem;
     text-align: center;
     color: #F9FAF7;
-    padding-top: 8rem;
-    padding-bottom: 4rem;
+    padding: 7.7rem 0 0.5rem;
+
+    @include mq('sm') {
+      min-height: 42rem;
+      padding: 6rem 0 1px;
+    }
 
     &__head {
-      padding-bottom: 8rem;
+      padding-bottom: 6.5rem;
+      margin-top: -3px;
+
+      @include mq('sm') {
+        padding-bottom: 4.8rem;
+      }
 
       header {
         font-family: Yu Gothic;
@@ -1535,6 +1600,10 @@
     }
 
     &__body {
+      @include mq('sm') {
+        padding: 0 1.6rem;
+      }
+
       h1 {
         font-family: Yu Gothic;
         font-weight: 600;
@@ -1549,7 +1618,7 @@
         font-size: 1.6rem;
         line-height: 3.2rem;
         letter-spacing: 1.6px;
-        margin-bottom: 4rem;
+        margin-bottom: 2.4rem;
       }
     }
   }

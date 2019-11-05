@@ -396,8 +396,8 @@
 
 	<div class="p-heading top_page">
 		<div class="p-heading top_page__headers">
-			<header>キャッシュの問題点がわかる！</header>
-			<header>改善の方向性が見える！</header>
+			<h1>キャッシュの問題点がわかる！</h1>
+			<h2>改善の方向性が見える！</h2>
 		</div>
 		<div class=" c-staff">
 			<img class="c-staff__img" src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/staff-1.png" alt="">
