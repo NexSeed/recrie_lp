@@ -1,0 +1,105 @@
+@import '../../helper/mixin';
+.c-staff {
+  &__img {
+    width: 132px;
+    height: 131px;
+    @include mq('md') {
+      width: 97px;
+      height: 96px;
+    }
+
+    &.--margin-middle {
+      margin: 0 2px;
+    }
+  }
+
+}
+
+.c-finance {
+  width: 100%;
+  margin-top: 3.2rem;
+
+  &__title {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #394829;
+    @include mq('md') {
+      font-size: 20px;
+      width: 200px;
+    }
+  }
+
+  &__tax {
+    color: #0D5D4B;
+    letter-spacing: 1.3px;
+    font-size: 1.3rem;
+  }
+
+  &__cost {
+    font-size: 5.3rem;
+    letter-spacing: 4.1px;
+  }
+}
+// wordpress form 
+.wpcf7 {
+  width: 770px;
+  display: block;
+  margin: 0 auto !important;
+  box-sizing: border-box;
+  padding: 4rem 0 !important;
+  @include mq('md') {
+    width: 92%;
+    box-sizing: border-box;
+  }
+}
+// component form input types
+input[type=text], input[type=email] {
+  width: 100%; 
+  height: 48px;
+  border: 1px solid #C4CCBB;
+  border-radius: 3px;
+  background: #F9FAF7;
+  color: #394829; 
+  font-size: 16px;
+  padding-left: 15px;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+label {
+  text-align: left;
+  font-size: 15px;
+  font-weight: medium;
+  letter-spacing: 1.5px;
+  color: #394829;
+  display: block;
+}
+.c- {
+  &fab {
+    display: none;
+    position: fixed;
+    bottom: 9vh;
+    right: 5rem;
+    z-index: 2;
+    border: 1px solid #C4CCBB;
+    padding: 3px 10px;
+    border-radius: 5px;
+    box-shadow: inset 0px -1px 0.2px 0.3px grey;
+    @include mq('md') {
+      right: 20px;
+    }
+  }
+  &logo {
+    position: absolute;
+    top: 41px;
+    left: 56px;
+    width: 46px;
+    height: 46px;
+  }
+}
+
+#top-link {
+  margin-top: 5rem;
+}
