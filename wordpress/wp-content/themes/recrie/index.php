@@ -15,6 +15,7 @@
 		<img src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/logo.png" alt="" class="c-logo">
 		<img src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/heroPC.png" alt="" class="hero-pc" srcset="">
 		<img src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/heroSP.png" alt="" class="hero-sp" srcset="">
+		<img src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/hero-title.png" alt="" class="hero-sp-title" srcset="">
 	</div>
 
 	<div class="p-feature">
@@ -64,7 +65,6 @@
 			<span class="p-coaching__detail--bold">社長自身が明確な根拠を持って会社経営のかじ取りを行なっていく</span>ことが可能となります。
 		</p>
 	</div>
-
 	<div class="p-coaching">
 		<p class="p-coaching__title">弊社財務コーチングで獲得できる事項</p>
 		<img src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/vertical-icon.png" alt="" srcset="" class="p-center-block l-logo">
@@ -250,10 +250,7 @@
 		<!-- Feature 1 -->
 		<div class="p-three__feature-item">
 			<div class="p-three__feature-item-details">
-				<div class="p-three__feature-item-title p-three__feature-item-title--one">
-					<p class="p-three__feature-item-no">1</p>
-					<p class="p-three__feature-item-text">伴走型<span class="xs">の</span><span class="medium">サポート</span></p>
-				</div>
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/feature-title01.png" alt="" srcset="" class="feature-title">
 				<p class="p-three__feature-item-content">調達再編スキームを用いて資金繰り改善を行なうだけではなく、経営者に寄り添った、悩み解決型のサービスを提供します。<br />経営者の本質的成功を目指し、社長自身が経営改善に関する専門的スキル・知識を習得することを目的とし、一時的な改善ではなく、中長期的な改善にまでコミットしたコンサルティングの提供となります。</p>
 			</div>
 			<img src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/financial-coaching-img1.jpeg" alt="" srcset="" class="p-three__feature-item-img">
@@ -262,10 +259,7 @@
 		<div class="p-three__feature-item">
 			<img src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/financial-coaching-img2.jpeg" alt="" srcset="" class="p-three__feature-item-img">
 			<div class="p-three__feature-item-details">
-				<div class="p-three__feature-item-title p-three__feature-item-title--two">
-					<p class="p-three__feature-item-no">2</p>
-					<p class="p-three__feature-item-text">CFO<span class="xs">（最高財務責任者）</span><span class="medium">を</span><br /><span class="large">社外</span><span class="ms">に</span><span class="large">持</span><span class="small"><span class="large">つ</span>ことができる</span></p>
-				</div>
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/feature-title02.png" alt="" srcset="" class="feature-title">
 				<p class="p-three__feature-item-content">通常の大企業であれば、CFO（最高財務責任者）を持つためには数千万円クラスの報酬が必要となる。弊社のコーチングサービスの場合、新入社員の給与以下のコストで、お金のプロである財務コンサルタントを社外CFOとして雇うことができます</p>
 			</div>
 		</div>
@@ -273,10 +267,7 @@
 		<div class="p-three__feature-item p-three__feature-item--three">
 			<div class="p-three__feature-item-details">
 				<div class="p-three__feature-item-title p-three__feature-item-title--three">
-					<p class="p-three__feature-item-no">3</p>
-					<p class="p-three__feature-item-text"><span class="fs39">中小企業</span><span class="fs33">の</span><br /><span class="medium">課題解決</span><span class="xs">を</span>
-						<span class="large">ワンストップで</span><br /><span class="fs24">（資金繰り・集客・人材）</span></p>
-
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/feature-title03.png" alt="" srcset="" class="feature-title">
 				</div>
 				<p class="p-three__feature-item-content">公認会計士・税理士、社会保険労務士、弁護士、WEBマーケッター等の専門家集団により、資金繰り・集客・人材面からの総合的な経営コンサルティングが可能</p>
 			</div>
@@ -410,7 +401,9 @@
 				<span class="c-finance__cost top_page">20,000円</span>(税抜き)
 			</div>
 		</div>
-		<button class="c-button__round c-button__round__top_page">財務改善診断のお申し込みはこちら</button>
+		<a href="<?php echo home_url('contact'); ?>">
+			<button class="c-button__round c-button__round__top_page">財務改善診断のお申し込みはこちら</button>
+		</a>
 	</div>
 
 	<div class="p-company_profile" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/minified/images/footer-company-profile.png')">
@@ -426,4 +419,5 @@
 			<p>経営・財務改善コンサルティング、WEB集客コンサルティング</p>
 		</div>
 	</div>
+
 	<?php get_footer(); ?>
