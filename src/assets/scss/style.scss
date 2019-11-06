@@ -1,3 +1,10 @@
+/*!
+Theme Name: Recrie Wordpress
+Author: Nexseed Labo
+Description: Recrie offshore project
+Version: 0.0.1
+*/
+
 // ==========================================================================
 // Init _RESET, VARIABLE and MIXIN
 // ==========================================================================
@@ -12,7 +19,7 @@
 // INSERT LAYOUT FILES HERE 5555555555555555555555555555555555555555555555555
 // @import "layout/_footer";
 // @import "layout/_header";
-@import "layout/layout";
+@import "layout/main";
 // @import "layout/_sidebar";
 
 // ==========================================================================
@@ -49,6 +56,7 @@
 // @import "object/utility/_size";
 // @import "object/utility/_text";
 // @import "object/project/project";
+@import "object/utility/_utility";
 
 // -----------------------------------------------------------------
 // CUSTOM PAGE STYLES

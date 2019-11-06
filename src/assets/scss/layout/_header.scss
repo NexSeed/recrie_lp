@@ -3,7 +3,6 @@
 // header
 .l-header-container {
   position: relative;
-  min-height: 100vh;
 }
 .l-navbar {
   position: relative;
@@ -24,12 +23,18 @@
     @include mq('md') {
       font-size: 14px;
     }
+    @include mq('xs') {
+      font-size: 11px;
+    }
   }
 
   .l-logo {
     width: 36px;
     height: 36px;
     margin: 0 14px 0 30px;
+    @include mq('sm') {
+      margin-left: 12px;
+    }
   }
 
   ul {
@@ -40,8 +45,10 @@
       display: none;
     }
     @include mq('md') {
-      position: absolute;
+      position: fixed;
+      overflow: hidden;
       top: 0;
+      left: 0;
       padding: 0 30px;
       display: none;
       width: 100%;
@@ -111,8 +118,8 @@
     }
     img {
       width: 36px;
-      height: 33px;
-      margin: 8px 0 5px;
+      height: 38px;
+      margin: 18px 0 5px;
       transition: all .3s ease;
     }
     p {
