@@ -1,0 +1,17 @@
+//for confirm pages
+
+.custom-wpcf7c-confirmed {
+  input{
+    &[readonly=readonly]{
+    border: none;
+    font-size: 1.6rem!important;
+    color: #394829!important;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: #f9faf7!important;
+    }
+  }
+  input:-webkit-autofill {
+    box-shadow: 0 0 0px 1000px #f9faf7 inset;
+  }
+}
