@@ -260,8 +260,7 @@
 
       @include mq('xs') {
         padding: 30px 0 15px 0;
-        width: calc(100% - 570px / 2);
-
+        // width: calc(100% - 570px / 2);
       }
 
       p {
@@ -877,9 +876,14 @@
       &-img {
         img {
           width: 200px;
+          @include mq('sm') {
+            width: 150px;
+          }
         }
 
-        @include mq('md') {}
+        @include cq(330px) {
+          margin-top: 2rem;
+        }
       }
 
       &-details {
