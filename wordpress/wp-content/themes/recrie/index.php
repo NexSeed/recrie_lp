@@ -328,15 +328,17 @@
 
 		<div class="p-required_documents__feet">
 			<h3>その他資料（診断申し込み時点のもの）</h3>
-			<div class="p-required_documents__feet-item">
-				<p>銀行借入一覧表 or 全ての銀行の融資返済予定表一式</p>
-			</div>
-			<div class="p-required_documents__feet-item">
-				<p>法人名義の保険加入一覧（生命保険・損害保険含む） or 保険証券のコピー一式</p>
-			</div>
-			<div class="p-required_documents__feet-item">
-				<p>直近の月次推移表</p>
-			</div>
+			<ul>
+				<li class="p-required_documents__feet-item">
+					銀行借入一覧表 or 全ての銀行の融資返済予定表一式
+				</li>
+				<li class="p-required_documents__feet-item">
+					法人名義の保険加入一覧（生命保険・損害保険含む） or 保険証券のコピー一式
+				</li>
+				<li class="p-required_documents__feet-item">
+					直近の月次推移表
+				</li>
+			</ul>
 		</div>
 	</div>
 
