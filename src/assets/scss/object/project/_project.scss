@@ -5,7 +5,7 @@
 }
 
 .p-mincho {
-  font-family: "游明朝",YuMincho,"ヒラギノ明朝 ProN W3","Hiragino Mincho ProN","HG明朝E","ＭＳ Ｐ明朝","ＭＳ 明朝",MINCHO,Helvetica,sans-serif;
+  font-family: "游明朝", Yu Mincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", MINCHO, Helvetica, sans-serif;
   font-weight: 600;
 }
 
@@ -83,6 +83,69 @@
     background-color: #EFF2ED;
     padding-top: 4rem;
     padding-bottom: 4.0rem;
+    border-radius: 5px;
+
+    &.top_page {
+      max-width: 97rem;
+      margin: 8rem auto 12rem;
+      padding-top: 3rem;
+
+      @include mq('lg') {
+        margin: 8rem 1.6rem 12rem;
+      }
+
+      @include mq('sm') {
+        margin: 8rem 1.6rem;
+      }
+
+      &__headers {
+        display: grid;
+        margin: auto;
+        max-width: 60rem;
+        padding-top: unset;
+        padding-bottom: 2.5rem;
+        grid-template-areas: "header1 header2";
+
+        @include cq(600px) {
+          //custom query
+          max-width: unset;
+          row-gap: 2.4rem;
+          padding-bottom: 4rem;
+
+          grid-template-areas:
+            "header1"
+            "header2";
+        }
+
+        h1,
+        h2 {
+          display: inline-block;
+          min-width: 27rem;
+          text-align: center;
+          font-family: Yu Gothic;
+          font-size: 1.8rem;
+          font-weight: 600;
+          line-height: 3.2rem;
+          letter-spacing: 1.8px;
+          color: #0D5D4B;
+          border-bottom: 1px solid #0D5D4B;
+          margin: auto;
+
+          @include cq(600px) {
+            font-size: 1.6rem;
+            letter-spacing: 1.6px;
+          }
+        }
+
+        h1 {
+          grid-area: header1;
+        }
+
+        h2 {
+          grid-area: header2;
+        }
+      }
+    }
   }
 
   &privacy {
@@ -119,12 +182,13 @@
     font-size: 2rem;
     font-weight: 500;
     letter-spacing: 2px;
-    color: #394829;;
+    color: #394829;
     margin-bottom: 25px;
   }
 
   &hero {
     position: relative;
+
     &__title {
       display: block;
       position: absolute;
@@ -132,23 +196,29 @@
       left: 50%;
       transform: translateX(-50%);
     }
-    .hero-pc, .hero-sp {
+
+    .hero-pc,
+    .hero-sp {
       width: 100%;
       height: auto;
     }
+
     .hero-pc {
       @include mq('sm') {
         display: none;
       }
     }
+
     .hero-sp {
       display: none;
+
       @include mq('sm') {
         display: block;
       }
 
       &-title {
         display: none;
+
         @include mq('sm') {
           display: block;
           position: absolute;
@@ -158,32 +228,36 @@
         }
       }
     }
+
     @include mq('md') {
       .c-logo {
         display: none;
       }
     }
-
   }
 
   &feature {
-    &__title{
+    &__title {
       max-width: 100%;
       display: inline-block;
       margin-bottom: 30px;
       width: 100%;
+
       &.is-first {
         max-width: 400px;
       }
     }
+
     @include mq('sm') {
       padding: 0 15px;
     }
+
     &__item {
       border-bottom: 1px solid #0D5D4B;
       padding: 20px 0;
       display: block;
       width: 70%;
+
       @include mq('xs') {
         padding: 30px 0 15px 0;
         width: calc(100% - 570px / 2);
@@ -195,6 +269,7 @@
         font-size: 16px;
         letter-spacing: 1.6px;
         color: #394829;
+
         @include mq('sm') {
           letter-spacing: 1.5px;
           font-size: 15px;
@@ -207,23 +282,34 @@
         font-weight: 500;
         letter-spacing: 2.6px;
         color: #394829;
+
         @include mq('sm') {
           font-size: 20px;
         }
       }
 
       &--right {
-        p {
-          text-align: left;
-        }
         margin-left: auto;
+
         @include mq('sm') {
           margin-left: 0;
           margin-right: auto;
         }
+
+        p {
+          text-align: left;
+        }
       }
 
       &--left {
+        margin-right: auto;
+        text-align: right;
+
+        @include mq('sm') {
+          margin-left: auto;
+          margin-right: 0;
+        }
+
         p {
           text-align: left;
           width: 320px;
@@ -234,16 +320,8 @@
             width: 100%;
           }
         }
-        margin-right: auto;
-        text-align: right;
-
-        @include mq('sm') {
-          margin-left: auto;
-          margin-right: 0;
-        }
       }
     }
-
   }
 
   &service {
@@ -251,8 +329,8 @@
     height: 821px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position:  center center;
-    margin:5rem 0;
+    background-position: center center;
+    margin: 5rem 0;
     padding: 0 15px;
     z-index: -2;
 
@@ -283,12 +361,14 @@
       margin: 0 auto;
       padding: 6rem 0 5rem;
       width: 770px;
+
       @include mq('lg') {
         font-size: 16px;
         letter-spacing: 1.62px;
         width: 100%;
       }
     }
+
     &__arrow-down {
       width: 0;
       height: 0;
@@ -308,9 +388,11 @@
     display: grid;
     grid-template-columns: 20% 80%;
     margin: 1rem auto;
+
     @include mq('lg') {
       width: 100%;
     }
+
     @include mq('md') {
       height: 95px;
     }
@@ -319,21 +401,25 @@
       display: flex;
       align-items: center;
       justify-content: center;
+
       p {
         font-size: 15px;
         letter-spacing: 1.5px;
         color: #0D5D4B;
         line-height: 40px;
+
         @include mq('md') {
           font-size: 9px;
           letter-spacing: 0.9px;
           line-height: 25px;
         }
       }
-      p > span {
+
+      p>span {
         font-size: 60px;
         letter-spacing: 6px;
         color: #0D5D4B;
+
         @include mq('md') {
           font-size: 36px;
           letter-spacing: 3.6px;
@@ -347,6 +433,7 @@
       color: #394829;
       text-align: left;
       margin: auto 0;
+
       @include mq('md') {
         font-size: 16px;
         letter-spacing: 1.6px;
@@ -365,6 +452,7 @@
     margin: 0 auto;
     padding: 0 15px;
     @extend %container;
+
     @include mq('md') {
       .l-logo {
         width: 29px;
@@ -381,6 +469,7 @@
       color: #0D5D4B;
       text-align: center;
       margin: 19px 0 49px;
+
       @include mq('md') {
         font-size: 20px;
         letter-spacing: 2px;
@@ -398,19 +487,23 @@
       width: 770px;
       display: block;
       line-height: 1.8;
+
       @include mq('lg') {
         width: 100%;
       }
+
       @include mq('md') {
         font-size: 15px;
         letter-spacing: 1.5px;
         margin: 0 auto 6rem;
       }
+
       &--bold {
         font-size: 17px;
         font-weight: bold;
         letter-spacing: 1.7px;
         color: #0D5D4B;
+
         @include mq('md') {
           font-size: 15px;
           letter-spacing: 1.5px;
@@ -423,6 +516,7 @@
       grid-template-columns: 50% 50%;
       position: relative;
       margin: 6rem 0;
+
       @include mq('xl') {
         display: flex;
         flex-wrap: wrap;
@@ -436,6 +530,7 @@
         top: 50%;
         transform: translate(-50%, -50%);
         width: 540px;
+
         @include mq('lg') {
           width: 276px;
           height: 173px;
@@ -449,6 +544,7 @@
         z-index: 1;
         display: block;
         margin: auto;
+
         @include mq('lg') {
           width: 250px;
           height: 150px;
@@ -457,10 +553,12 @@
 
       &-visual {
         position: relative;
+
         @include mq('xl') {
           margin: 3rem 15px 0 auto;
           justify-self: end;
         }
+
         @include mq('lg') {
           order: 2;
         }
@@ -486,6 +584,7 @@
       &-details {
         padding-left: 110px;
         position: relative;
+
         &::before {
           top: 0.7em;
           left: 0;
@@ -495,8 +594,8 @@
           display: inline-block;
           border-top: 1px solid #394829;
           height: 0;
-          background: url(../minified/images/check-symbol.png);
         }
+
         &::after {
           top: .5em;
           left: 60px;
@@ -505,13 +604,15 @@
           width: 45px;
           display: inline-block;
           height: 1em;
-          background: url(../minified/images/check-symbol.png) no-repeat;
+          background: url(assets/minified/images/check-symbol.png) no-repeat;
         }
+
         margin: 0 0 2rem 0;
         font-size: 16px;
         font-weight: 500;
         letter-spacing: 1.6px;
         color: #394829;
+
         @include mq('md') {
           font-size: 15px;
           letter-spacing: 1.5px;
@@ -520,10 +621,12 @@
 
       &-vtext {
         width: 570px;
+
         @include mq('xl') {
           width: 40%;
           margin: 0 auto;
         }
+
         @include mq('lg') {
           width: 100%;
         }
@@ -544,6 +647,7 @@
         height: 39px;
       }
     }
+
     &__title {
       @extend .p-mincho;
       text-align: center;
@@ -553,12 +657,14 @@
       color: #0D5D4B;
       text-align: center;
       margin: 2rem 0 10px;
+
       @include mq('md') {
         font-size: 20px;
         letter-spacing: 2px;
         margin: 19px 0 16px;
       }
     }
+
     &__subtitle {
       text-align: center;
       font-size: 16px;
@@ -566,6 +672,7 @@
       letter-spacing: 1.6px;
       color: #394829;
       margin: 4.5rem 0 4rem;
+
       @include mq('md') {
         font-size: 15px;
         letter-spacing: 1.5px;
@@ -587,9 +694,11 @@
 
     &__info {
       width: 50%;
+
       @include mq('md') {
         width: 100%;
       }
+
       &-title {
         @extend .p-mincho;
         margin-bottom: 0.7em;
@@ -598,6 +707,7 @@
         font-weight: 500;
         letter-spacing: 2.6px;
         color: #394829;
+
         @include mq('sm') {
           font-size: 20px;
           letter-spacing: 2px;
@@ -610,6 +720,7 @@
         font-weight: 500;
         letter-spacing: 1.6px;
         color: #394829;
+
         @include mq('sm') {
           font-size: 15px;
           letter-spacing: 1.5px;
@@ -624,6 +735,7 @@
         letter-spacing: 1.6px;
         color: #095389;
       }
+
       @include mq('md') {
         width: 100%;
       }
@@ -640,6 +752,7 @@
         width: 100%;
         padding-right: 2rem;
       }
+
       @include mq('sm') {
         padding: 0;
       }
@@ -647,20 +760,26 @@
       table {
         max-width: 500px;
         width: 100%;
+
         @include mq('md') {
           max-width: 100%;
         }
+
         @include mq('sm') {
           width: 100%;
         }
       }
+
       thead {
         border-bottom: 1px solid #0D5D4B;
       }
-      th,td {
+
+      th,
+      td {
         padding-top: 0.3em;
         padding-bottom: 0.3em;
       }
+
       th {
         text-align: right;
         font-size: 16px;
@@ -669,6 +788,7 @@
         color: #0D5D4B;
         text-transform: uppercase;
       }
+
       tr {
         td {
           font-size: 16px;
@@ -676,6 +796,7 @@
           letter-spacing: 1.6px;
           color: #394829;
           padding: 5px 0;
+
           @include mq('sm') {
             font-size: 15px;
             letter-spacing: 1.5px;
@@ -686,10 +807,12 @@
           width: 40%;
           text-align: left;
         }
+
         td:nth-child(2) {
           width: 30%;
           text-align: right;
         }
+
         td:nth-child(3) {
           width: 30%;
           text-align: right;
@@ -697,6 +820,7 @@
           font-weight: bold;
           letter-spacing: 1.6px;
           color: #0D5D4B;
+
           @include mq('sm') {
             font-size: 15px;
             letter-spacing: 1.5px;
@@ -749,12 +873,13 @@
           letter-spacing: 1.5px;
         }
       }
+
       &-img {
         img {
           width: 200px;
         }
-        @include mq('md') {
-        }
+
+        @include mq('md') {}
       }
 
       &-details {
@@ -764,7 +889,8 @@
         letter-spacing: 1.6px;
         color: #394829;
         width: 100%;
-        p ~ p {
+
+        p~p {
           margin-top: 0.5em;
         }
       }
@@ -795,6 +921,7 @@
     @include mq('md') {
       padding: 6rem 1.5rem 1rem;
     }
+
     &-title {
       text-align: center;
       font-size: 26px;
@@ -806,6 +933,7 @@
       width: 500px;
       text-align: center;
       margin: 0 auto;
+
       @extend .p-mincho;
 
       @include mq('md') {
@@ -842,10 +970,12 @@
         @include mq('md') {
           width: 337px;
         }
+
         @include mq('xs') {
           width: 280px;
         }
       }
+
       &-text {
         text-align: left;
         font-size: 74px;
@@ -948,7 +1078,7 @@
       }
     }
 
-    &__subtitle{
+    &__subtitle {
       text-align: center;
       font-size: 16px;
       font-weight: bold;
@@ -956,6 +1086,7 @@
       color: #0D5D4B;
       display: inline-block;
       align-self: center;
+
       @include mq('md') {
         font-size: 13px;
         letter-spacing: 1.3px;
@@ -971,6 +1102,7 @@
       width: 770px;
       display: block;
       margin: 2rem auto;
+
       @include mq('lg') {
         width: 100%;
       }
@@ -984,7 +1116,7 @@
       width: 570px;
       display: block;
       margin: 50px auto 0 auto;
-      border-bottom:  1px solid;
+      border-bottom: 1px solid;
       padding-bottom: 10px;
       @extend .p-mincho;
 
@@ -997,35 +1129,38 @@
     }
 
     &__info {
-      margin: 4rem 30px 4rem 0 ;
-      width: calc(33.333% - 60px / 3) ;
+      margin: 4rem 30px 4rem 0;
+      width: calc(33.333% - 60px / 3);
 
-      &:nth-child(3n){
+      &:nth-child(3n) {
         margin-right: 0;
       }
 
       @include mq('md') {
-        width: calc(50% - 15px / 2) ;
+        width: calc(50% - 15px / 2);
         margin: 3rem 15px 3rem 0;
-        &:nth-child(3n){
+
+        &:nth-child(3n) {
           margin-right: 15px;
         }
-        &:nth-child(2n){
+
+        &:nth-child(2n) {
           margin-right: 0;
         }
       }
 
       @include mq('sm') {
         width: 100%;
-        margin-right: 0!important;
+        margin-right: 0 !important;
       }
+
       &-con {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         @extend %container;
-
       }
+
       &-title {
         text-align: center;
         font-size: 16px;
@@ -1051,6 +1186,382 @@
           letter-spacing: 1.6px;
           color: #394829;
         }
+      }
+    }
+  }
+
+  &financial_diagnostic {
+    background: transparent linear-gradient(0deg, rgba(182, 216, 106, 0.180392) 0%, rgba(0, 182, 183, 0.180392) 100%) 0% 0% no-repeat padding-box;
+    padding: 7rem;
+    padding-bottom: 5.6rem;
+    margin: 6rem 0 7.7rem;
+
+    @include mq('md') {
+      padding: 5.6rem 1.5rem;
+      margin: 6rem 0 5.2rem;
+    }
+
+    &__head {
+      text-align: left;
+      font-weight: 500;
+      font-size: 1.6rem;
+      line-height: 3.2rem;
+      font-family: Yu Gothic;
+      letter-spacing: 1.6px;
+      color: #394829;
+      max-width: 77rem;
+      margin: auto;
+
+      @include mq('sm') {
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 3.2rem;
+        font-family: Yu Gothic;
+        letter-spacing: 1.5px;
+      }
+
+      span {
+        text-align: left;
+        font-weight: 600;
+        font-size: 1.7rem;
+        line-height: 3.2rem;
+        font-family: Yu Gothic;
+        letter-spacing: 1.7px;
+        color: #0D5D4B;
+
+        @include mq('sm') {
+          font-weight: 600;
+          font-size: 1.5rem;
+          line-height: 3.2rem;
+          font-family: Yu Gothic;
+          letter-spacing: 1.6px;
+        }
+      }
+    }
+
+    &__body {
+      text-align: center;
+      font-weight: 500;
+      font-size: 2.6rem;
+      line-height: 3.9rem;
+      font-family: Source Han Serif;
+      letter-spacing: 2.6px;
+      color: #394829;
+      margin: 5rem auto 6rem;
+
+      @include mq('sm') {
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 3.8rem;
+        font-family: Source Han Serif;
+        letter-spacing: 2px;
+        color: #212121;
+        margin: 2.7rem 0;
+      }
+
+      h1 {
+        text-align: center;
+        font-weight: 500;
+        font-size: 6.6rem;
+        line-height: 9.9rem;
+        font-family: Source Han Serif;
+        letter-spacing: 6.6px;
+        color: #0D5D4B;
+        margin: 1rem auto 2rem;
+
+        @include mq('sm') {
+          font-weight: 500;
+          font-size: 5.5rem;
+          line-height: 8.3rem;
+          font-family: Source Han Serif;
+          letter-spacing: 5.5px;
+          margin: 0.1rem auto 0.2rem;
+        }
+
+        span {
+          text-align: center;
+          font-weight: 500;
+          font-size: 1.6rem;
+          line-height: 3.2rem;
+          font-family: Yu Gothic;
+          letter-spacing: 1.6px;
+          color: #0D5D4B;
+
+          @include mq('sm') {
+            font-weight: 500;
+            font-size: 1.2rem;
+            line-height: 2.6rem;
+            font-family: Yu Gothic;
+            letter-spacing: 1.2px;
+          }
+        }
+      }
+    }
+
+    &__feet {
+      text-align: left;
+      font-weight: 500;
+      font-size: 1.6rem;
+      line-height: 3.2rem;
+      font-family: Yu Gothic;
+      letter-spacing: 1.6px;
+      color: #394829;
+      max-width: 77rem;
+      margin: auto;
+
+      @include mq('sm') {
+        text-align: center;
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 3.0rem;
+        font-family: Yu Gothic;
+        letter-spacing: 1.5px;
+        color: #212121;
+      }
+    }
+  }
+
+  &required_documents {
+    font-family: Yu Gothic;
+    text-align: left;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+    letter-spacing: 1.6px;
+    color: #394829;
+    max-width: 77rem;
+    padding: 0 1.6rem;
+    margin: auto;
+
+    &__head {
+      text-align: left;
+      font-family: Yu Gothic;
+      font-weight: 500;
+      font-size: 1.6rem;
+      line-height: 3rem;
+      letter-spacing: 1.6px;
+      margin-bottom: 6.9rem;
+      color: #394829;
+
+      @include mq('md') {
+        text-align: left;
+        font-family: Yu Gothic;
+        font-size: 1.5rem;
+        line-height: 3rem;
+        letter-spacing: 1.5px;
+        color: #212121;
+        margin-bottom: 0;
+      }
+    }
+
+    &__body {
+
+      &-item {
+        font-family: Yu Gothic;
+        font-weight: 500;
+        line-height: 3.4rem;
+        font-size: 1.6rem;
+        letter-spacing: 1.6px;
+        color: #394829;
+
+        border: 1px solid #394829;
+        max-width: 57rem;
+        min-height: 4.6rem;
+        margin: auto;
+        margin-bottom: 2rem;
+        padding: 1.2em 2rem 1.2em 11.1rem;
+        position: relative;
+
+        @include mq('sm') {
+          min-height: 3.8rem;
+          margin-bottom: 1rem;
+        }
+
+        &::before {
+          top: 2.3em;
+          left: 23px;
+          position: absolute;
+          content: '';
+          width: 45px;
+          display: inline-block;
+          border-top: 1px solid #394829;
+          height: 0;
+        }
+
+        &::after {
+          top: 1.85em;
+          left: 79px;
+          position: absolute;
+          content: '';
+          width: 45px;
+          display: inline-block;
+          height: 1em;
+          background: url(assets/minified/images/check-symbol.png) no-repeat;
+        }
+      }
+    }
+
+    &__feet {
+
+      &-item {
+        text-align: left;
+        font-family: Yu Gothic;
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 3.2rem;
+        letter-spacing: 1.6px;
+        color: #394829;
+
+        margin: auto;
+        margin-bottom: 0.8rem;
+        max-width: 57rem;
+        padding-left: 10rem;
+        position: relative;
+
+        @include mq('md') {
+          margin-left: 0;
+          margin: auto;
+        }
+
+        &::before {
+          top: 1em;
+          left: 0;
+          position: absolute;
+          content: '';
+          width: 47px;
+          display: inline-block;
+          border-top: 1px solid #394829;
+          height: 0;
+        }
+
+        &::after {
+          top: .7em;
+          left: 56px;
+          position: absolute;
+          content: '';
+          width: 45px;
+          display: inline-block;
+          height: 1em;
+          background: url(assets/minified/images/check-symbol.png) no-repeat;
+        }
+      }
+    }
+
+    h1 {
+      text-align: center;
+      max-width: 57rem;
+      font-family: Yu Gothic;
+      font-weight: 600;
+      font-size: 1.8rem;
+      line-height: 3.2rem;
+      letter-spacing: 1.8px;
+      color: #394829;
+      padding-bottom: 0.7rem;
+      margin: auto;
+      margin-bottom: 3.6rem;
+      border-bottom: 1px solid #394829;
+
+      @include mq('md') {
+        font-size: 1.6rem;
+        letter-spacing: 1.6px;
+        padding: 0.6rem 0 0.7rem;
+        margin-bottom: 2.5rem;
+      }
+    }
+
+    h2 {
+      text-align: center;
+      max-width: 57rem;
+      font-family: Yu Gothic;
+      font-weight: 600;
+      font-size: 1.8rem;
+      line-height: 3.2rem;
+      letter-spacing: 1.8px;
+      color: #394829;
+      margin: auto;
+      margin-bottom: 3.2rem;
+
+      @include mq('md') {
+        font-size: 1.6rem;
+        line-height: 3.2rem;
+        letter-spacing: 1.6px;
+        margin: 2.5rem 0 1.5rem;
+      }
+    }
+
+    h3 {
+      text-align: center;
+      max-width: 57rem;
+      font-family: Yu Gothic;
+      font-weight: 600;
+      font-size: 1.8rem;
+      line-height: 3.2rem;
+      letter-spacing: 1.8px;
+      color: #394829;
+      margin: auto;
+      margin-top: 7.5rem;
+      margin-bottom: 2.4rem;
+
+      @include mq('md') {
+        margin-top: 4.3rem;
+        margin-bottom: 1.6rem;
+        font-size: 1.6rem;
+        letter-spacing: 1.6px;
+      }
+    }
+  }
+
+  &company_profile {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 40rem;
+    text-align: center;
+    color: #F9FAF7;
+    padding: 7.7rem 0 0.5rem;
+
+    @include mq('sm') {
+      min-height: 42rem;
+      padding: 6rem 0 1px;
+    }
+
+    &__head {
+      padding-bottom: 6.5rem;
+      margin-top: -3px;
+
+      @include mq('sm') {
+        padding-bottom: 4.8rem;
+      }
+
+      header {
+        font-family: Yu Gothic;
+        font-weight: 600;
+        font-size: 1.8rem;
+        line-height: 3.2rem;
+        letter-spacing: 1.8px;
+      }
+    }
+
+    &__body {
+      @include mq('sm') {
+        padding: 0 1.6rem;
+      }
+
+      h1 {
+        font-family: Yu Gothic;
+        font-weight: 600;
+        font-size: 1.6rem;
+        line-height: 3.2rem;
+        letter-spacing: 1.6px;
+      }
+
+      p {
+        font-family: Yu Gothic;
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 3.2rem;
+        letter-spacing: 1.6px;
+        margin-bottom: 2.4rem;
       }
     }
   }
