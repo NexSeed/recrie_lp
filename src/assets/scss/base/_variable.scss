@@ -26,3 +26,9 @@ $breakpoints: ('xs': 'screen and (max-width: #{$breakpoint-xs})',
   'xl': 'screen and (max-width: #{$breakpoint-xl})',
   'xxl': 'screen and (max-width: #{$breakpoint-xxl})',
 ) !default;
+
+//for android
+@font-face {
+  font-family: "MINCHO";
+  src: url("assets/fonts/ipaexm.eot?") format('eot'), url("assets/fonts/ipaexm.woff") format('woff');
+}
