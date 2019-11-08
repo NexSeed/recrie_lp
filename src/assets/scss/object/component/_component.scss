@@ -17,14 +17,22 @@
     min-height: 7rem;
     padding: 1.3rem 1.7rem;
 
-    @include mq('sm') {
-      margin: auto 2rem;
-    }
-
     &__upload {
       width: 100%;
       max-width: 57rem;
       margin: 5rem auto;
+    }
+
+    &.contact {
+      &_confirm {
+        width: 100%;
+        max-width: 57rem;
+      }
+
+      &_submit {
+        width: 100%;
+        max-width: 57rem;
+      }
     }
 
     &__top_page {
@@ -64,6 +72,14 @@
     &__remove {
       max-width: 20rem;
       margin: 1.8rem auto;
+    }
+
+    &.contact {
+      &_back {
+        width: 100%;
+        max-width: 20rem;
+        margin: 1.8rem auto;
+      }
     }
   }
 
@@ -333,42 +349,27 @@
 
 // wordpress plugins custom design
 // wp_form
-// .wpcf7 {
-//   width: 770px;
-//   display: block;
-//   margin: 0 auto !important;
-//   box-sizing: border-box;
-
-//   &__title {
-//     font-size: 26px;
-//     font-weight: 700;
-//     letter-spacing: 2px;
-//     text-align: center;
-//     color: #394829;
-
-//     @include mq('md') {
-//       font-size: 20px;
-//       width: 200px;
-//     }
-//   }
-// }
 .wpcf7 {
   width: 770px;
   display: block;
   margin: 0 auto !important;
   box-sizing: border-box;
-  padding: 4rem 0 !important;
 
-    &__title {
-      font-size: 26px;
-      font-weight: 700;
-      letter-spacing: 2px;
-      text-align: center;
-      color: #394829;
+  @include mq('md') {
+    width: 95%;
+    box-sizing: border-box;
+  }
+
+  &__title {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #394829;
 
     @include mq('md') {
-      width: 92%;
-      box-sizing: border-box;
+      font-size: 20px;
+      width: 200px;
     }
   }
 }
@@ -511,18 +512,3 @@ label {
     }
   }
 }
-
-// wordpress form
-.wpcf7 {
-  width: 770px;
-  display: block;
-  margin: 0 auto !important;
-  box-sizing: border-box;
-  padding: 4rem 0 !important;
-
-  @include mq('md') {
-    width: 92%;
-    box-sizing: border-box;
-  }
-}
-

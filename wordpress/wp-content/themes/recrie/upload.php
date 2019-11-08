@@ -32,7 +32,7 @@
 		<?php echo do_shortcode('[contact-form-7 id="23" title="Upload Recrie"]'); ?>
 	</div>
 </div>
-<div class="l-container">
+<div class="l-container__fluid">
 	<section class="p-application">
 		<header class="p-application__title">申込み同意事項</header>
 		<p class="p-application__text">
@@ -40,7 +40,7 @@
 		</p>
 	</section>
 </div>
-<div class="l-container">
+<div class="l-container__fluid">
 	<section class="p-privacy">
 		<header class="p-privacy__title">プライバシーポリシー</header>
 		<p class="p-privacy__text">
