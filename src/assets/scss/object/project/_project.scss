@@ -33,10 +33,11 @@
   }
 
   &application {
-    margin-top: 40px;
+    margin: 4rem auto;
     text-align: -webkit-center;
     background-color: #EFF2ED;
     padding: 1.6rem;
+    max-width: 77rem;
 
     &__title {
       text-align: left;
@@ -50,7 +51,7 @@
     &__text {
       text-align: left;
       font-size: 1.6rem;
-      font-weight: medium;
+      font-weight: 500;
       letter-spacing: 1.6px;
       color: #394829;
     }
@@ -59,20 +60,22 @@
   &file {
     margin-top: 1.6rem;
     text-align: -webkit-center;
-    padding: 1.6rem;
+    padding: 1.6rem 0;
 
-    &__title {
+    &__head {
       text-align: left;
-      font: 500 1.6rem/3rem YuGothic;
+      font-family: Yu Gothic;
+      font-weight: 500;
+      font-size: 1.5rem;
+      line-height: 3rem;
       letter-spacing: 1.6px;
-      color: #394829;
-      padding-bottom: 1.6rem;
+      color: #212121;
     }
 
     &__text {
       text-align: left;
       font-size: 1.6rem;
-      font-weight: medium;
+      font-weight: 500;
       letter-spacing: 1.6px;
       color: #394829;
     }
@@ -152,8 +155,13 @@
   &privacy {
     text-align: -webkit-center;
     background-color: #EFF2ED;
-    margin: 4rem 0;
+    margin: 4rem auto 12rem;
     padding: 1.6rem;
+    max-width: 77rem;
+
+    @include mq('md') {
+      margin: 4rem auto 12rem;
+    }
 
     &__title {
       text-align: left;
@@ -173,18 +181,58 @@
     }
   }
 
+  &upload {
+    text-align: -webkit-center;
+    margin-top: 2rem;
+    padding-top: 2rem;
+
+    &__head {
+      font-family: Source Han Serif;
+      font-weight: 500;
+      font-size: 2rem;
+      line-height: 3.8rem;
+      letter-spacing: 2px;
+      color: #212121;
+      margin-bottom: 6rem;
+
+      @include mq('md') {
+        margin-bottom: 2rem;
+      }
+    }
+
+    &__text {
+      text-align: left;
+      font-weight: 500;
+      font-size: 1.6rem;
+      line-height: 3.2rem;
+      letter-spacing: 1.6px;
+      color: #394829;
+    }
+  }
+
   &center-block {
     display: block;
     margin: 0 auto;
   }
 
-  &contact-title {
+  &contact__head{
     text-align: center;
-    font-size: 2rem;
+    font-family: Source Han Serif;
+    font-size: 2.6rem;
     font-weight: 500;
-    letter-spacing: 2px;
+    line-height: 3.9rem;
+    letter-spacing: 2.6px;
     color: #394829;
-    margin-bottom: 25px;
+    margin: 5rem auto 9rem;
+
+    @include mq('md') {
+      font-size: 2rem;
+      font-weight: 500;
+      line-height: 3.8rem;
+      letter-spacing: 2px;
+      color: #212121;
+      margin-bottom: 2rem;
+    }
   }
 
   &hero {
@@ -360,7 +408,7 @@
       display: block;
       margin: 0 auto;
       padding: 6rem 0 5rem;
-      width: 770px;
+      width: 77rem;
 
       @include mq('lg') {
         font-size: 16px;
@@ -499,7 +547,7 @@
       letter-spacing: 1.6px;
       color: #212121;
       margin: 0 auto 10rem;
-      width: 770px;
+      width: 77rem;
       display: block;
       line-height: 1.8;
 
@@ -1134,7 +1182,7 @@
       font-weight: 500;
       letter-spacing: 1.6px;
       color: #394829;
-      width: 770px;
+      width: 77rem;
       display: block;
       margin: 2rem auto;
 
