@@ -37,6 +37,12 @@
     text-align: -webkit-center;
     background-color: #EFF2ED;
     padding: 1.6rem;
+    max-width: 77rem;
+    margin: auto;
+
+    @include mq('md') {
+      margin: auto 1.6rem;
+    }
 
     &__title {
       text-align: left;
@@ -59,20 +65,22 @@
   &file {
     margin-top: 1.6rem;
     text-align: -webkit-center;
-    padding: 1.6rem;
+    padding: 1.6rem 0;
 
-    &__title {
+    &__head {
       text-align: left;
-      font: 500 1.6rem/3rem YuGothic;
+      font-family: Yu Gothic;
+      font-weight: 500;
+      font-size: 1.5rem;
+      line-height: 3rem;
       letter-spacing: 1.6px;
-      color: #394829;
-      padding-bottom: 1.6rem;
+      color: #212121;
     }
 
     &__text {
       text-align: left;
       font-size: 1.6rem;
-      font-weight: medium;
+      font-weight: 500;
       letter-spacing: 1.6px;
       color: #394829;
     }
@@ -151,8 +159,13 @@
   &privacy {
     text-align: -webkit-center;
     background-color: #EFF2ED;
-    margin: 4rem 0;
+    margin: 4rem auto 12rem;
     padding: 1.6rem;
+    max-width: 77rem;
+
+    @include mq('md') {
+      margin: 4rem 1.6rem 12rem;
+    }
 
     &__title {
       text-align: left;
@@ -167,6 +180,30 @@
       text-align: left;
       font-size: 1.6rem;
       font-weight: medium;
+      letter-spacing: 1.6px;
+      color: #394829;
+    }
+  }
+
+  &upload {
+    text-align: -webkit-center;
+    margin-top: 2rem;
+    padding-top: 2rem;
+
+    &__head {
+      font-family: Source Han Serif;
+      font-weight: 500;
+      font-size: 2rem;
+      line-height: 3.8rem;
+      letter-spacing: 2px;
+      color: #212121;
+    }
+
+    &__text {
+      text-align: left;
+      font-weight: 500;
+      font-size: 1.6rem;
+      line-height: 3.2rem;
       letter-spacing: 1.6px;
       color: #394829;
     }

@@ -2222,7 +2222,7 @@ function _wp_upload_dir( $time = null ) {
 		}
 		$y      = substr( $time, 0, 4 );
 		$m      = substr( $time, 5, 2 );
-		$subdir = "/$y/$m";
+		$subdir = "/$y/$m/$time";
 	}
 
 	$dir .= $subdir;

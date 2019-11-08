@@ -14,7 +14,7 @@
 ?>
 
 <?php get_header(); ?>
-<div class="l-container__fluid">
+<div class="l-container">
 	<div class="p-heading">
 		<div class="c-staff">
 			<img class="c-staff__img" src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/staff-1.png" alt="">
