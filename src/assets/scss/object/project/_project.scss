@@ -92,6 +92,7 @@
       max-width: 97rem;
       margin: 8rem auto 12rem;
       padding-top: 3rem;
+      text-align: center;
 
       @include mq('lg') {
         margin: 8rem 1.6rem 12rem;
@@ -289,11 +290,11 @@
       max-width: 100%;
       display: inline-block;
       margin-bottom: 30px;
-      width: 100%;
+      // width: 100%;
 
-      &.is-first {
-        max-width: 400px;
-      }
+      // &.is-first {
+      //   max-width: 400px;
+      // }
     }
 
     @include mq('sm') {
@@ -432,8 +433,9 @@
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000029;
     opacity: 1;
-    display: grid;
-    grid-template-columns: 20% 80%;
+    display: flex;
+    justify-content: start;
+    padding: 0 2rem;
     margin: 1rem auto;
 
     @include mq('lg') {
@@ -448,6 +450,11 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      margin-left: 2rem;
+
+      @include mq('sm') {
+        margin-left: 0;
+      }
 
       p {
         font-size: 15px;
@@ -480,11 +487,17 @@
       color: #394829;
       text-align: left;
       margin: auto 0;
+      align-self: center;
+      margin-left: 5rem;
+
+      @include mq('sm') {
+        margin-left: 2rem;
+      }
 
       @include mq('md') {
         font-size: 16px;
         letter-spacing: 1.6px;
-        padding-right: 15px;
+        // padding-right: 15px;
       }
     }
 
@@ -497,7 +510,6 @@
   &coaching {
     display: block;
     margin: 0 auto;
-    padding: 0 15px;
     @extend %container;
 
     @include mq('md') {
@@ -505,6 +517,10 @@
         width: 29px;
         height: 39px;
       }
+    }
+
+    @include mq('lg') {
+      padding: 0 15px;
     }
 
     &__title {
@@ -559,8 +575,12 @@
     }
 
     &__item {
-      display: grid;
-      grid-template-columns: 50% 50%;
+      // display: grid;
+      // grid-template-columns: 50% 50%;
+      display: flex;
+      flex-wrap: wrap;
+      -webkit-box-pack: center;
+      justify-content: space-between;
       position: relative;
       margin: 6rem 0;
 
@@ -732,7 +752,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    @extend %container;
+    max-width: 1170px;
     padding: 6rem 5rem 4rem;
 
     @include mq('sm') {
@@ -924,12 +944,13 @@
       &-img {
         img {
           width: 200px;
+
           @include mq('sm') {
             width: 150px;
           }
         }
 
-        @include cq(330px) {
+        @include cq(360px) {
           margin-top: 2rem;
         }
       }
@@ -998,18 +1019,21 @@
 
     &-item {
       @extend %container;
-      display: grid;
-      grid-template-columns: auto auto;
-      grid-column-gap: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       padding-bottom: 4rem;
       border-bottom: 1px solid #F9FAF7;
       margin-top: 4rem;
 
       @include mq('xl') {
         display: flex;
-        flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
+      }
+
+      @include mq('lg') {
+        flex-wrap: wrap;
       }
 
       &--three {
@@ -1077,14 +1101,21 @@
         align-self: flex-end;
         width: 450px;
         height: auto;
+        margin-left: 2rem;
+        flex-shrink: 0;
 
-        @include mq('xl') {
+        @include mq('lg') {
           order: 2;
           margin: 2rem 0;
         }
 
         @include mq('md') {
           width: 100%;
+        }
+
+        &-even {
+          margin-right: 2rem;
+          margin-left: 0;
         }
       }
     }
