@@ -1,0 +1,51 @@
+.p- {
+  &hero {
+    position: relative;
+
+    &__title {
+      display: block;
+      position: absolute;
+      bottom: 1rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .hero-pc,
+    .hero-sp {
+      width: 100%;
+      height: auto;
+    }
+
+    .hero-pc {
+      @include mq('sm') {
+        display: none;
+      }
+    }
+
+    .hero-sp {
+      display: none;
+
+      @include mq('sm') {
+        display: block;
+      }
+
+      &-title {
+        display: none;
+
+        @include mq('sm') {
+          display: block;
+          position: absolute;
+          bottom: 15px;
+          margin: 0 auto;
+          width: 100%;
+        }
+      }
+    }
+
+    @include mq('md') {
+      .c-logo {
+        display: none;
+      }
+    }
+  }
+}

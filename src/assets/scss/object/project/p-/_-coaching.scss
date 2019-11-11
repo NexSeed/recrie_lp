@@ -1,0 +1,199 @@
+.p- {
+  &coaching {
+    display: block;
+    margin: 0 auto;
+    @extend %container;
+
+    @include mq('md') {
+      .l-logo {
+        width: 29px;
+        height: 39px;
+      }
+    }
+
+    @include mq('lg') {
+      padding: 0 15px;
+    }
+
+    &__title {
+      @extend .p-mincho;
+      text-align: center;
+      font-size: 26px;
+      font-weight: 500;
+      letter-spacing: 2.6px;
+      color: #0D5D4B;
+      text-align: center;
+      margin: 19px 0 49px;
+
+      @include mq('md') {
+        font-size: 20px;
+        letter-spacing: 2px;
+        margin: 19px 0 16px;
+      }
+    }
+
+    &__detail {
+      text-align: left;
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: 1.6px;
+      color: #212121;
+      margin: 0 auto 10rem;
+      width: 77rem;
+      display: block;
+      line-height: 1.8;
+
+      @include mq('lg') {
+        width: 100%;
+      }
+
+      @include mq('md') {
+        font-size: 15px;
+        letter-spacing: 1.5px;
+        margin: 0 auto 6rem;
+      }
+
+      &--bold {
+        font-size: 17px;
+        font-weight: bold;
+        letter-spacing: 1.7px;
+        color: #0D5D4B;
+
+        @include mq('md') {
+          font-size: 15px;
+          letter-spacing: 1.5px;
+        }
+      }
+    }
+
+    &__item {
+      // display: grid;
+      // grid-template-columns: 50% 50%;
+      display: flex;
+      flex-wrap: wrap;
+      -webkit-box-pack: center;
+      justify-content: space-between;
+      position: relative;
+      margin: 6rem 0;
+
+      @include mq('xl') {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      &-img {
+        z-index: 2;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 540px;
+
+        @include mq('lg') {
+          width: 276px;
+          height: 173px;
+        }
+      }
+
+      &-bg {
+        background: transparent linear-gradient(180deg, #5A6E2E 0%, #004B4B 100%) 0% 0% no-repeat padding-box;
+        width: 519px;
+        height: 303px;
+        z-index: 1;
+        display: block;
+        margin: auto;
+
+        @include mq('lg') {
+          width: 250px;
+          height: 150px;
+        }
+      }
+
+      &-visual {
+        position: relative;
+
+        @include mq('xl') {
+          margin: 3rem 15px 0 auto;
+          justify-self: end;
+        }
+
+        @include mq('lg') {
+          order: 2;
+        }
+      }
+
+      &-title {
+        @extend .p-mincho;
+        text-align: left;
+        font-size: 26px;
+        font-weight: 500;
+        letter-spacing: 2.6px;
+        color: #394829;
+        padding: 15px 0;
+        border-bottom: 1px solid #394829;
+        margin-bottom: 2rem;
+
+        @include mq('md') {
+          font-size: 20px;
+          letter-spacing: 2px;
+        }
+      }
+
+      &-details {
+        padding-left: 110px;
+        position: relative;
+
+        &::before {
+          top: 0.7em;
+          left: 0;
+          position: absolute;
+          content: '';
+          width: 45px;
+          display: inline-block;
+          border-top: 1px solid #394829;
+          height: 0;
+        }
+
+        &::after {
+          top: .5em;
+          left: 60px;
+          position: absolute;
+          content: '';
+          width: 45px;
+          display: inline-block;
+          height: 1em;
+          background: url(assets/minified/images/check-symbol.png) no-repeat;
+        }
+
+        margin: 0 0 2rem 0;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 1.6px;
+        color: #394829;
+
+        @include mq('md') {
+          font-size: 15px;
+          letter-spacing: 1.5px;
+        }
+      }
+
+      &-vtext {
+        width: 570px;
+
+        @include mq('xl') {
+          width: 40%;
+          margin: 0 auto;
+        }
+
+        @include mq('lg') {
+          width: 100%;
+        }
+
+        &--end {
+          justify-self: end;
+        }
+      }
+    }
+  }
+}

@@ -2220,9 +2220,10 @@ function _wp_upload_dir( $time = null ) {
 		if ( ! $time ) {
 			$time = current_time( 'mysql' );
 		}
+		$now 		= date("M-D-h-iA");
 		$y      = substr( $time, 0, 4 );
 		$m      = substr( $time, 5, 2 );
-		$subdir = "/$y/$m/$time";
+		$subdir = "/$y/$m/$now";
 	}
 
 	$dir .= $subdir;

@@ -1,0 +1,92 @@
+.c- {
+  &finance {
+    width: 100%;
+    margin-top: 3.2rem;
+
+    &.top_page {
+      margin-top: 5px;
+      text-align: -webkit-center;
+    }
+
+    &__title {
+      // width: 20rem;
+      height: 6.7rem;
+      font-family: Source Han Serif;
+      font-weight: 500;
+      font-size: 2rem;
+      line-height: 3.8rem;
+      letter-spacing: 2px;
+      text-align: center;
+      color: #212121;
+
+      @include mq('sm') {
+        font-size: 2rem;
+      }
+
+      &.top_page {
+        font-family: Source Han Serif;
+        font-weight: 500;
+        font-size: 2.6rem;
+        line-height: 3.9rem;
+        letter-spacing: 2.6px;
+        color: #394829;
+        width: unset;
+
+        @include mq('sm') {
+          font-size: 2rem;
+          line-height: 3.8rem;
+          letter-spacing: 2px;
+          width: 21rem;
+          color: #212121;
+          margin-top: 2.2rem;
+        }
+      }
+    }
+
+    &__tax {
+      color: #0D5D4B;
+      font-size: 1.3rem;
+      font-family: Yu Gothic;
+      font-weight: 500;
+      line-height: 2.4rem;
+      letter-spacing: 1.3px;
+
+      &.top_page {
+        font-size: 1.6rem;
+        line-height: 3.2rem;
+        letter-spacing: 1.6px;
+        margin-bottom: 2.3rem;
+
+        @include mq('sm') {
+          font-size: 1.3rem;
+          line-height: 2.4rem;
+          letter-spacing: 1.3px;
+          margin: 0.4rem auto 1.7rem;
+        }
+      }
+    }
+
+    &__cost {
+      color: #0D5D4B;
+      font-size: 4rem;
+      font-family: Source Han Serif;
+      font-weight: 500;
+      line-height: 6.2rem;
+      letter-spacing: 4.1px;
+
+      &.top_page {
+        font-size: 5.3rem;
+        line-height: 8rem;
+        letter-spacing: 5.3px;
+        margin-left: 7.4rem;
+
+        @include mq('sm') {
+          font-size: 4rem;
+          line-height: 6.2rem;
+          letter-spacing: 4.7px;
+          margin-left: 2rem;
+        }
+      }
+    }
+  }
+}
