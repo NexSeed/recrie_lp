@@ -196,6 +196,8 @@
       &-img {
         img {
           width: 200px;
+          max-width: 100%;
+          height: auto;
 
           @include mq('sm') {
             width: 150px;
