@@ -25,8 +25,7 @@ paths = {
 	srcJs: srcDir + 'assets/js/*',
 
 	comScss: compiledDir,
-	comImg: compiledDir + 'assets/minified/images/*',
-	comJs: compiledDir + 'assets/js/*',
+	comImg: compiledDir + 'assets/minified/images/',
 }
 
 const watchFiles = (done) => {

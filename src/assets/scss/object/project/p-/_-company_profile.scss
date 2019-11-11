@@ -1,0 +1,56 @@
+.p- {
+  &company_profile {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 40rem;
+    text-align: center;
+    color: #F9FAF7;
+    padding: 7.7rem 0 0.5rem;
+
+    @include mq('sm') {
+      min-height: 42rem;
+      padding: 6rem 0 1px;
+    }
+
+    &__head {
+      padding-bottom: 6.5rem;
+      margin-top: -3px;
+
+      @include mq('sm') {
+        padding-bottom: 4.8rem;
+      }
+
+      header {
+        font-family: Yu Gothic;
+        font-weight: 600;
+        font-size: 1.8rem;
+        line-height: 3.2rem;
+        letter-spacing: 1.8px;
+      }
+    }
+
+    &__body {
+      @include mq('sm') {
+        padding: 0 1.6rem;
+      }
+
+      h1 {
+        font-family: Yu Gothic;
+        font-weight: 600;
+        font-size: 1.6rem;
+        line-height: 3.2rem;
+        letter-spacing: 1.6px;
+      }
+
+      p {
+        font-family: Yu Gothic;
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 3.2rem;
+        letter-spacing: 1.6px;
+        margin-bottom: 2.4rem;
+      }
+    }
+  }
+}
