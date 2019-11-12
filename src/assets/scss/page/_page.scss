@@ -53,11 +53,11 @@
   &-progress-bar {
     display: inline-flex !important;
     height: 1rem !important;
-    margin: 1rem 4rem 1rem 0;
+    margin: 1rem 0;
     min-width: 50rem;
 
     @include mq('md') {
-      margin: 1rem 0;
+      margin: 3.5rem 0;
       display: block !important;
       min-width: unset;
     }
@@ -70,14 +70,17 @@
   &-upload {
     &-status {
       padding: unset !important;
-      border-bottom: 0.5px solid #C4CCBB;
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
+
+      @include mq('md') {
+        border-bottom: 0.5px solid #C4CCBB;
+      }
     }
 
     &-image {
       align-self: start;
-      width: 3rem !important;
-      height: 3rem !important;
+      min-width: 3rem !important;
+      min-height: 3rem !important;
     }
 
     &-details {
@@ -90,9 +93,14 @@
 
       .name {
         margin-left: 1rem;
+        margin-bottom: -3rem;
         font-weight: 600;
         padding: 0 !important;
         color: #394829 !important;
+
+        @include mq('md') {
+          margin-bottom: -3rem;
+        }
 
         em {
           font-weight: 500 !important;
@@ -107,6 +115,7 @@
         right: unset !important;
         top: unset !important;
         min-width: 20rem;
+        margin-left: 3rem;
 
         @include mq('md') {
           display: block;
@@ -116,6 +125,12 @@
         span {
           line-height: 5rem;
         }
+      }
+
+      .has-error {
+        display: block;
+        margin: -3rem auto 1rem;
+        padding-left: 1rem;
       }
     }
   }

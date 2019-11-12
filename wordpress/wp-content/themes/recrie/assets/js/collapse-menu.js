@@ -1,6 +1,9 @@
 let flag = false;
 let templateDir = 'http://recrie.local/wp-content/themes/recrie';
 // let templateDirTest = 'http://nexseed1ab.xsrv.jp/recrie_lp/wp-content/themes/recrie';
+
+var md = window.matchMedia("(max-width: 768px)");
+
 $('#toggleHamburger, #toggleHamburger2').click(function () {
 	flag = !flag;
 	if (flag) {
@@ -31,12 +34,29 @@ window.addEventListener('scroll', () => {
 
 window.addEventListener('load', function () {
 	if ($('input.wpcf7-drag-n-drop-file').change(function () { // Will move the remove button when file/s are selected
-			let removeIcon = $('a.remove-file');
-			$('a.remove-file').remove();
-			$(removeIcon[0]).appendTo($('.dnd-upload-details'));
-			$('span.dnd-icon-remove').addClass('c-button__default c-button__default__remove');
-			$('span.dnd-icon-remove').append(' ファイルを削除');
-		})) {}
+		let removeIcon = $('a.remove-file');
+		$('a.remove-file').remove();
+		$(removeIcon[0]).appendTo($('.dnd-upload-details'));
+		$('span.dnd-icon-remove').addClass('c-button__default c-button__default__remove');
+		$('span.dnd-icon-remove').append(' ファイルを削除');
+
+		// File validation error text handler
+		let details = $('.dnd-upload-details');
+		let count = details.length;
+		let error = ' > span.has-error';
+
+		for (i = 0; i < count; i++) {
+			if ($(details[i]).has($('span.has-error')).length) {
+
+				if (!md.matches) {
+					$(details[i]).find(error).appendTo($(details[i]));
+				} else {
+					i = count;
+				}
+			}
+		}
+
+	})) { }
 
 	$('.cd-upload-btn').addClass('c-button__default c-button__default__upload');
 	$('.codedropz-upload-inner').prepend(`<img class='c-file__select' src='${templateDir}/assets/minified/images/select-file-icon.png' />`);
@@ -69,5 +89,4 @@ function mdCheck(md) {
 	}
 }
 
-var md = window.matchMedia("(max-width: 768px)");
 md.addListener(mdCheck) // Attach listener function on state changes
