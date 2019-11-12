@@ -1,5 +1,8 @@
 let flag = false;
 let templateDir = 'http://recrie.local/wp-content/themes/recrie';
+
+var md = window.matchMedia("(max-width: 768px)");
+
 $('#toggleHamburger, #toggleHamburger2').click(function () {
 	flag = !flag;
 	if (flag) {
@@ -43,7 +46,12 @@ window.addEventListener('load', function () {
 
 		for (i = 0; i < count; i++) {
 			if ($(details[i]).has($('span.has-error')).length) {
-				$(details[i]).find(error).appendTo($(details[i]));
+
+				if (!md.matches) {
+					$(details[i]).find(error).appendTo($(details[i]));
+				} else {
+					i = count;
+				}
 			}
 		}
 
@@ -80,5 +88,4 @@ function mdCheck(md) {
 	}
 }
 
-var md = window.matchMedia("(max-width: 768px)");
 md.addListener(mdCheck) // Attach listener function on state changes
