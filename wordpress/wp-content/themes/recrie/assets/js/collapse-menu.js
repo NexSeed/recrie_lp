@@ -1,5 +1,6 @@
 let flag = false;
 let templateDir = 'http://recrie.local/wp-content/themes/recrie';
+// let templateDirTest = 'http://nexseed1ab.xsrv.jp/recrie_lp/wp-content/themes/recrie';
 
 var md = window.matchMedia("(max-width: 768px)");
 

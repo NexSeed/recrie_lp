@@ -97,7 +97,7 @@
         margin-right: 0;
       }
 
-      @include mq('md') {
+      @include cq('875') {
         width: calc(50% - 15px / 2);
         margin: 3rem 15px 3rem 0;
 
