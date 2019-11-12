@@ -56,7 +56,7 @@ window.addEventListener('load', function () {
 			}
 		}
 
-	})) { }
+	}))
 
 	$('.cd-upload-btn').addClass('c-button__default c-button__default__upload');
 	$('.codedropz-upload-inner').prepend(`<img class='c-file__select' src='${templateDir}/assets/minified/images/select-file-icon.png' />`);
@@ -75,15 +75,18 @@ function mdCheck(md) {
 			flag = !flag;
 		}
 		$('#menu-list').css('display', 'none');
-		$('#pcFileUpload').css('display', 'none');
-		$('#spFileUpload').css('display', 'block');
+		// $('#pcFileUpload').css('display', 'none');
+		// $('#spFileUpload').css('display', 'block');
+		$('#fileUpload').addClass('spFileUpload');
+
 		$('h3.c-file__text').text('添付ファイル');
 		$('.c-file__text').addClass('p-file__head');
 
 	} else {
 		$('#menu-list').css('display', 'block');
-		$('#pcFileUpload').css('display', 'block');
-		$('#spFileUpload').css('display', 'none');
+		// $('#pcFileUpload').css('display', 'block');
+		// $('#spFileUpload').css('display', 'none');
+		$('#fileUpload').removeClass('spFileUpload');
 		$('h3.c-file__text').text('ここにファイルをドラッグドロップ');
 		$('.c-file__text').removeClass('p-file__head');
 	}
