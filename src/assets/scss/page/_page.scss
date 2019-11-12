@@ -70,8 +70,11 @@
   &-upload {
     &-status {
       padding: unset !important;
-      border-bottom: 0.5px solid #C4CCBB;
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
+
+      @include mq('md') {
+        border-bottom: 0.5px solid #C4CCBB;
+      }
     }
 
     &-image {
@@ -90,6 +93,7 @@
 
       .name {
         margin-left: 1rem;
+        margin-bottom: -3rem;
         font-weight: 600;
         padding: 0 !important;
         color: #394829 !important;
@@ -116,6 +120,12 @@
         span {
           line-height: 5rem;
         }
+      }
+
+      .has-error {
+        display: block;
+        margin: -3rem auto 1rem;
+        padding-left: 1rem;
       }
     }
   }
