@@ -10,15 +10,25 @@
       transform: translateX(-50%);
     }
 
-    .hero-pc,
-    .hero-sp {
+    .hero-img {
       width: 100%;
+      max-height: 100vh;
       height: auto;
+      object-fit: cover;
     }
 
     .hero-pc {
-      @include mq('sm') {
-        display: none;
+      &-title {
+        position: absolute;
+        bottom: 15px;
+        display: block;
+        width: 65%;
+        left: 50%;
+        transform: translateX(-50%);
+
+        @include mq('sm') {
+          display: none;
+        }
       }
     }
 
