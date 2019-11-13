@@ -1,0 +1,198 @@
+//for confirm pages
+
+.custom-wpcf7c-confirmed {
+  input {
+    &[readonly=readonly] {
+      border: none;
+      font-size: 1.6rem !important;
+      color: #394829 !important;
+      padding-left: 0;
+      padding-right: 0;
+      background-color: #f9faf7 !important;
+    }
+  }
+
+  input:-webkit-autofill {
+    box-shadow: 0 0 0px 1000px #f9faf7 inset;
+  }
+}
+
+// wordpress plugins custom design
+// wp_form
+.wpcf7 {
+  width: 770px;
+  display: block;
+  margin: 0 auto !important;
+  box-sizing: border-box;
+
+  @include mq('md') {
+    width: 95%;
+    box-sizing: border-box;
+  }
+
+  &__title {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #394829;
+
+    @include mq('md') {
+      font-size: 20px;
+      width: 200px;
+    }
+  }
+}
+
+// drag and drop
+.dnd {
+  &-icon-blank-file {
+    font-size: 1.5rem !important;
+  }
+
+  &-progress-bar {
+    display: inline-flex !important;
+    height: 1rem !important;
+    margin: 1rem 0;
+    min-width: 50rem;
+
+    @include mq('md') {
+      margin: 3.5rem 0;
+      display: block !important;
+      min-width: unset;
+    }
+
+    .complete {
+      line-height: 1rem !important;
+    }
+  }
+
+  &-upload {
+    &-status {
+      padding: unset !important;
+      margin-bottom: 2rem;
+
+      @include mq('md') {
+        border-bottom: 0.5px solid #C4CCBB;
+      }
+    }
+
+    &-image {
+      align-self: start;
+      min-width: 3rem !important;
+      min-height: 3rem !important;
+    }
+
+    &-details {
+      text-align: left;
+      padding: unset !important;
+      font-family: Yu Gothic;
+      font-size: 1.6rem;
+      line-height: 2rem;
+      letter-spacing: 1.6px;
+
+      .name {
+        margin-left: 1rem;
+        margin-bottom: -3rem;
+        font-weight: 600;
+        padding: 0 !important;
+        color: #394829 !important;
+
+        @include mq('md') {
+          margin-bottom: -3rem;
+        }
+
+        em {
+          font-weight: 500 !important;
+          display: block;
+        }
+      }
+
+      .remove-file {
+        display: inline-block;
+        text-align: center;
+        position: unset !important;
+        right: unset !important;
+        top: unset !important;
+        min-width: 20rem;
+        margin-left: 3rem;
+
+        @include mq('md') {
+          display: block;
+          margin-left: -3px;
+        }
+
+        span {
+          line-height: 5rem;
+        }
+      }
+
+      .has-error {
+        display: block;
+        margin: -3rem auto 1rem;
+        padding-left: 1rem;
+      }
+    }
+  }
+}
+
+// component form input types
+input[type=text],
+input[type=email],
+input[type=tel] {
+  width: 100%;
+  height: 48px;
+  border: 1px solid #C4CCBB;
+  border-radius: 3px;
+  background: #F9FAF7;
+  color: #394829;
+  font-size: 16px;
+  padding-left: 15px;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+label {
+  text-align: left;
+  font-size: 15px;
+  font-weight: medium;
+  letter-spacing: 1.5px;
+  color: #394829;
+  display: block;
+}
+
+//specific elements styling with these IDs
+
+#top-link {
+  margin-top: 5rem;
+}
+
+#pcFileUpload,
+#spFileUpload {
+  margin-top: 2rem;
+}
+
+.spFileUpload {
+
+  .codedropz- {
+    &upload-container {
+      padding: 0 !important;
+    }
+  }
+
+  .c-file {
+
+    &__upload {
+      border: none !important;
+      background: none !important;
+
+      span {
+        display: none;
+      }
+    }
+
+    &__select {
+      display: none;
+    }
+  }
+}

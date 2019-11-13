@@ -1,0 +1,46 @@
+%container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1170px;
+}
+
+.p- {
+
+  //I think these are utilities
+  &center-block {
+    display: block;
+    margin: 0 auto;
+  }
+
+  &flex__center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    &-mtb4 {
+      margin: 4rem 0;
+    }
+  }
+}
+
+@import "./p-/-action";
+@import "./p-/-application";
+@import "./p-/-benefit";
+@import "./p-/-coaching";
+@import "./p-/-company_profile";
+@import "./p-/-contact";
+@import "./p-/-experience";
+@import "./p-/-feature";
+@import "./p-/-file";
+@import "./p-/-financial_diagnostic";
+@import "./p-/-heading";
+@import "./p-/-hero";
+@import "./p-/-information";
+@import "./p-/-mincho";
+@import "./p-/-privacy";
+@import "./p-/-required_document";
+@import "./p-/-service";
+@import "./p-/-testimonial";
+@import "./p-/-three_feature";
+@import "./p-/-upload";

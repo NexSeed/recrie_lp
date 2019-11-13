@@ -1,0 +1,25 @@
+.c- {
+  &staff {
+    &__img {
+      width: 132px;
+      height: 131px;
+
+      @include mq('sm') {
+        width: 97px;
+        height: 96px;
+      }
+
+      &.margin-middle {
+        margin: 0 2px;
+
+        &__top_page {
+          margin: 0 5px;
+
+          @include mq('sm') {
+            margin: 0 2px;
+          }
+        }
+      }
+    }
+  }
+}

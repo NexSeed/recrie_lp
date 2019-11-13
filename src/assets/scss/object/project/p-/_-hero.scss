@@ -1,0 +1,61 @@
+.p- {
+  &hero {
+    position: relative;
+
+    &__title {
+      display: block;
+      position: absolute;
+      bottom: 1rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .hero-img {
+      width: 100%;
+      max-height: 100vh;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .hero-pc {
+      &-title {
+        position: absolute;
+        bottom: 15px;
+        display: block;
+        width: 65%;
+        left: 50%;
+        transform: translateX(-50%);
+
+        @include mq('sm') {
+          display: none;
+        }
+      }
+    }
+
+    .hero-sp {
+      display: none;
+
+      @include mq('sm') {
+        display: block;
+      }
+
+      &-title {
+        display: none;
+
+        @include mq('sm') {
+          display: block;
+          position: absolute;
+          bottom: 15px;
+          margin: 0 auto;
+          width: 100%;
+        }
+      }
+    }
+
+    @include mq('md') {
+      .c-logo {
+        display: none;
+      }
+    }
+  }
+}

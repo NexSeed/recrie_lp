@@ -10,8 +10,8 @@ npm-debug.log
 package.box
 playbook.retry
 node_modules
-src/assets/css
-src/assets/minified
-style.css.map
+src/assets/css/*
+src/assets/map/*
+src/assets/minified/*
 package-lock.json
 *.map

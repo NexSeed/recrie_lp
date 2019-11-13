@@ -1,0 +1,90 @@
+.c- {
+  &file {
+    &__content {
+      margin-top: 1.6rem;
+      text-align: left;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__delete {
+      margin: 1.6rem auto;
+    }
+
+    &__icon {
+      text-align: left;
+      max-width: 2.7rem;
+      max-height: 3rem;
+      padding-right: 3.5px;
+    }
+
+    &__name {
+      margin-left: 3.5px;
+      font-weight: 600;
+      font-size: 1.6rem;
+      line-height: 3.2rem;
+      letter-spacing: 1.6px;
+      color: #394829;
+    }
+
+    &__size {
+      margin-top: -1rem;
+      font-weight: 500;
+      font-size: 1.5rem;
+      line-height: 3rem;
+      letter-spacing: 1.5px;
+      color: #394829;
+    }
+
+    &__type {
+      text-align: left;
+      font-weight: 500;
+      font-size: 1.5rem;
+      line-height: 2.2rem;
+      letter-spacing: 1.5px;
+      color: #D86A83;
+    }
+
+    &__sent {
+      width: 220px;
+      height: 126px;
+    }
+
+    &__success {
+      text-align: center;
+      font-weight: 600;
+      font-size: 1.5rem;
+      line-height: 3rem;
+      letter-spacing: 1.5px;
+      color: #394829;
+      margin-top: 2rem;
+      margin-bottom: -3rem;
+
+      @include mq('md') {
+        max-width: 20rem;
+      }
+    }
+
+    &__select {
+      width: 40px;
+      height: 52px;
+      display: block;
+      margin: 3rem auto;
+    }
+
+    &__text {
+      text-align: center;
+      font-weight: 600;
+      font-size: 1.8rem;
+      line-height: 3.2rem;
+      letter-spacing: 1.8px;
+      color: #687262;
+    }
+
+    &__upload {
+      margin-bottom: 5rem !important;
+      border: 2px dashed rgba(57, 72, 41, 0.5) !important;
+      background: #EFF2ED 0% 0% no-repeat padding-box;
+    }
+  }
+}
