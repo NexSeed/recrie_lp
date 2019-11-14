@@ -1,3 +1,13 @@
+%hover {
+  transition: .3s;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.9;
+    box-shadow: 1px 2px 10px darken(#07030329, 30%),1px 2px 10px darken(#07030329, 30%);
+  }
+}
+
 .c- {
   &button__round {
     background: transparent linear-gradient(133deg, #E3A211 0%, #E53859 100%) 0% 0% no-repeat padding-box;
@@ -14,6 +24,8 @@
     text-shadow: 0px 0px 6px #00000029;
     min-height: 7rem;
     padding: 1.3rem 1.7rem;
+
+    @extend %hover;
 
     &__upload {
       width: 100%;
