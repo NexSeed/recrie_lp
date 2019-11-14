@@ -84,8 +84,10 @@
 
 	// Get folder path
 	function dnd_get_upload_dir() {
+
+		session_start();
 		$upload = wp_upload_dir();
-		$uploads_dir = wpcf7_dnd_dir . $upload['subdir'];
+		$uploads_dir = wpcf7_dnd_dir . '/' . $_SESSION['serial'] . '/';
 
 		// If save as attachment ( also : Check if upload use year and month folders )
 		if( get_option('drag_n_drop_mail_attachment') == 'yes' ) {
