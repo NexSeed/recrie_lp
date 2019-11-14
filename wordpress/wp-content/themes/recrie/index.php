@@ -28,29 +28,21 @@
 			<p class="p-mincho"><span>そ</span>んな不安や焦りを抱えたまま、<br>本業に手を取られて解決策を見い出せない状況、ありませんか？</p>
 		</div>
 	</div>
-	<div class="p-service" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/minified/images/service.jpeg')">
-		<div class="p-service__bg"></div>
-		<div class="p-service__arrow-down u-center-block"></div>
-		<p class="p-service__detail p-mincho">
-			弊社の財務コーチングは、そんな経営に関する悩みを払拭し、契約満了時には、以下の状況を手に入れる事が可能な、御社の為だけの唯一無二のカスタムメイド・コーチングです。
-		</p>
+	<div class="p-benefit-con">
 		<div class="p-benefit">
-			<div class="p-benefit__no">
-				<p>BENEFIT<br /><span>01</span></p>
-			</div>
-			<p class="p-benefit__detail">漠然としたお金の悩みから解放され、<strong class="p-benefit__underline">本業に専念できる</strong></p>
+			<img src="assets/minified/images/benefit1.png" alt="" srcset="" class="">
+			<p class="p-benefit__detail p-mincho">漠然としたお金の悩みから解放され、<strong class="p-benefit__underline">本業に専念できる</strong></p>
+			<img src="assets/minified/images/benefit-img1.png" alt="" srcset="" class="p-benefit__img-visual">
 		</div>
 		<div class="p-benefit">
-			<div class="p-benefit__no">
-				<p>BENEFIT<br /><span>02</span></p>
-			</div>
-			<p class="p-benefit__detail">うまく言語化できずにモヤモヤしていたことが言語化され、<strong class="p-benefit__underline">行動が加速する</strong></p>
+			<img src="assets/minified/images/benefit2.png" alt="" srcset="" class="">
+			<p class="p-benefit__detail p-mincho">うまく言語化できずにモヤモヤしていたことが言語化され、<strong class="p-benefit__underline">行動が加速する</strong></p>
+			<img src="assets/minified/images/benefit-img2.png" alt="" srcset="" class="p-benefit__img-visual">
 		</div>
 		<div class="p-benefit">
-			<div class="p-benefit__no">
-				<p>BENEFIT<br /><span>03</span></p>
-			</div>
-			<p class="p-benefit__detail">社員にも採算意識が芽生え、立場の違いからくる危機感の<strong class="p-benefit__underline">ズレやギャップが縮まる</strong></p>
+			<img src="assets/minified/images/benefit3.png" alt="" srcset="" class="">
+			<p class="p-benefit__detail p-mincho">社員にも採算意識が芽生え、立場の違いからくる危機感の<strong class="p-benefit__underline">ズレやギャップが縮まる</strong></p>
+			<img src="assets/minified/images/benefit-img3.png" alt="" srcset="" class="p-benefit__img-visual">
 		</div>
 	</div>
 	<div class="p-coaching">
@@ -378,20 +370,3 @@
 	</div>
 
 	<?php get_footer(); ?>
-	<div class="p-benefit-con">
-		<div class="p-benefit"> 
-			<img src="assets/minified/images/benefit1.png" alt="" srcset="" class="">
-			<p class="p-benefit__detail p-mincho">漠然としたお金の悩みから解放され、<strong class="p-benefit__underline">本業に専念できる</strong></p>
-			<img src="assets/minified/images/benefit-img1.png" alt="" srcset="" class="p-benefit__img-visual">
-		</div>
-		<div class="p-benefit"> 
-			<img src="assets/minified/images/benefit2.png" alt="" srcset="" class="">
-			<p class="p-benefit__detail p-mincho">うまく言語化できずにモヤモヤしていたことが言語化され、<strong class="p-benefit__underline">行動が加速する</strong></p>
-			<img src="assets/minified/images/benefit-img2.png" alt="" srcset="" class="p-benefit__img-visual">
-		</div>
-		<div class="p-benefit"> 
-			<img src="assets/minified/images/benefit3.png" alt="" srcset="" class="">
-			<p class="p-benefit__detail p-mincho">社員にも採算意識が芽生え、立場の違いからくる危機感の<strong class="p-benefit__underline">ズレやギャップが縮まる</strong></p>
-			<img src="assets/minified/images/benefit-img3.png" alt="" srcset="" class="p-benefit__img-visual">
-		</div>
-	</div>
