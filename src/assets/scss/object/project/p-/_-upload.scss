@@ -1,6 +1,6 @@
 .p- {
   &upload {
-    text-align: -webkit-center;
+    text-align: center;
     margin-top: 2rem;
     padding-top: 2rem;
 
@@ -25,6 +25,10 @@
       line-height: 3.2rem;
       letter-spacing: 1.6px;
       color: #394829;
+    }
+
+    #fileUpload {
+      margin-top: 2rem;
     }
   }
 }

@@ -39,24 +39,12 @@ window.addEventListener('load', function () {
 		$(removeIcon[0]).appendTo($('.dnd-upload-details'));
 		$('span.dnd-icon-remove').addClass('c-button__default c-button__default__remove');
 		$('span.dnd-icon-remove').append(' ファイルを削除');
-
-		// File validation error text handler
-		let details = $('.dnd-upload-details');
-		let count = details.length;
-		let error = ' > span.has-error';
-
-		for (i = 0; i < count; i++) {
-			if ($(details[i]).has($('span.has-error')).length) {
-
-				if (!md.matches) {
-					$(details[i]).find(error).appendTo($(details[i]));
-				} else {
-					i = count;
-				}
-			}
-		}
+		upload_errors();
 
 	}))
+		if ($('#fileUpload').hasClass('spFileUpload')) {
+			upload_errors();
+		}
 
 	$('.cd-upload-btn').addClass('c-button__default c-button__default__upload');
 	$('.codedropz-upload-inner').prepend(`<img class='c-file__select' src='${templateDir}/assets/minified/images/select-file-icon.png' />`);
@@ -64,6 +52,25 @@ window.addEventListener('load', function () {
 	$('.codedropz-upload-handler').addClass('c-file__upload');
 	mdCheck(md) // check browser resolution == 786px
 });
+
+function upload_errors() {
+
+	// File validation error text handler
+	let details = $('.dnd-upload-details');
+	let count = details.length;
+	let error = ' > span.has-error';
+
+	for (i = 0; i < count; i++) {
+		if ($(details[i]).has($('span.has-error')).length) {
+
+			if (!md.matches) {
+				$(details[i]).find(error).appendTo($(details[i]));
+			} else {
+				i = count;
+			}
+		}
+	}
+}
 
 function mdCheck(md) {
 	if (md.matches) { // If media query matches max-width of 786px
@@ -75,17 +82,13 @@ function mdCheck(md) {
 			flag = !flag;
 		}
 		$('#menu-list').css('display', 'none');
-		// $('#pcFileUpload').css('display', 'none');
-		// $('#spFileUpload').css('display', 'block');
 		$('#fileUpload').addClass('spFileUpload');
 
-		$('h3.c-file__text').text('添付ファイル');
+		$('h3.c-file__text').text('');
 		$('.c-file__text').addClass('p-file__head');
 
 	} else {
 		$('#menu-list').css('display', 'block');
-		// $('#pcFileUpload').css('display', 'block');
-		// $('#spFileUpload').css('display', 'none');
 		$('#fileUpload').removeClass('spFileUpload');
 		$('h3.c-file__text').text('ここにファイルをドラッグドロップ');
 		$('.c-file__text').removeClass('p-file__head');
