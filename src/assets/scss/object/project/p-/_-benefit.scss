@@ -82,6 +82,12 @@
 
     &__underline {
       color: #0D5D4B;
+      border-bottom: 1px solid #B6D86A;
+      font-weight: normal;
+
+      &--bold {
+        font-weight: bolder;
+      }
     }
   }
 }
