@@ -13,7 +13,18 @@
 
 ?>
 
+<?php
+session_start();
+$_SESSION["serial"] = $_GET['serial'];
+?>
+
+
 <?php get_header(); ?>
+<?php
+// URL watcher for client serialnumber
+if (isset($_GET['serial'])) { }
+?>
+
 <div class="l-container">
 	<div class="p-heading">
 		<div class="c-staff">
@@ -29,7 +40,8 @@
 <div class="l-container">
 	<div class="p-upload">
 		<header class="p-upload__head">アップロードページ</header>
-		<?php echo do_shortcode('[contact-form-7 id="23" title="Upload Recrie"]'); ?>
+		<span hidden name="serial" value="<?php echo $_SESSION['serial']; ?>"></span>
+		<?php echo do_shortcode('[contact-form-7 id="40" title="Upload Recrie"]'); ?>
 	</div>
 </div>
 <div class="l-container__fluid">
