@@ -23,9 +23,9 @@ $browse_command = function( $_, $assoc_args ) {
 	$wp_admin = \WP_CLI\Utils\get_flag_value( $assoc_args, 'wp-admin' );
 
 	if ( true === $wp_admin ) {
-		$url = 'http://recrie.local/wp-admin/';
+		$url = 'http://192.168.33.99/wp-admin/';
 	} else {
-		$url = 'http://recrie.local/';
+		$url = 'http://192.168.33.99/';
 	}
 
 	passthru( $exec . ' ' . escapeshellarg( $url ) );
