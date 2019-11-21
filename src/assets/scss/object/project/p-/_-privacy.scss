@@ -1,19 +1,19 @@
 .p- {
   &privacy {
+    margin: 4rem auto 12rem;
     text-align: -webkit-center;
     background-color: #EFF2ED;
-    margin: 4rem auto 12rem;
-    padding: 1.6rem;
+    padding: 2.5rem 3.6rem 3rem;
     max-width: 77rem;
 
     @include mq('md') {
-      margin: 4rem auto 12rem;
+      padding: 1.6rem;
     }
 
     &__title {
       text-align: left;
       font-size: 1.6rem;
-      font-weight: bold;
+      font-weight: 600;
       letter-spacing: 1.6px;
       color: #394829;
       padding-bottom: 1.6rem;
@@ -21,8 +21,10 @@
 
     &__text {
       text-align: left;
+      font-family: Yu Gothic;
+      font-weight: 500;
       font-size: 1.6rem;
-      font-weight: medium;
+      line-height: 3.2rem;
       letter-spacing: 1.6px;
       color: #394829;
     }

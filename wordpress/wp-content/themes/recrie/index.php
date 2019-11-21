@@ -242,7 +242,7 @@
 			<div class="line"></div>
 		</div>
 		<p class="p-information__details">上述のような財務改善コーチングを行なう為には、まず何より、御社の現状を把握する事が必要不可欠となります。</p>
-		<p class="p-information__details">本サービスにおいては、御社より決算書等を提出いただき、財務改善診断書を作成。書面と口頭により、以下情報を提供させていただきます。（その後、財務改善コーチングを申し込むかどうかをご判断ください）</p>
+		<p class="p-information__details">本サービスにおいては、御社より決算書等を提出いただき、財務改善診断書を作成。<br>書面と口頭により、以下情報を提供させていただきます。（その後、財務改善コーチングを申し込むかどうかをご判断ください）</p>
 		<p class="p-information__title2">財務改善診断で得る事ができる情報</p>
 		<div class="p-information__card_container">
 			<!-- Card -->

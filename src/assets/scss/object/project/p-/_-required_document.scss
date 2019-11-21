@@ -7,7 +7,7 @@
     line-height: 3.2rem;
     letter-spacing: 1.6px;
     color: #394829;
-    max-width: 77rem;
+    max-width: 80.2rem;
     padding: 0 1.6rem;
     margin: auto;
 
@@ -16,9 +16,9 @@
       font-family: Yu Gothic;
       font-weight: 500;
       font-size: 1.6rem;
-      line-height: 3rem;
-      letter-spacing: 1.6px;
-      margin-bottom: 6.9rem;
+      line-height: 3.2rem;
+      letter-spacing: 1.55px;
+      margin-bottom: 6.5rem;
       color: #394829;
 
       @include mq('md') {
@@ -47,7 +47,7 @@
         min-height: 4.6rem;
         margin: auto;
         margin-bottom: 2rem;
-        padding: 1.2em 2rem 1.2em 11.1rem;
+        padding: 1.9rem 2rem 1.7rem 11.1rem;
         position: relative;
 
         @include mq('sm') {
@@ -93,7 +93,7 @@
         margin: auto;
         margin-bottom: 0.8rem;
         max-width: 57rem;
-        padding-left: 10rem;
+        padding-left: 99.5px;
         position: relative;
 
         @include mq('md') {
@@ -102,7 +102,7 @@
         }
 
         &::before {
-          top: 1em;
+          top: 14px;
           left: 0;
           position: absolute;
           content: '';
@@ -113,13 +113,13 @@
         }
 
         &::after {
-          top: .7em;
-          left: 56px;
+          top: 9px;
+          left: 55px;
           position: absolute;
           content: '';
           width: 45px;
           display: inline-block;
-          height: 1em;
+          height: 1rem;
           background: url(assets/minified/images/check-symbol.png) no-repeat;
         }
       }
@@ -134,9 +134,9 @@
       line-height: 3.2rem;
       letter-spacing: 1.8px;
       color: #394829;
-      padding-bottom: 0.7rem;
+      padding-bottom: 0.8rem;
       margin: auto;
-      margin-bottom: 3.6rem;
+      margin-bottom: 3.4rem;
       border-bottom: 1px solid #394829;
 
       @include mq('md') {
@@ -177,8 +177,8 @@
       letter-spacing: 1.8px;
       color: #394829;
       margin: auto;
-      margin-top: 7.5rem;
-      margin-bottom: 2.4rem;
+      margin-top: 7.7rem;
+      margin-bottom: 2.5rem;
 
       @include mq('md') {
         margin-top: 4.3rem;

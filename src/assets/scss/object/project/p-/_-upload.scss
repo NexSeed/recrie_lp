@@ -1,19 +1,23 @@
 .p- {
   &upload {
     text-align: center;
-    margin-top: 2rem;
-    padding-top: 2rem;
+    margin-top: 3rem;
+    padding-top: 2.5rem;
 
     &__head {
       font-family: Source Han Serif;
       font-weight: 500;
-      font-size: 2rem;
-      line-height: 3.8rem;
-      letter-spacing: 2px;
-      color: #212121;
-      margin-bottom: 6rem;
+      margin-bottom: 8.9rem;
+      font-size: 2.6rem;
+      line-height: 3.9rem;
+      letter-spacing: 2.6px;
+      color: #394829;
 
       @include mq('md') {
+        font-size: 2rem;
+        line-height: 3.8rem;
+        letter-spacing: 2px;
+        color: #212121;
         margin-bottom: 2rem;
       }
     }
