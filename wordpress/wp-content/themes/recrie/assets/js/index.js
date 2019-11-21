@@ -38,7 +38,7 @@ window.addEventListener('load', function () {
 		$('a.remove-file').remove();
 		$(removeIcon[0]).appendTo($('.dnd-upload-details'));
 		$('span.dnd-icon-remove').addClass('c-button__default c-button__default__remove');
-		$('span.dnd-icon-remove').append(' ファイルを削除');
+		$('span.dnd-icon-remove').text('ファイルを削除');
 		upload_errors();
 
 	}))
