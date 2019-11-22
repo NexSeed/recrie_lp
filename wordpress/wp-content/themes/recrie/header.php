@@ -25,13 +25,13 @@
 						<a href="<?php echo home_url(); ?>">トップ</a>
 					</li>
 					<li>
-						<a href="">実績</a>
+						<a href="<?php echo home_url(); ?>#work">実績</a>
 					</li>
 					<li>
-						<a href="">特徴</a>
+						<a href="<?php echo home_url(); ?>#feature">特徴</a>
 					</li>
 					<li>
-						<a href="">サービス</a>
+						<a href="<?php echo home_url(); ?>#service">サービス</a>
 					</li>
 					<li id="toggleHamburger2" class="l-close-hamburger">
 						<a>
