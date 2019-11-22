@@ -16,7 +16,7 @@
 <?php
 // URL watcher for client serialnumber
 if (!isset($_GET['serial'])) {
-	header("Location: / ");
+	header("Location: /recrie_lp ");
 }
 ?>
 <?php
