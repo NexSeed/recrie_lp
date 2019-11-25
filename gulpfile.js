@@ -43,8 +43,8 @@ const scss = () => {
 		.pipe(sass({
 			outputStyle: 'compressed'
 		}))
+		.pipe(autoprefixer("last 1 version", "> 1%", "ie 10", "ie 11"))
 		.on('error', notify.onError('Error: <%= error.message %>'))
-		.pipe(autoprefixer())
 		.pipe(sourcemaps.write('../map'))
 		.pipe(dest(compiledDir))
 }
