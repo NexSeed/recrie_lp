@@ -81,6 +81,10 @@
       &.top_page {
         line-height: 8.6rem;
         margin-left: 7.3rem;
+
+        @include mq('md') {
+          margin: 0;
+        }
       }
     }
   }
