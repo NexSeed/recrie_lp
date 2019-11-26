@@ -30,7 +30,7 @@ $_SESSION["serial"] = $_GET['serial'];
 	<div class="p-heading upload">
 		<div class="c-staff">
 			<img class="c-staff__img" src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/staff-1.png" alt="">
-			<img class="c-staff__img --margin-middle" src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/staff-2.png" alt="">
+			<img class="c-staff__img margin-middle" src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/staff-2.png" alt="">
 			<img class="c-staff__img" src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/staff-3.png" alt="">
 		</div>
 		<div class="c-finance">

@@ -11,7 +11,7 @@
       color: #394829;
       margin: 5.6rem auto 9rem;
 
-      @include mq('md') {
+      @include mq('sm') {
         font-size: 2rem;
         line-height: 3.8rem;
         letter-spacing: 2px;

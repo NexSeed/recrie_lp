@@ -20,15 +20,15 @@
 // wordpress plugins custom design
 // wp_form
 .wpcf7 {
-  width: 770px;
+  max-width: 770px;
   display: block;
   margin: 0 auto !important;
   box-sizing: border-box;
 
-  @include mq('md') {
-    width: 95%;
-    box-sizing: border-box;
-  }
+  // @include mq('lg') {
+  //   width: 95%;
+  //   box-sizing: border-box;
+  // }
 
   &__title {
     font-size: 26px;
@@ -44,6 +44,8 @@
   }
 
   &-form {
+    padding: 0 1.6rem;
+
     p>label {
       font-size: 1.6rem;
       font-weight: 500;

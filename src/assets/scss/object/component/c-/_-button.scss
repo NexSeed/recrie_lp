@@ -24,6 +24,7 @@
 
 .c- {
   &button__round {
+    width: 100%;
     display: inline-block;
     position: relative;
     overflow: hidden;
@@ -64,9 +65,10 @@
       min-height: 7.4rem;
       padding: 1.3rem 1.7rem;
 
-      @include mq('md') {
+      @include mq('sm') {
         font-size: 1.5rem;
         letter-spacing: 1.5px;
+        min-height: 5.3rem;
         text-align: center;
         text-shadow: #00000029 0px 0px 6px;
       }
@@ -90,24 +92,34 @@
     }
 
     &__upload {
-      width: 100%;
       max-width: 57rem;
       margin: 5rem auto;
+
+      @include mq('sm') {
+        min-height: 5.3rem;
+        max-width: 30rem;
+      }
     }
 
     &.contact {
+
       &_confirm {
-        width: 100%;
         max-width: 57rem;
+
+        @include mq('sm') {
+          max-width: 30rem;
+        }
       }
 
       &_submit {
-        width: 100%;
         max-width: 57rem;
+
+        @include mq('sm') {
+          max-width: 30rem;
+        }
       }
 
       &_back {
-        width: 100%;
         max-width: 20rem;
         margin: 1.8rem auto;
       }
@@ -122,6 +134,8 @@
       @include mq('sm') {
         font-size: 1.5rem;
         letter-spacing: 1.5px;
+        max-width: 30rem;
+        min-height: 5.3rem;
       }
     }
   }

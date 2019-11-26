@@ -17,8 +17,7 @@
     &.top_page {
       max-width: 97rem;
       margin: 7rem auto 12.2rem;
-      padding-top: 3rem;
-      padding-bottom: 4rem;
+      padding: 3rem 3rem 4rem;
       text-align: center;
 
       @include mq('lg') {
