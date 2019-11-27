@@ -1,9 +1,9 @@
 <?php
 
 /**
- * The template for displaying the footer
+ * The template for displaying the upload page
  *
- * Contains the closing of the #content div and all content after.
+ * Contains the template and shortcode for upload page.
  *
  * Template Name: upload
  *
