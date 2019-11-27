@@ -30,17 +30,17 @@
 	</div>
 	<div class="p-benefit-con">
 		<div class="p-benefit">
-			<img src="assets/minified/images/benefit1.png" alt="" srcset="" class="">
+			<img src="assets/minified/images/benefit1.png" alt="" srcset="" class="p-benefit__img-visual">
 			<p class="p-benefit__detail p-mincho">漠然としたお金の悩みから解放され、<strong class="p-benefit__underline">本業に専念できる</strong></p>
 			<img src="assets/minified/images/benefit-img1.png" alt="" srcset="" class="p-benefit__img-visual">
 		</div>
 		<div class="p-benefit">
-			<img src="assets/minified/images/benefit2.png" alt="" srcset="" class="">
+			<img src="assets/minified/images/benefit2.png" alt="" srcset="" class="p-benefit__img-visual">
 			<p class="p-benefit__detail p-mincho">うまく言語化できずにモヤモヤしていたことが言語化され、<strong class="p-benefit__underline">行動が加速する</strong></p>
 			<img src="assets/minified/images/benefit-img2.png" alt="" srcset="" class="p-benefit__img-visual">
 		</div>
 		<div class="p-benefit">
-			<img src="assets/minified/images/benefit3.png" alt="" srcset="" class="">
+			<img src="assets/minified/images/benefit3.png" alt="" srcset="" class="p-benefit__img-visual">
 			<p class="p-benefit__detail p-mincho">社員にも採算意識が芽生え、立場の違いからくる危機感の<strong class="p-benefit__underline">ズレやギャップが縮まる</strong></p>
 			<img src="assets/minified/images/benefit-img3.png" alt="" srcset="" class="p-benefit__img-visual">
 		</div>
