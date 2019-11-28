@@ -5,6 +5,8 @@
     background-color: #EFF2ED;
     padding: 2.5rem 3.6rem 3rem;
     max-width: 77rem;
+    overflow: auto;
+    max-height: 250px;
 
     @include mq('md') {
       padding: 1.6rem;
