@@ -30,4 +30,3 @@
 			</div>
 		</div>
 		<a href="#top-link"><img class="c-fab" src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/top-fab.png" alt="" srcset=""></a>
-	<?php endif;?>
