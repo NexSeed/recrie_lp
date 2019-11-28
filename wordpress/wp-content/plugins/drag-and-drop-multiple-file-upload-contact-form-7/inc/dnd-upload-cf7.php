@@ -5,6 +5,12 @@
 	* @Package : Drag & Drop Multiple File Upload - Contact Form 7
 	* @Author : Glen Don L. Mongaya
 	*/
+	header('Content-Type: text/html; charset=UTF-8');
+
+	mb_internal_encoding('UTF-8'); //or whatever character set works for you
+	mb_http_output('UTF-8');
+	mb_http_input('UTF-8');
+	mb_regex_encoding('UTF-8'); 
 
 	if ( ! defined( 'ABSPATH' ) || ! defined('dnd_upload_cf7') ) {
 		exit;
@@ -498,7 +504,7 @@
 		// Create file name
 		$filename = $file['name'];
 		$filename = wpcf7_canonicalize( $filename, 'as-is' );
-		$filename = wpcf7_antiscript_file_name( $filename );
+		// $filename = wpcf7_antiscript_file_name( $filename );
 
 		// Add filter on upload file name
 		$filename = apply_filters( 'wpcf7_upload_file_name', $filename,	$file['name'] );
