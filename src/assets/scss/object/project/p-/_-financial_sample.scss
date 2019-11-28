@@ -47,17 +47,59 @@
       border-bottom: 1px solid #ffffff;
       max-width: 57rem;
     }
+    &__btn-open {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding: 0;
+      margin: 0 auto 50px auto;
 
-    figure {
+      &::after {
+        cursor: pointer;
+        font-weight: bold;
+        transform: translateX(-50%);
+        border-radius: 30px;
+        color: #0D5D4B;
+        white-space: nowrap;
+        border: 1px solid #0D5D4B;
+        left: 50%;
+        bottom: 30px;
+        padding: 15px 25px;
+        position: absolute;
+        content: '財務改善診断書を見る';
+        transition: .3s;
+      }
+      &:hover::after {
+        color: #ffffff;
+        background: #0D5D4B;
+      }
+    }
+
+    &__content {
+      // display: none;
+      position: relative;
+      z-index: 2;
       text-align: center;
       padding: 0;
       margin: 0 auto 50px auto;
     }
 
-    figcaption {
-      margin-bottom: 20px;
-      display: block;
-    }
+    &__btn-close {
+      margin-top: 30px;
+      display: inline-block;
+      cursor: pointer;
+      font-weight: bold;
+      border-radius: 30px;
+      color:  #fff;
+      border: 1px solid  #fff;
+      padding: 15px 30px;
+      content: '財務改善診断書を見る';
+      transition: .3s;
 
+      &:hover {
+        color: #0D5D4B;
+        background: #fff;
+      }
+    }
   }
 }
