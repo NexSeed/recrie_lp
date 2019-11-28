@@ -9,7 +9,7 @@
   {
     $containing_dir = explode('/', $upload);
 
-    if($containing_dir[7] == $serial_no) 
+    if($containing_dir[9] == $serial_no) 
     {
       if (is_dir($upload)){
       

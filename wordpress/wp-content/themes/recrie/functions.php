@@ -190,10 +190,10 @@ function show_list()
 			?>
 			<tr>
 				<td>
-					<?php echo $containing_dir[7];?>
+					<?php echo $containing_dir[9];?>
 				</td>
 				<td>
-					<a href="javascript:;" id="<?php echo $containing_dir[7]; ?>" class="c-btn--common">View Files</a>						
+					<a href="javascript:;" id="<?php echo $containing_dir[9]; ?>" class="c-btn--common">View Files</a>						
 				</td>
 			</tr>
 			<?php

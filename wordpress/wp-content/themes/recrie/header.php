@@ -14,7 +14,8 @@
 			position: absolute;
 			bottom: 0;
     }
-  </style>
+	</style>
+	<?php endif; ?>
 </head>
 
 <body>
