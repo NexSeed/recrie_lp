@@ -9,14 +9,14 @@ $('#toggleHamburger, #toggleHamburger2').click(function () {
 	if (flag) {
 		$('.l-hamburger').addClass('l-hamburger--toggled');
 		$('.menu-icon').attr({
-			"src": templateDirTest+'/assets/minified/images/x-icon.png'
+			"src": templateDirTest + '/assets/minified/images/x-icon.png'
 		}).toggleClass('menu-icon--rotate90');
 		$('body').css('overflow', 'hidden');
 		$('#menu-list').slideDown(500);
 	} else {
 		$('.l-hamburger').removeClass('l-hamburger--toggled');
 		$('.menu-icon').attr({
-			"src": templateDirTest+'/assets/minified/images/menu.png'
+			"src": templateDirTest + '/assets/minified/images/menu.png'
 		}).toggleClass('menu-icon--rotate90');
 		$('body').css('overflow', 'auto');
 		$('#menu-list').slideUp(500);
@@ -33,9 +33,9 @@ $('.p-financial_sample__btn-close').on('click', function () {
 	$('.p-financial_sample__content').slideUp(1000);
 	$('.p-financial_sample__btn-prev').css("display", "block");
 
-})
+});
 
-window.addEventListener('scroll', () => {
+window.addEventListener('scroll', function () {
 	let scrollHeight = window.pageYOffset;
 	if (scrollHeight >= 350) {
 		$('.c-fab').css("display", "block");
@@ -43,6 +43,12 @@ window.addEventListener('scroll', () => {
 		$('.c-fab').css("display", "none");
 	}
 });
+
+function myBrowser() {
+	if ((navigator.userAgent.indexOf("MSIE") != -1) || (!!document.documentMode == true)) {
+		$('.p-benefit__img-no').css({ 'width': 'auto', 'height': 'auto' });
+	}
+}
 
 window.addEventListener('load', function () {
 	if ($('input.wpcf7-drag-n-drop-file').change(function () { // Will move the remove button when file/s are selected
@@ -59,7 +65,7 @@ window.addEventListener('load', function () {
 		}
 
 	$('.cd-upload-btn').addClass('c-button__default c-button__default__upload');
-	$('.codedropz-upload-inner').prepend("<img class='c-file__select' src="+templateDirTest+"/assets/minified/images/select-file-icon.png"+ "/>");
+	$('.codedropz-upload-inner').prepend("<img class='c-file__select' src=" + templateDirTest + "/assets/minified/images/select-file-icon.png" + "/>");
 	$('.codedropz-upload-inner > h3, .codedropz-upload-inner > span ').addClass('c-file__text');
 	$('.codedropz-upload-handler').addClass('c-file__upload');
 	mdCheck(md) // check browser resolution == 786px
@@ -89,7 +95,7 @@ function upload_errors() {
 function mdCheck(md) {
 	if (md.matches) { // If media query matches max-width of 786px
 		$('.menu-icon').attr({
-			"src": templateDirTest+'/assets/minified/images/menu.png'
+			"src": templateDirTest + '/assets/minified/images/menu.png'
 		})
 		if (flag) {
 			$('.menu-icon').toggleClass('menu-icon--rotate90');
@@ -111,8 +117,3 @@ function mdCheck(md) {
 
 md.addListener(mdCheck) // Attach listener function on state changes
 
-function myBrowser(){
-	if((navigator.userAgent.indexOf("MSIE") != -1 ) || (!!document.documentMode == true )){
-		$('.p-benefit__img-no').css({'width' : 'auto', 'height' : 'auto'});
-	}  
-}
