@@ -49,16 +49,14 @@ function add_thanks_page()
 			document.addEventListener('wpcf7mailsent', function(event) {
 				location = "<?php echo home_url('/thanks/'); ?>";
 			}, false);
-		</script>
-	<?php
+		</script><?php
     } elseif (is_page('upload')) {
         ?>
 		<script>
 			document.addEventListener('wpcf7mailsent', function(event) {
 				location = "<?php echo home_url('/upload-thanks/'); ?>";
 			}, false);
-		</script>
-<?php
+		</script><?php
     }
 }
 
@@ -95,9 +93,9 @@ function is_pdf($filename) {
     return (file_get_contents($filename, false, null, 0, strlen(PDF_MAGIC)) === PDF_MAGIC) ? true : false;
 }
 
-function show_list() 
+function show_list()
 {
-	
+
 	$uploads = wp_upload_dir();
 	$uploaded_files = glob($uploads['basedir'].'/wp_dndcf7_uploads/*');
 
@@ -112,7 +110,7 @@ function show_list()
 		.files {
 			width: 48%;
 			background: #eaece5;
-			padding: 20px 30px;	
+			padding: 20px 30px;
 		}
 
 		.files a {
@@ -124,12 +122,12 @@ function show_list()
 			width: 48%;
 			border-collapse: collapse;
 		}
-		
+
 		.p-file__table > thead {
 			background: #394829;
 			color: #fff;
 			font-size: 16px;
-		} 
+		}
 
 		.p-file__table > thead th {
 			padding: 15px;
@@ -149,7 +147,7 @@ function show_list()
 
 		.p-file__table tbody tr:hover {background-color: #f5f5f5;}
 
-		
+
 		.c-btn--common {
 			transition: .3s;
 			border: 1px solid #394829;
@@ -185,7 +183,7 @@ function show_list()
 			<th>Action</th>
 		</thead>
 		<?php
-		foreach($uploaded_files as $upload) 
+		foreach($uploaded_files as $upload)
 		{
 			$containing_dir = explode('/', $upload);
 			// Open a directory, and read its contents
@@ -195,14 +193,14 @@ function show_list()
 					<?php echo $containing_dir[7];?>
 				</td>
 				<td>
-					<a href="javascript:;" id="<?php echo $containing_dir[7]; ?>" class="c-btn--common">View Files</a>						
+					<a href="javascript:;" id="<?php echo $containing_dir[7]; ?>" class="c-btn--common">View Files</a>
 				</td>
 			</tr>
 			<?php
 		}
 		$temp = json_encode($uploads);
 	?>
-		</table>	
+		</table>
 		<div class="files"></div>
 	</div>
 	<script>
@@ -231,7 +229,7 @@ function show_list()
 				});
 			});
 		});
-		
+
 	</script>
 
 	<?php
