@@ -8,6 +8,13 @@
 	<title>Recrie</title>
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
 	<?php wp_head(); ?>
+	<?php if(is_page('thanks') || is_page('upload-thanks') ): ?>
+  <style>
+    .l-footer {
+			position: absolute;
+			bottom: 0;
+    }
+  </style>
 </head>
 
 <body>
