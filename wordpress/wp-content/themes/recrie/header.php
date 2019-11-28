@@ -7,6 +7,13 @@
 	<title>Recrie</title>
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
 	<?php wp_head(); ?>
+	<?php if(is_page('thanks') || is_page('upload-thanks') ): ?>
+  <style>
+    .l-footer {
+			position: absolute;
+			bottom: 0;
+    }
+  </style>
 </head>
 
 <body>
@@ -24,13 +31,13 @@
 						<a href="<?php echo home_url(); ?>">トップ</a>
 					</li>
 					<li>
-						<a href="">実績</a>
+						<a href="<?php echo home_url(); ?>#work">実績</a>
 					</li>
 					<li>
-						<a href="">特徴</a>
+						<a href="<?php echo home_url(); ?>#feature">特徴</a>
 					</li>
 					<li>
-						<a href="">サービス</a>
+						<a href="<?php echo home_url(); ?>#service">サービス</a>
 					</li>
 					<li id="toggleHamburger2" class="l-close-hamburger">
 						<a>

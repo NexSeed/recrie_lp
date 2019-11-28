@@ -1,8 +1,9 @@
 .p- {
   &benefit {
     &-con {
-      margin: 7rem 0;
+      margin: 7rem 0 20rem;
     }
+
     max-width: 1090px;
     width: 100%;
     opacity: 1;
@@ -11,17 +12,34 @@
     margin: 3rem auto 3rem;
     padding: 0 2rem;
 
-    @include cq(680px) {
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
     @include mq('md') {
       margin-bottom: 7rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    &__division {
+      display: flex;
+      width: 100%;
+    }
+
+    &__img-no {
+      width: 155px;
+      height: 181px;
+      align-self: center;
+      @include mq('md') {
+        width: 90px;
+        height: 100px;
+      }
     }
 
     &__img-visual {
       align-self: flex-end;
+      width: auto;
+      @include mq('md') {
+        width: 180px;
+        height: auto;
+      }
     }
 
     &__no {
@@ -74,9 +92,9 @@
       }
 
       @include mq('md') {
-        font-size: 22px;
+        font-size: 15px;
         letter-spacing: 1.6px;
-        margin: 2rem 0;
+        margin: 2rem 0 2rem 2rem;
       }
     }
 

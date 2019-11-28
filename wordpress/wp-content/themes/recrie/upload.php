@@ -1,9 +1,9 @@
 <?php
 
 /**
- * The template for displaying the footer
+ * The template for displaying the upload page
  *
- * Contains the closing of the #content div and all content after.
+ * Contains the template and shortcode for upload page.
  *
  * Template Name: upload
  *
@@ -14,22 +14,23 @@
 ?>
 
 <?php
+// URL watcher for client serialnumber
+if (!isset($_GET['serial'])) {
+	header("Location: /recrie_lp ");
+}
+?>
+<?php
 session_start();
 $_SESSION["serial"] = $_GET['serial'];
 ?>
 
-
 <?php get_header(); ?>
-<?php
-// URL watcher for client serialnumber
-if (isset($_GET['serial'])) { }
-?>
 
 <div class="l-container">
-	<div class="p-heading">
+	<div class="p-heading upload">
 		<div class="c-staff">
 			<img class="c-staff__img" src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/staff-1.png" alt="">
-			<img class="c-staff__img --margin-middle" src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/staff-2.png" alt="">
+			<img class="c-staff__img margin-middle" src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/staff-2.png" alt="">
 			<img class="c-staff__img" src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/staff-3.png" alt="">
 		</div>
 		<div class="c-finance">

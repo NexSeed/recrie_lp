@@ -1,0 +1,87 @@
+%lists {
+  li {
+
+    margin: 0 2em .5em 0;
+
+    &::before {
+      content: '';
+      width: .8em;
+      height: .8em;
+      margin-right: 0.3em;
+      border-radius: 50%;
+      display: inline-block;
+      background: #687262;
+    }
+  }
+}
+
+%title {
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+
+.p- {
+  &upload-box {
+    color: #687262;
+    text-align: left;
+    border: 1px solid #687262;
+    padding: 1.5em;
+    margin: 4rem 0 3rem;
+
+    &__title {
+      margin-top: 2em;
+
+      &--pink {
+        color: #D86A83;
+        @extend %title;
+      }
+
+      @extend %title;
+    }
+
+    &__lists {
+      @extend %lists;
+    }
+
+    &__lists--inline {
+      @extend %lists;
+
+      li {
+        display: inline-block;
+      }
+    }
+
+    &__dl-link {
+      li {
+        display: inline-block;
+        margin-right: 2em;
+
+        &::before {
+          margin-right: 5px;
+          vertical-align: -8px;
+          height: 40px;
+          width: 30px;
+          display: inline-block;
+          content: '';
+          background: url(assets/minified/images/file-excel.png) no-repeat center / cover;
+        }
+
+        margin-bottom: 0.5em;
+
+        a {
+          color: #687262;
+
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+
+        .small {
+          display: inline-block;
+          margin-top: 10px;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}

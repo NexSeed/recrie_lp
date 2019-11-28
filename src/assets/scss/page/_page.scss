@@ -20,15 +20,15 @@
 // wordpress plugins custom design
 // wp_form
 .wpcf7 {
-  width: 770px;
+  max-width: 770px;
   display: block;
   margin: 0 auto !important;
   box-sizing: border-box;
 
-  @include mq('md') {
-    width: 95%;
-    box-sizing: border-box;
-  }
+  // @include mq('lg') {
+  //   width: 95%;
+  //   box-sizing: border-box;
+  // }
 
   &__title {
     font-size: 26px;
@@ -40,6 +40,20 @@
     @include mq('md') {
       font-size: 20px;
       width: 200px;
+    }
+  }
+
+  &-form {
+    padding: 0 1.6rem;
+
+    p>label {
+      font-size: 1.6rem;
+      font-weight: 500;
+      line-height: 3.2rem;
+      letter-spacing: 1.6px;
+      color: #394829;
+      display: block;
+      text-align: left;
     }
   }
 }
@@ -141,24 +155,15 @@ input[type=text],
 input[type=email],
 input[type=tel] {
   width: 100%;
-  height: 48px;
+  height: 6rem;
   border: 1px solid #C4CCBB;
   border-radius: 3px;
   background: #F9FAF7;
   color: #394829;
-  font-size: 16px;
-  padding-left: 15px;
+  font-size: 1.6rem;
+  padding-left: 1.5rem;
   box-sizing: border-box;
-  margin-top: 10px;
-}
-
-label {
-  text-align: left;
-  font-size: 15px;
-  font-weight: medium;
-  letter-spacing: 1.5px;
-  color: #394829;
-  display: block;
+  margin: 1.8rem auto 0rem;
 }
 
 //specific elements styling with these IDs

@@ -1,20 +1,18 @@
 .p- {
   &financial_diagnostic {
-    background: transparent linear-gradient(0deg, rgba(182, 216, 106, 0.180392) 0%, rgba(0, 182, 183, 0.180392) 100%) 0% 0% no-repeat padding-box;
-    padding: 7rem;
-    padding-bottom: 5.6rem;
-    margin: 6rem 0 7.7rem;
+    background: transparent linear-gradient(0deg, rgba(181, 216, 105, 0.18) 0%, rgba(0, 182, 183, 0.18) 100%) 0% 0% no-repeat padding-box;
+    padding: 7.3rem 7rem 5.7rem;
+    margin: 6rem 0 10rem;
 
     @include mq('md') {
       padding: 5.6rem 1.5rem;
-      margin: 6rem 0 5.2rem;
     }
 
     &__head {
       text-align: left;
       font-weight: 500;
       font-size: 1.6rem;
-      line-height: 3.2rem;
+      line-height: 3.1rem;
       font-family: Yu Gothic;
       letter-spacing: 1.6px;
       color: #394829;
@@ -35,7 +33,7 @@
         font-size: 1.7rem;
         line-height: 3.2rem;
         font-family: Yu Gothic;
-        letter-spacing: 1.7px;
+        letter-spacing: 1.6px;
         color: #0D5D4B;
 
         @include mq('sm') {
@@ -56,13 +54,11 @@
       font-family: Source Han Serif;
       letter-spacing: 2.6px;
       color: #394829;
-      margin: 5rem auto 6rem;
+      margin: 5.2rem auto 5.7rem;
 
       @include mq('sm') {
-        font-weight: 500;
         font-size: 2rem;
         line-height: 3.8rem;
-        font-family: Source Han Serif;
         letter-spacing: 2px;
         color: #212121;
         margin: 2.7rem 0;
@@ -76,19 +72,16 @@
         font-family: Source Han Serif;
         letter-spacing: 6.6px;
         color: #0D5D4B;
-        margin: 1rem auto 2rem;
+        margin: 1rem auto 2rem 2.8rem;
 
         @include mq('sm') {
-          font-weight: 500;
           font-size: 5.5rem;
           line-height: 8.3rem;
-          font-family: Source Han Serif;
           letter-spacing: 5.5px;
           margin: 0.1rem auto 0.2rem;
         }
 
         span {
-          text-align: center;
           font-weight: 500;
           font-size: 1.6rem;
           line-height: 3.2rem;
@@ -97,10 +90,8 @@
           color: #0D5D4B;
 
           @include mq('sm') {
-            font-weight: 500;
             font-size: 1.2rem;
             line-height: 2.6rem;
-            font-family: Yu Gothic;
             letter-spacing: 1.2px;
           }
         }
@@ -110,7 +101,7 @@
     &__feet {
       text-align: left;
       font-weight: 500;
-      font-size: 1.6rem;
+      font-size: 1.4rem;
       line-height: 3.2rem;
       font-family: Yu Gothic;
       letter-spacing: 1.6px;
