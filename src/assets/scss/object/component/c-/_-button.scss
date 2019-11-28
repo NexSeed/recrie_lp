@@ -24,6 +24,20 @@
 
 .c- {
   &button__round {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    box-sizing: border-box;
+    box-shadow: 1px 3px 4px #07030329;
+    border: 3px solid #FFFFFF;
+    border-radius: 4rem;
+    color: #F9FAF7;
+    min-height: 7.4rem;
+    font-weight: 600;
+
+    @extend %hover;
 
     &.c-button__back {
       &::before {
@@ -47,26 +61,22 @@
       font-size: 2.2rem;
       letter-spacing: 2.2px;
       text-align: center;
-      text-shadow: 0px 0px 6px #00000029;
+      text-shadow: #00000029 0px 0px 6px;
       min-height: 7.4rem;
       padding: 1.3rem 1.7rem;
 
-      @include mq('md') {
+      @include mq('sm') {
         font-size: 1.5rem;
         letter-spacing: 1.5px;
+        min-height: 5.3rem;
         text-align: center;
-        text-shadow: 0px 0px 6px #00000029;
+        text-shadow: #00000029 0px 0px 6px;
       }
 
       &:hover {
         cursor: pointer;
       }
     }
-
-    display: inline-block;
-    position: relative;
-    overflow: hidden;
-    z-index: 2;
 
     &::before {
       transition: .3s;
@@ -81,34 +91,35 @@
       background: transparent linear-gradient(126deg, #E3A211 30%, #E53859 80%) 0% 0% no-repeat padding-box;
     }
 
-    box-sizing: border-box;
-    box-shadow: 1px 3px 4px #07030329;
-    border: 3px solid #FFFFFF;
-    border-radius: 4rem;
-    color: #F9FAF7;
-    min-height: 7.4rem;
-
-    @extend %hover;
-
     &__upload {
-      width: 100%;
       max-width: 57rem;
       margin: 5rem auto;
+
+      @include mq('sm') {
+        min-height: 5.3rem;
+        max-width: 30rem;
+      }
     }
 
     &.contact {
+
       &_confirm {
-        width: 100%;
         max-width: 57rem;
+
+        @include mq('sm') {
+          max-width: 30rem;
+        }
       }
 
       &_submit {
-        width: 100%;
         max-width: 57rem;
+
+        @include mq('sm') {
+          max-width: 30rem;
+        }
       }
 
       &_back {
-        width: 100%;
         max-width: 20rem;
         margin: 1.8rem auto;
       }
@@ -123,6 +134,8 @@
       @include mq('sm') {
         font-size: 1.5rem;
         letter-spacing: 1.5px;
+        max-width: 30rem;
+        min-height: 5.3rem;
       }
     }
   }

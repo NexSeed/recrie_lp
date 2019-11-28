@@ -1,8 +1,11 @@
 .p- {
   &financial_sample {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    margin-top: 4.4rem;
+    padding: 0 1.5rem;
+    margin-top: 20rem;
+
+    @include mq('md') {
+      margin-top: 10rem;
+    }
 
     img {
       max-width: 100%;
