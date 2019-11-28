@@ -115,5 +115,4 @@ function mdCheck(md) {
 	}
 }
 
-md.addListener(mdCheck) // Attach listener function on state changes
-
+md.addListener(mdCheck); // Attach listener function on state changes
