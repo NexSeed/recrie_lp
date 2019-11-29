@@ -25,6 +25,7 @@
       color: #0D5D4B;
       display: inline-block;
       align-self: center;
+      margin: 0 1rem;
 
       @include mq('md') {
         font-size: 13px;
@@ -48,7 +49,10 @@
           background: #0D5D4B;
           display: inline-block;
           align-self: center;
-          margin: 0 1rem;
+
+          @include cq(374px) {
+            width: 32px;
+          }
         }
       }
     }

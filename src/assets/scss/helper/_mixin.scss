@@ -24,3 +24,9 @@
     @content;
   }
 }
+
+@mixin cqmin($query) {
+  @media only screen and (min-width: $query) {
+    @content;
+  }
+}
