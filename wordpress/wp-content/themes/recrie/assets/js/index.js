@@ -52,20 +52,28 @@ function myBrowser() {
 
 window.addEventListener('load', function () {
 	if ($('input.wpcf7-drag-n-drop-file').change(function () { // Will move the remove button when file/s are selected
+		uploadButton();
+	}))
+
+	if ($('#fileUpload').hasClass('spFileUpload')) {
+		upload_errors();
+	}
+
+	if($('.codedropz-upload-handler').on('drop', function () { // Will move the remove button when file/s are selected using drag and drop 
+		uploadButton();
+	}))
+
+	function uploadButton() {
 		let removeIcon = $('a.remove-file');
 		$('a.remove-file').remove();
 		$(removeIcon[0]).appendTo($('.dnd-upload-details'));
 		$('span.dnd-icon-remove').addClass('c-button__default c-button__default__remove');
 		$('span.dnd-icon-remove').text('ファイルを削除');
 		upload_errors();
-
-	}))
-		if ($('#fileUpload').hasClass('spFileUpload')) {
-			upload_errors();
-		}
+	}
 
 	$('.cd-upload-btn').addClass('c-button__default c-button__default__upload');
-	$('.codedropz-upload-inner').prepend("<img class='c-file__select' src=" + templateDirTest + "/assets/minified/images/select-file-icon.png" + "/>");
+	$('.codedropz-upload-inner').prepend("<img class='c-file__select' src=" + templateDirTest + '/assets/minified/images/select-file-icon.png' + ">");
 	$('.codedropz-upload-inner > h3, .codedropz-upload-inner > span ').addClass('c-file__text');
 	$('.codedropz-upload-handler').addClass('c-file__upload');
 	mdCheck(md) // check browser resolution == 786px
