@@ -47,8 +47,9 @@ window.addEventListener('scroll', function () {
 
 function myBrowser() {
 	if ((navigator.userAgent.indexOf("MSIE") != -1) || (!!document.documentMode == true)) {
-		$('.p-benefit__img-no').css({ 'width': 'auto', 'height': 'auto' });
+		return true;
 	}
+	return false;
 }
 
 window.addEventListener('load', function () {
@@ -79,7 +80,10 @@ window.addEventListener('load', function () {
 	$('.codedropz-upload-handler').addClass('c-file__upload');
 	mdCheck(md) // check browser resolution == 786px
 
-	myBrowser();
+	let checkBrowser = myBrowser();
+	if(checkBrowser) {
+		$('.p-benefit__img-no').css({ 'width': 'auto', 'height': 'auto' });
+	}
 });
 
 function upload_errors() {
@@ -126,6 +130,12 @@ function mdCheck(md) {
 		$('.c-file__text').removeClass('p-file__head');
 
 		$('.p-financial_sample__btn-open').appendTo($('.p-financial_sample__btn-prev'));
+
+		let checkBrowser = myBrowser();
+		if(checkBrowser) {
+			$('.p-hero').css('height', '40vh');
+		}
+
 	}
 }
 
