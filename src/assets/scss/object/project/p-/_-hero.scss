@@ -4,6 +4,10 @@
     overflow: hidden;
 
     @include cqmin(768px) {
+      height: 58vh;
+    }
+
+    @include cqmin(1200px) {
       height: 70vh;
     }
 

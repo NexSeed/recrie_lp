@@ -67,8 +67,6 @@
     }
 
     &__item {
-      // display: grid;
-      // grid-template-columns: 50% 50%;
       display: flex;
       flex-wrap: wrap;
       -webkit-box-pack: center;
@@ -80,6 +78,10 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+      }
+
+      @include mq('sm') {
+        margin: 3rem 0;
       }
 
       &-img {
