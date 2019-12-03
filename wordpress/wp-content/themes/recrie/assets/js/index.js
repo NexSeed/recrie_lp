@@ -3,6 +3,10 @@ let flag = false;
 let templateDirTest = 'http://nexseed1ab.xsrv.jp/recrie_lp/wp-content/themes/recrie';
 
 var md = window.matchMedia("(max-width: 768px)");
+var lg = window.matchMedia("(min-width: 1230px)");
+
+var checkBrowser = myBrowser();
+
 
 $('#toggleHamburger, #toggleHamburger2').click(function () {
 	flag = !flag;
@@ -47,8 +51,9 @@ window.addEventListener('scroll', function () {
 
 function myBrowser() {
 	if ((navigator.userAgent.indexOf("MSIE") != -1) || (!!document.documentMode == true)) {
-		$('.p-benefit__img-no').css({ 'width': 'auto', 'height': 'auto' });
+		return true;
 	}
+	return false;
 }
 
 window.addEventListener('load', function () {
@@ -56,22 +61,22 @@ window.addEventListener('load', function () {
 		uploadButton();
 	}))
 
-	if ($('#fileUpload').hasClass('spFileUpload')) {
-		upload_errors();
-	}
+		if ($('#fileUpload').hasClass('spFileUpload')) {
+			upload_errors();
+		}
 
-	if($('.codedropz-upload-handler').on('drop', function () { // Will move the remove button when file/s are selected using drag and drop 
+	if ($('.codedropz-upload-handler').on('drop', function () { // Will move the remove button when file/s are selected using drag and drop
 		uploadButton();
 	}))
 
-	function uploadButton() {
-		let removeIcon = $('a.remove-file');
-		$('a.remove-file').remove();
-		$(removeIcon[0]).appendTo($('.dnd-upload-details'));
-		$('span.dnd-icon-remove').addClass('c-button__default c-button__default__remove');
-		$('span.dnd-icon-remove').text('ファイルを削除');
-		upload_errors();
-	}
+		function uploadButton() {
+			let removeIcon = $('a.remove-file');
+			$('a.remove-file').remove();
+			$(removeIcon[0]).appendTo($('.dnd-upload-details'));
+			$('span.dnd-icon-remove').addClass('c-button__default c-button__default__remove');
+			$('span.dnd-icon-remove').text('ファイルを削除');
+			upload_errors();
+		}
 
 	$('.cd-upload-btn').addClass('c-button__default c-button__default__upload');
 	$('.codedropz-upload-inner').prepend("<img class='c-file__select' src=" + templateDirTest + '/assets/minified/images/select-file-icon.png' + ">");
@@ -79,7 +84,9 @@ window.addEventListener('load', function () {
 	$('.codedropz-upload-handler').addClass('c-file__upload');
 	mdCheck(md) // check browser resolution == 786px
 
-	myBrowser();
+	if (checkBrowser) {
+		$('.p-benefit__img-no').css({ 'width': 'auto', 'height': 'auto' });
+	}
 });
 
 function upload_errors() {
@@ -101,8 +108,17 @@ function upload_errors() {
 	}
 }
 
+function lgCheck(lg) {
+	if (lg.matches) {
+		if (checkBrowser) {
+			$('.p-hero').css('height', '70vh');
+			console.log('wati3');
+		}
+	}
+}
+
 function mdCheck(md) {
-	if (md.matches) { // If media query matches max-width of 786px
+	if (md.matches) { // If media query matches max-width of 768px
 		$('.menu-icon').attr({
 			"src": templateDirTest + '/assets/minified/images/menu.png'
 		})
@@ -119,6 +135,8 @@ function mdCheck(md) {
 		// appends the finanancial sample button
 		$('.p-financial_sample__btn-open').insertAfter($('.p-financial_sample__title'));
 
+
+
 	} else {
 		$('#menu-list').css('display', 'block');
 		$('#fileUpload').removeClass('spFileUpload');
@@ -131,27 +149,29 @@ function mdCheck(md) {
 
 md.addListener(mdCheck); // Attach listener function on state changes
 
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
 
-      // Store hash
-      var hash = this.hash;
+$(document).ready(function () {
+	// Add smooth scrolling to all links
+	$("a").on('click', function (event) {
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
+		// Make sure this.hash has a value before overriding default behavior
+		if (this.hash !== "") {
+			// Prevent default anchor click behavior
+			event.preventDefault();
 
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
+			// Store hash
+			var hash = this.hash;
+
+			// Using jQuery's animate() method to add smooth page scroll
+			// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+			$('html, body').animate({
+				scrollTop: $(hash).offset().top
+			}, 800, function () {
+
+				// Add hash (#) to URL when done scrolling (default click behavior)
+				window.location.hash = hash;
+			});
+		} // End if
+	});
 });
