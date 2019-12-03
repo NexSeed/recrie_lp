@@ -20,12 +20,18 @@
     font-size: 16px;
     font-weight: bold;
     margin-right: auto;
+    align-self: center;
     @include mq('md') {
       font-size: 14px;
     }
     @include mq('xs') {
       font-size: 11px;
     }
+  }
+
+  &__top-link {
+    display: flex;
+    text-decoration: none;
   }
 
   .l-logo {

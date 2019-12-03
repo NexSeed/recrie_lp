@@ -22,9 +22,12 @@
 	<div class="l-body-container">
 		<div class="l-header-container">
 			<div class="l-navbar">
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/logo.png" alt="Company Logo" class="l-logo">
+				<a href="<?php echo home_url(); ?>" class="l-navbar__top-link">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/minified/images/logo.png" alt="Company Logo" class="l-logo">
 					<div class="l-navbar__title">
 						レクリエの財務改善コーチング
-					</div>
+						</div>
+				</a>
+				
 			</div>
 		</div>
