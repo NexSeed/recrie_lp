@@ -23,6 +23,37 @@ function set_seo()
     $setmeta = '';
     if (is_home() || is_front_page()) {
         $setmeta .= '<title>'.get_bloginfo('name')."</title>\n";
+				$setmeta .= '<meta name="description" content="'.get_bloginfo('description').'">'."\n";
+				$setmeta .= '<meta property="og:type" content="website">'."\n";
+				$setmeta .= '<meta property="og:url" content="'.home_url().'">'."\n";
+				$setmeta .= '<meta property="og:image" content="'.get_template_directory_uri().'/assets/minified/images/ogp.png">'."\n";
+				$setmeta .= '<meta property="og:locale" content="ja_JP">'."\n";
+				$setmeta .= '<meta name="og:title" content="'.get_bloginfo('name').'">'."\n";
+				$setmeta .= '<meta name="og:description" content="'.get_bloginfo('description').'">'."\n";
+				$setmeta .= '<meta name="twitter:card" content="summary_large_image">'."\n";
+				$setmeta .='<script type="application/ld+json">'."\n";
+        $setmeta .= '{'."\n";
+        $setmeta .= '  "@context": "http://schema.org",'."\n";
+        $setmeta .= '  "@type": "WebSite",'."\n";
+        $setmeta .= '  "url":"'.home_url().'",'."\n";
+        $setmeta .= '  "name" : "'.get_bloginfo('name').'",'."\n";
+        $setmeta .= '  "description": "'.get_bloginfo('description').'",'."\n";
+        $setmeta .= '  "image":"'.get_template_directory_uri().'/assets/minified/images/ogp.png",'."\n";
+        $setmeta .= '  "publisher": ['."\n";
+        $setmeta .= '  {'."\n";
+        $setmeta .= '    "type": "Corporation",'."\n";
+        $setmeta .= '    "name" : "株式会社レクリエ",'."\n";
+        $setmeta .= '    "url": "https://recrie.co.jp",'."\n";
+        $setmeta .= '    "logo": ['."\n";
+        $setmeta .= '        {'."\n";
+        $setmeta .= '          "@type": "ImageObject",'."\n";
+        $setmeta .= '          "url": "'.get_template_directory_uri().'/assets/minified/images/site-logo.png"'."\n";
+        $setmeta .= '        }'."\n";
+        $setmeta .= '      ]'."\n";
+        $setmeta .= '    }'."\n";
+        $setmeta .= '  ]'."\n";
+				$setmeta .= '}'."\n";
+				$setmeta .= '</script>'."\n";
     } else {
         if (is_page() || is_single()) {
             $setmeta .= '<title>'.get_the_title().' | '.get_bloginfo('name')."</title>\n";
