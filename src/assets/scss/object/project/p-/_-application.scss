@@ -14,7 +14,7 @@
 
     &__title {
       text-align: left;
-      font-size: 1.6rem;
+      font-size: 2rem;
       font-weight: 600;
       letter-spacing: 1.6px;
       color: #394829;
@@ -22,13 +22,17 @@
     }
 
     &__text {
-      text-align: left;
-      font-family: Yu Gothic;
-      font-weight: 500;
-      font-size: 1.6rem;
-      line-height: 3.2rem;
-      letter-spacing: 1.6px;
-      color: #394829;
+      text-decoration: none;
+      li {
+        text-align: left;
+        font-family: Yu Gothic;
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 3.2rem;
+        letter-spacing: 1.6px;
+        color: #394829;
+        margin-bottom: 10px;
+      }
     }
   }
 }
