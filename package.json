@@ -17,6 +17,11 @@
     "gulp-imagemin": "^6.1.1",
     "gulp-notify": "^3.2.0",
     "gulp-sass": "^4.0.2",
-    "gulp-sourcemaps": "^2.6.5"
+    "gulp-sourcemaps": "^2.6.5",
+    "lg-fullscreen": "^1.1.0",
+    "lg-pager": "^1.0.2",
+    "lg-thumbnail": "^1.1.0",
+    "lg-zoom": "^1.1.0",
+    "lightgallery": "^1.6.12"
   }
 }

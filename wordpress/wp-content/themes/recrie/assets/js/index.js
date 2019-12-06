@@ -27,19 +27,6 @@ $('#toggleHamburger, #toggleHamburger2').click(function () {
 	}
 })
 
-// Accordion on Financial Sample
-$('.p-financial_sample__btn-open').on('click', function () {
-	$('.p-financial_sample__content').slideDown(1000);
-	$('.p-financial_sample__btn-prev').css("display", "none");
-	$(this).css("display", "none");
-});
-
-$('.p-financial_sample__btn-close').on('click', function () {
-	$('.p-financial_sample__content').slideUp(1000);
-	$('.p-financial_sample__btn-prev').css("display", "block");
-	$('.p-financial_sample__btn-open').css("display", "block");
-});
-
 window.addEventListener('scroll', function () {
 	let scrollHeight = window.pageYOffset;
 	if (scrollHeight >= 350) {
@@ -132,18 +119,12 @@ function mdCheck(md) {
 		$('h3.c-file__text').text('');
 		$('.c-file__text').addClass('p-file__head');
 
-		// appends the finanancial sample button
-		$('.p-financial_sample__btn-open').insertAfter($('.p-financial_sample__title'));
-
-
-
 	} else {
 		$('#menu-list').css('display', 'block');
 		$('#fileUpload').removeClass('spFileUpload');
 		$('h3.c-file__text').text('ここにファイルをドラッグドロップ');
 		$('.c-file__text').removeClass('p-file__head');
 
-		$('.p-financial_sample__btn-open').appendTo($('.p-financial_sample__btn-prev'));
 	}
 }
 
@@ -173,5 +154,10 @@ $(document).ready(function () {
 				window.location.hash = hash;
 			});
 		} // End if
+	});
+	
+	//Financial sample gallery 
+	$("#lightgallery").lightGallery({
+		thumbnail: true
 	});
 });
