@@ -32,12 +32,14 @@ $('.p-financial_sample__btn-open').on('click', function () {
 	$('.p-financial_sample__content').slideDown(1000);
 	$('.p-financial_sample__btn-prev').css("display", "none");
 	$(this).css("display", "none");
+	$('.p-financial_sample__btn-close').css("display", "inline-block");
 });
 
 $('.p-financial_sample__btn-close').on('click', function () {
 	$('.p-financial_sample__content').slideUp(1000);
 	$('.p-financial_sample__btn-prev').css("display", "block");
 	$('.p-financial_sample__btn-open').css("display", "block");
+	$(this).css("display", "none");
 });
 
 window.addEventListener('scroll', function () {
@@ -173,5 +175,10 @@ $(document).ready(function () {
 				window.location.hash = hash;
 			});
 		} // End if
+	});
+	
+	//Financial sample gallery 
+	$("#lightgallery").lightGallery({
+		thumbnail: true
 	});
 });

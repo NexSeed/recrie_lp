@@ -5,7 +5,18 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
       <script src="https://kit.fontawesome.com/125087969d.js" crossorigin="anonymous"></script>
       <script src="<?php echo get_template_directory_uri(); ?>/assets/js/index.js"></script>
-      
+      <!-- <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/js/tst.js"></script> -->
+      <script src="<?php echo get_template_directory_uri(); ?>/assets/js/lightgallery.min.js"></script>
+      <script src="<?php echo get_template_directory_uri(); ?>/assets/js/lg-thumbnail.min.js"></script>
+      <script src="<?php echo get_template_directory_uri(); ?>/assets/js/lg-fullscreen.min.js"></script>
+      <script src="<?php echo get_template_directory_uri(); ?>/assets/js/lg-pager.min.js"></script>
+      <script type="text/javascript">
+        $(document).ready(function() {
+            $("#lightgallery").lightGallery({
+              thumbnail: true
+            }); 
+        });
+      </script>      
       <?php wp_footer(); ?>
     </div>
   </body>
