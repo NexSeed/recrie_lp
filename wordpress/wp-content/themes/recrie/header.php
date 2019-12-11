@@ -13,7 +13,12 @@
     .l-footer {
 			position: absolute;
 			bottom: 0;
-    }
+		}
+		@media only screen and (max-width: 400px)  {
+			.l-footer {
+				position: relative;
+			}
+		}
 	</style>
 	<?php endif; ?>
 </head>
