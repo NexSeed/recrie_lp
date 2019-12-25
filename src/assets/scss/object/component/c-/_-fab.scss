@@ -1,0 +1,18 @@
+.c- {
+  &fab {
+    display: none;
+    position: fixed;
+    bottom: 9vh;
+    right: 5rem;
+    z-index: 2;
+    border: 1px solid #C4CCBB;
+    padding: 8px 15px;
+    border-radius: 5px;
+    box-shadow: inset 0px -1px 0.2px 0.3px grey;
+    background: #F9FAF7;
+
+    @include mq('md') {
+      right: 20px;
+    }
+  }
+}

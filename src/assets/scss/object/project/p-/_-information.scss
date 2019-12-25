@@ -1,0 +1,154 @@
+.p- {
+  &information {
+    padding: 0 15px;
+
+    &__title {
+      text-align: center;
+      font-size: 26px;
+      font-weight: 500;
+      letter-spacing: 2.6px;
+      color: #0D5D4B;
+
+      @extend .p-mincho;
+
+      @include mq('md') {
+        font-size: 20px;
+        letter-spacing: 2px;
+      }
+    }
+
+    &__subtitle {
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: 1.6px;
+      color: #0D5D4B;
+      display: inline-block;
+      align-self: center;
+
+      @include mq('md') {
+        font-size: 13px;
+        letter-spacing: 1.3px;
+      }
+
+      &_container {
+        text-align: center;
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: 1.6px;
+        color: #0D5D4B;
+        height: 50px;
+        line-height: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .line {
+          height: 1px;
+          width: 52px;
+          background: #0D5D4B;
+          display: inline-block;
+          align-self: center;
+          margin: 0 1rem;
+        }
+      }
+    }
+
+    &__details {
+      text-align: left;
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: 1.6px;
+      color: #394829;
+      width: 77rem;
+      display: block;
+      margin: 2rem auto;
+
+      @include mq('lg') {
+        width: 100%;
+      }
+    }
+
+    &__title2 {
+      text-align: center;
+      font-size: 18px;
+      letter-spacing: 1.8px;
+      color: #394829;
+      width: 570px;
+      display: block;
+      margin: 50px auto 0 auto;
+      border-bottom: 1px solid;
+      padding-bottom: 10px;
+      @extend .p-mincho;
+
+      @include mq('md') {
+        font-size: 16px;
+        letter-spacing: 1.6px;
+        width: 100%;
+        margin: 0;
+      }
+    }
+
+    &__card {
+      margin: 4rem 30px 4rem 0;
+      width: calc(33.333% - 60px / 3);
+
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+
+      @include cq(875px) {
+        width: calc(50% - 15px / 2);
+        margin: 3rem 15px 3rem 0;
+
+        &:nth-child(3n) {
+          margin-right: 15px;
+        }
+
+        &:nth-child(2n) {
+          margin-right: 0;
+        }
+      }
+
+      @include mq('sm') {
+        width: 100%;
+        margin-right: 0 !important;
+      }
+
+      &_container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        @extend %container;
+      }
+
+      &_title {
+        text-align: center;
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: 1.6px;
+        color: #0D5D4B;
+      }
+
+      &_box {
+
+        height: 158px;
+        border: 1px solid #0D5D4B;
+        padding: 24px;
+        margin-top: 16px;
+
+        @include mq('sm') {
+          height: auto;
+        }
+
+        &__content {
+          text-align: left;
+          font-size: 16px;
+          font-weight: 500;
+          letter-spacing: 1.6px;
+          color: #394829;
+        }
+      }
+    }
+  }
+}

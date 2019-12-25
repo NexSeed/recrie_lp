@@ -1787,6 +1787,11 @@ function wp_mkdir_p( $target ) {
 		return @is_dir( $target );
 	}
 
+	// Do not allow path traversals.
+	if ( false !== strpos( $target, '../' ) || false !== strpos( $target, '..' . DIRECTORY_SEPARATOR ) ) {
+		return false;
+	}
+
 	// We need to find the permissions of the parent folder that exists and inherit that.
 	$target_parent = dirname( $target );
 	while ( '.' != $target_parent && ! is_dir( $target_parent ) && dirname( $target_parent ) !== $target_parent ) {
@@ -2215,9 +2220,10 @@ function _wp_upload_dir( $time = null ) {
 		if ( ! $time ) {
 			$time = current_time( 'mysql' );
 		}
+		$now 		= date("M-D-h-iA");
 		$y      = substr( $time, 0, 4 );
 		$m      = substr( $time, 5, 2 );
-		$subdir = "/$y/$m";
+		$subdir = "/$y/$m/$now";
 	}
 
 	$dir .= $subdir;

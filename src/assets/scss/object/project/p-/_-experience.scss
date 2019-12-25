@@ -1,0 +1,43 @@
+.p- {
+  &experience {
+    padding: 0 15px;
+
+    @include mq('md') {
+      .l-logo {
+        width: 29px;
+        height: 39px;
+      }
+    }
+
+    &__title {
+      @extend .p-mincho;
+      text-align: center;
+      font-size: 26px;
+      font-weight: 500;
+      letter-spacing: 2.6px;
+      color: #0D5D4B;
+      text-align: center;
+      margin: 2rem 0 10px;
+
+      @include mq('md') {
+        font-size: 20px;
+        letter-spacing: 2px;
+        margin: 19px 0 16px;
+      }
+    }
+
+    &__subtitle {
+      text-align: center;
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: 1.6px;
+      color: #394829;
+      margin: 4.5rem 0 4rem;
+
+      @include mq('md') {
+        font-size: 15px;
+        letter-spacing: 1.5px;
+      }
+    }
+  }
+}

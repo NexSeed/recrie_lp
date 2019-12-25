@@ -1,0 +1,30 @@
+.c- {
+  &progress {
+    overflow: hidden;
+    width: 50rem;
+    display: flex;
+    position: relative;
+    align-items: center;
+
+    &__bar {
+      background: rgba(0, 0, 0, 0.075);
+      border-radius: 1rem;
+      min-width: 30rem;
+    }
+
+    &__load {
+      border-radius: 1rem;
+      padding: 4px 0;
+      width: 0%;
+    }
+
+    &__count {
+      text-align: left;
+      font-weight: 600;
+      font-size: 1.2rem;
+      letter-spacing: 1.2px;
+      color: #394829;
+      margin: auto;
+    }
+  }
+}

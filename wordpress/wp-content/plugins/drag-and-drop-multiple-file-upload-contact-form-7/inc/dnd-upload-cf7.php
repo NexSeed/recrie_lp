@@ -85,7 +85,7 @@
 	// Get folder path
 	function dnd_get_upload_dir() {
 		$upload = wp_upload_dir();
-		$uploads_dir = wpcf7_dnd_dir . '/wpcf7-files';
+		$uploads_dir = wpcf7_dnd_dir . $upload['subdir'];
 
 		// If save as attachment ( also : Check if upload use year and month folders )
 		if( get_option('drag_n_drop_mail_attachment') == 'yes' ) {
