@@ -2,8 +2,8 @@
 Donate link : http://codedropz.com/donation
 Tags: drag and drop, contact form 7, ajax uploader, multiple file, upload, contact form 7 uploader
 Requires at least: 3.0.1
-Tested up to: 5.2
-Stable tag: 1.3.0
+Tested up to: 5.2.4
+Stable tag: 1.3.1
 Requires PHP: 5.2.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -52,6 +52,11 @@ Checkout available features on **PRO version**.
 * 1 Month Premium Support
 
 You can get [PRO Version here](https://www.codedropz.com/purchase-plugin/)!
+
+### Other Plugin You May Like
+
+* [Drag & Drop Multiple File Upload - WPForms](https://www.codedropz.com/drag-drop-file-uploader-wpforms/) 
+An extension for **WPForms** - Transform your simple file upload into beautiful **"Drag & Drop Multiple File Upload"**.
 
 == Frequently Asked Questions ==
 
@@ -110,6 +115,10 @@ To install this plugin see below:
 6. Multiple Drag and Drop Fields - Front
 
 == Changelog ==
+
+= 1.3.1 =
+* Fixed - Browser Compatibility ( Error Uploading files in Edge, Safari and Internet Explorer )
+* Improved - Removed error text if there are muliple error ( File upload validation )
 
 = 1.3.0 =
 * Fixed - Multiple Drag & Drop fields in one form ( Validation Issues - Max File not working correctly )

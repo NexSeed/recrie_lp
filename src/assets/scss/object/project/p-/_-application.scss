@@ -3,24 +3,36 @@
     margin: 4rem auto;
     text-align: -webkit-center;
     background-color: #EFF2ED;
-    padding: 1.6rem;
+    padding: 2.5rem 3.6rem 3rem;
     max-width: 77rem;
+    overflow: auto;
+    max-height: 250px;
+
+    @include mq('md') {
+      padding: 1.6rem;
+    }
 
     &__title {
       text-align: left;
-      font-size: 1.6rem;
-      font-weight: bold;
+      font-size: 2rem;
+      font-weight: 600;
       letter-spacing: 1.6px;
       color: #394829;
-      padding-bottom: 1.6rem;
+      padding-bottom: 1.4rem;
     }
 
     &__text {
-      text-align: left;
-      font-size: 1.6rem;
-      font-weight: 500;
-      letter-spacing: 1.6px;
-      color: #394829;
+      text-decoration: none;
+      li {
+        text-align: left;
+        font-family: Yu Gothic;
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 3.2rem;
+        letter-spacing: 1.6px;
+        color: #394829;
+        margin-bottom: 10px;
+      }
     }
   }
 }

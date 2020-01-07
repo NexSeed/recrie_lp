@@ -26,6 +26,12 @@
         // width: calc(100% - 570px / 2);
       }
 
+      @include mq('sm') {
+        br {
+          display: none;
+        }
+      }
+
       p {
 
         font-size: 16px;
@@ -35,6 +41,10 @@
         @include mq('sm') {
           letter-spacing: 1.5px;
           font-size: 15px;
+        }
+
+        @include mq('xs') {
+          font-size: 14px;
         }
       }
 

@@ -1,7 +1,13 @@
 .p- {
   &hero {
     position: relative;
-
+    overflow: hidden;
+    @include cqmin(768px) {
+      height: 40vh;
+    }
+    @include cqmin(1230px) {
+      height: 70vh;
+    }
     &__title {
       display: block;
       position: absolute;
@@ -9,14 +15,22 @@
       left: 50%;
       transform: translateX(-50%);
     }
-
     .hero-img {
       width: 100%;
-      max-height: 100vh;
       height: auto;
       object-fit: cover;
+      @include cqmin(768px) {
+        min-width: 100%;
+        min-height: 100%;
+        height: auto;
+        object-fit: cover;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+      }
     }
-
     .hero-pc {
       &-title {
         position: absolute;
@@ -25,23 +39,18 @@
         width: 65%;
         left: 50%;
         transform: translateX(-50%);
-
         @include mq('sm') {
           display: none;
         }
       }
     }
-
     .hero-sp {
       display: none;
-
       @include mq('sm') {
         display: block;
       }
-
       &-title {
         display: none;
-
         @include mq('sm') {
           display: block;
           position: absolute;
@@ -51,7 +60,6 @@
         }
       }
     }
-
     @include mq('md') {
       .c-logo {
         display: none;

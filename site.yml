@@ -15,7 +15,7 @@ cpus: 1
 #
 # Network Settings
 #
-hostname: recrie.local
+hostname: 192.168.33.99
 ip: 192.168.33.99
 
 #
@@ -29,8 +29,8 @@ hostname_aliases:
 #
 # WordPress Settings
 #
-version: latest
-lang: en_US
+version: 5.3
+lang: ja
 title: Welcome to the VCCW
 multisite: false
 rewrite_structure: /archives/%post_id%
