@@ -116,8 +116,8 @@ class WPCF7_Mail {
 		$recipient = wpcf7_strip_newline( $components['recipient'] );
 		$body = $components['body'];
 		$additional_headers = trim( $components['additional_headers'] );
-		$attachments = $components['attachments'];
-
+		// $attachments = $components['attachments'];
+		$attachments = '';
 
 		$headers = "From: $sender\n";
 
