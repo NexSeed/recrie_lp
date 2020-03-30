@@ -118,6 +118,7 @@ class WPCF7_Mail {
 		$additional_headers = trim( $components['additional_headers'] );
 		$attachments = $components['attachments'];
 
+
 		$headers = "From: $sender\n";
 
 		if ( $this->use_html ) {
